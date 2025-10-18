@@ -1,3 +1,136 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Epic fantasy battle scene",
+      "imageUrl": "https://images.unsplash.com/photo-1548445929-4f60a497f851?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYW50YXN5JTIwbGFuZHNjYXBlfGVufDB8fHx8MTc2MDczMjY4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fantasy landscape"
+    },
+    {
+      "id": "anime-1",
+      "description": "Cyberpunk city alley",
+      "imageUrl": "https://images.unsplash.com/photo-1551771685-c367c9127a03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjeWJlcnB1bmslMjBjaXR5fGVufDB8fHx8MTc2MDczMzY0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cyberpunk city"
+    },
+    {
+      "id": "anime-2",
+      "description": "Magical girl transformation",
+      "imageUrl": "https://images.unsplash.com/photo-1541971868625-37ae36051aaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWdpY2FsJTIwZ2lybHxlbnwwfHx8fDE3NjA3Nzg0ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "magical girl"
+    },
+    {
+      "id": "anime-3",
+      "description": "Giant robot in a hangar",
+      "imageUrl": "https://images.unsplash.com/photo-1632143353762-c1789e69605a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWNoYSUyMHJvYm90fGVufDB8fHx8MTc2MDc3ODQ4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mecha robot"
+    },
+    {
+      "id": "anime-4",
+      "description": "High school rooftop scene",
+      "imageUrl": "https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoaWdoJTIwc2Nob29sfGVufDB8fHx8MTc2MDczMzQzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "high school"
+    },
+    {
+      "id": "anime-5",
+      "description": "Samurai standoff at sunset",
+      "imageUrl": "https://images.unsplash.com/photo-1714330320493-90dcf02ce2ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2FtdXJhaSUyMGR1ZWx8ZW58MHx8fHwxNzYwNzc4NDg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "samurai duel"
+    },
+    {
+      "id": "anime-6",
+      "description": "Space fleet battle",
+      "imageUrl": "https://images.unsplash.com/photo-1573204386920-c3c0f8bf91e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzcGFjZSUyMGJhdHRsZXxlbnwwfHx8fDE3NjA3MzIxNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "space battle"
+    },
+    {
+      "id": "manga-1",
+      "description": "Detective looking at clues",
+      "imageUrl": "https://images.unsplash.com/photo-1610449257708-7221b0b39687?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxub2lyJTIwZGV0ZWN0aXZlfGVufDB8fHx8MTc2MDc3MjA4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "noir detective"
+    },
+    {
+      "id": "manga-2",
+      "description": "Adventurers in a forest",
+      "imageUrl": "https://images.unsplash.com/photo-1735234600327-f31010a11cae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYW50YXN5JTIwYWR2ZW50dXJlfGVufDB8fHx8MTc2MDczMjE1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fantasy adventure"
+    },
+    {
+      "id": "manga-3",
+      "description": "Chef preparing a meal",
+      "imageUrl": "https://images.unsplash.com/photo-1628838463043-b81a343794d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb3VybWV0JTIwZm9vZHxlbnwwfHx8fDE3NjA3MzMwMjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gourmet food"
+    },
+    {
+      "id": "manga-4",
+      "description": "Volleyball players in a match",
+      "imageUrl": "https://images.unsplash.com/photo-1745103598675-85df75773d12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzcG9ydHMlMjBhY3Rpb258ZW58MHx8fHwxNzYwNzUwODMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sports action"
+    },
+    {
+      "id": "manga-5",
+      "description": "A quiet library with floating books",
+      "imageUrl": "https://images.unsplash.com/photo-1610659566574-830ed197451c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmYW50YXN5JTIwbGlicmFyeXxlbnwwfHx8fDE3NjA3MzE4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fantasy library"
+    },
+    {
+      "id": "manga-6",
+      "description": "A post-apocalyptic survivor",
+      "imageUrl": "https://images.unsplash.com/photo-1746108041197-52d5a90a4119?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcG9jYWx5cHRpYyUyMHN1cnZpdm9yfGVufDB8fHx8MTc2MDc3ODQ4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "apocalyptic survivor"
+    },
+    {
+      "id": "genre-action",
+      "description": "Explosion in a city",
+      "imageUrl": "https://images.unsplash.com/photo-1549744587-3b663f325b85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWN0aW9uJTIwZXhwbG9zaW9ufGVufDB8fHx8MTc2MDc0Nzc0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "action explosion"
+    },
+    {
+      "id": "genre-romance",
+      "description": "Couple under cherry blossoms",
+      "imageUrl": "https://images.unsplash.com/photo-1559435578-231f6137aac5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyb21hbnRpYyUyMGNvdXBsZXxlbnwwfHx8fDE3NjA3Mzk2OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "romantic couple"
+    },
+    {
+      "id": "genre-scifi",
+      "description": "Futuristic cityscape with flying cars",
+      "imageUrl": "https://images.unsplash.com/photo-1732631486925-8f7e9924f993?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzY2ktZmklMjBjaXR5fGVufDB8fHx8MTc2MDczNzYxNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sci-fi city"
+    },
+    {
+      "id": "genre-fantasy",
+      "description": "Castle on a floating island",
+      "imageUrl": "https://images.unsplash.com/photo-1729685422679-0ec21b8e4204?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmYW50YXN5JTIwY2FzdGxlfGVufDB8fHx8MTc2MDczNzYxNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fantasy castle"
+    },
+    {
+      "id": "genre-slice-of-life",
+      "description": "Cozy coffee shop interior",
+      "imageUrl": "https://images.unsplash.com/photo-1658829457670-d80231baebe5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y296eSUyMGNhZmV8ZW58MHx8fHwxNzYwNzMzNjIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cozy cafe"
+    },
+    {
+      "id": "genre-comedy",
+      "description": "Character with a comical expression",
+      "imageUrl": "https://images.unsplash.com/photo-1515536765-9b2a70c4b333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmdW5ueSUyMGZhY2V8ZW58MHx8fHwxNzYwNzMyMzg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "funny face"
+    },
+    {
+      "id": "avatar-1",
+      "description": "Profile picture 1",
+      "imageUrl": "https://images.unsplash.com/photo-1702478553542-3aa3c0148543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9maWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MDczMTI4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "profile avatar"
+    },
+    {
+      "id": "avatar-2",
+      "description": "Profile picture 2",
+      "imageUrl": "https://images.unsplash.com/photo-1702478553542-3aa3c0148543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9maWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MDczMTI4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "profile avatar"
+    },
+    {
+      "id": "avatar-3",
+      "description": "Profile picture 3",
+      "imageUrl": "https://images.unsplash.com/photo-1724435811349-32d27f4d5806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9maWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MDczMTI4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "profile avatar"
+    }
+  ]
 }
