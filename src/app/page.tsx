@@ -15,7 +15,8 @@ export default function Home() {
     <div className="flex flex-col">
       
         <section className="relative w-full h-[70vh]">
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 md:p-8">
+          <div className="absolute inset-0 bg-black/30 z-10" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 md:p-8 z-20">
             <div className="max-w-3xl space-y-6">
               <Image
                 src="https://res.cloudinary.com/doklib3it/image/upload/v1762448266/unleash-removebg-preview_lzoju4.png"
