@@ -2,12 +2,12 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, Search, X } from 'lucide-react';
+import { Menu, Search } from 'lucide-react';
 import { useState } from 'react';
+import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { OtakuVerseLogo } from '@/components/icons';
 import { cn } from '@/lib/utils';
 import {
   Sheet,
@@ -56,8 +56,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <OtakuVerseLogo className="h-6 w-6 text-primary" />
-            <span className="hidden font-bold sm:inline-block font-headline">OtakuVerse</span>
+            <Image src="https://res.cloudinary.com/doklib3it/image/upload/v1762444330/Screenshot_2025-09-22_002714-removebg-preview_tjg6hx.png" alt="Logo" width={100} height={24} className="h-6 w-auto" />
           </Link>
           <NavLinks />
         </div>
@@ -72,8 +71,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="left">
                <Link href="/" className="mr-6 flex items-center space-x-2 mb-4" onClick={() => setIsMobileMenuOpen(false)}>
-                  <OtakuVerseLogo className="h-6 w-6 text-primary" />
-                  <span className="font-bold font-headline">OtakuVerse</span>
+                  <Image src="https://res.cloudinary.com/doklib3it/image/upload/v1762444330/Screenshot_2025-09-22_002714-removebg-preview_tjg6hx.png" alt="Logo" width={100} height={24} className="h-6 w-auto" />
                 </Link>
               <NavLinks inSheet />
             </SheetContent>
