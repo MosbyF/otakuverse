@@ -54,14 +54,13 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
-        <div className="mr-4 hidden md:flex">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
+        <div className="flex items-center">
+          <Link href="/" className="flex items-center space-x-2">
             <Image src="https://res.cloudinary.com/doklib3it/image/upload/v1762444330/Screenshot_2025-09-22_002714-removebg-preview_tjg6hx.png" alt="Logo" width={100} height={24} className="h-6 w-auto" />
           </Link>
-          <NavLinks />
         </div>
 
-        <div className="md:hidden">
+        <div className="md:hidden ml-auto">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -79,9 +78,9 @@ export function Header() {
         </div>
 
 
-        <div className="flex flex-1 items-center justify-between space-x-4 md:justify-end">
-          <div className="w-full flex-1 md:w-auto md:flex-none">
-            <form>
+        <div className="hidden flex-1 items-center justify-end space-x-4 md:flex">
+          <NavLinks />
+          <div className="w-full flex-1 md:w-auto md:flex-none max-w-xs">
               <div className="relative">
                 <Search className="absolute left-2 top-2.5 h-4 w-4 text-gray-400" />
                 <Input
@@ -90,7 +89,6 @@ export function Header() {
                   className="pl-8 sm:w-40 md:w-56 text-gray-400"
                 />
               </div>
-            </form>
           </div>
            <Button variant="ghost" size="icon">
               <User className="h-5 w-5 text-gray-400" />
