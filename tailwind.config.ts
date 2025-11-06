@@ -20,6 +20,7 @@ export default {
         body: ['PT Sans', 'sans-serif'],
         headline: ['Bebas Neue', 'sans-serif'],
         lilita: ['Lilita One', 'sans-serif'],
+        'permanent-marker': ['"Permanent Marker"', 'cursive'],
         code: ['monospace'],
       },
       colors: {

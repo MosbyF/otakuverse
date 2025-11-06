@@ -17,7 +17,7 @@ export default function Home() {
         <section className="relative w-full h-[70vh]">
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 md:p-8 z-10">
             <div className="max-w-4xl space-y-6">
-              <h1 className="text-6xl md:text-8xl font-lilita text-white drop-shadow-lg">
+              <h1 className="text-6xl md:text-8xl font-permanent-marker text-white drop-shadow-lg">
                 Unleash Your Inner Otaku
               </h1>
             </div>
