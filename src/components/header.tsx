@@ -80,16 +80,10 @@ export function Header() {
 
         <div className="hidden flex-1 items-center justify-end space-x-4 md:flex">
           <NavLinks />
-          <div className="w-full flex-1 md:w-auto md:flex-none max-w-xs">
-              <div className="relative">
-                <Search className="absolute left-2 top-2.5 h-4 w-4 text-gray-400" />
-                <Input
-                  type="search"
-                  placeholder="Search titles..."
-                  className="pl-8 sm:w-40 md:w-56 text-white placeholder:text-gray-300"
-                />
-              </div>
-          </div>
+           <Button variant="ghost" size="icon">
+              <Search className="h-5 w-5 text-gray-400" />
+              <span className="sr-only">Search</span>
+            </Button>
            <Button variant="ghost" size="icon">
               <User className="h-5 w-5 text-gray-400" />
               <span className="sr-only">Profile</span>
