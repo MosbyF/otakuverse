@@ -19,6 +19,7 @@ export default {
       fontFamily: {
         body: ['PT Sans', 'sans-serif'],
         headline: ['Bebas Neue', 'sans-serif'],
+        lilita: ['Lilita One', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
