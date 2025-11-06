@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, Search } from 'lucide-react';
+import { Menu, Search, User } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -18,8 +18,8 @@ import {
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/media', label: 'Anime/Manga' },
-  { href: '/genres', label: 'Genres' },
+  { href: '/media?type=Manga', label: 'Manga' },
+  { href: '/media?type=Anime', label: 'Anime' },
   { href: '/fandom', label: 'Fandom' },
   { href: '/about', label: 'About Us' },
 ];
@@ -39,7 +39,7 @@ export function Header() {
           href={link.href}
           className={cn(
             'text-sm font-medium transition-colors hover:text-primary',
-            pathname === link.href ? 'text-primary' : 'text-muted-foreground',
+            pathname === link.href ? 'text-primary' : 'text-gray-400',
             inSheet && "text-lg"
           )}
           onClick={() => inSheet && setIsMobileMenuOpen(false)}
@@ -79,19 +79,23 @@ export function Header() {
         </div>
 
 
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+        <div className="flex flex-1 items-center justify-between space-x-4 md:justify-end">
           <div className="w-full flex-1 md:w-auto md:flex-none">
             <form>
               <div className="relative">
-                <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
+                <Search className="absolute left-2 top-2.5 h-4 w-4 text-gray-400" />
                 <Input
                   type="search"
                   placeholder="Search titles..."
-                  className="pl-8 sm:w-40 md:w-56"
+                  className="pl-8 sm:w-40 md:w-56 text-gray-400"
                 />
               </div>
             </form>
           </div>
+           <Button variant="ghost" size="icon">
+              <User className="h-5 w-5 text-gray-400" />
+              <span className="sr-only">Profile</span>
+            </Button>
         </div>
       </div>
     </header>
