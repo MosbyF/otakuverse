@@ -28,6 +28,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn.anime-planet.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
