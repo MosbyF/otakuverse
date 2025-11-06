@@ -16,10 +16,10 @@ export default function Home() {
       
         <section className="relative w-full h-[70vh]">
           
-          <div className="absolute inset-0" />
+          
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 md:p-8">
             <div className="max-w-3xl text-white space-y-6">
-              <h1 className="text-4xl md:text-7xl font-bold font-headline">Unleash Your Inner Otaku</h1>
+              <h1 className="text-4xl md:text-7xl font-bold font-headline" style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)' }}>Unleash Your Inner Otaku</h1>
             </div>
           </div>
         </section>
