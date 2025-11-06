@@ -85,7 +85,7 @@ export const media: MediaType[] = [
   {
     id: 'the-banished-court-magician-aims-to-become-the-strongest',
     title: 'The Banished Court Magician Aims to Become the Strongest',
-    type: 'Manga',
+    type: 'Anime',
     description: 'A talented magician, banished from court, seeks to become the strongest of all.',
     longDescription: 'Betrayed and exiled from the royal court he served, a prodigious magician now wanders the lands. To protect those he cares for and to prove his worth, he embarks on a solitary journey to hone his skills and surpass every magical limit, aiming to become the undisputed strongest magician in the world.',
     genres: ['Fantasy', 'Adventure', 'Action'],
