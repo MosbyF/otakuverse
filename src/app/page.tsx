@@ -19,7 +19,7 @@ export default function Home() {
           
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 md:p-8">
             <div className="max-w-3xl text-white space-y-6">
-              <h1 className="text-4xl md:text-7xl font-bold font-headline" style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)' }}>Unleash Your Inner Otaku</h1>
+              <h1 className="text-4xl md:text-7xl font-bold font-headline">Unleash Your Inner Otaku</h1>
             </div>
           </div>
         </section>
@@ -37,7 +37,7 @@ export default function Home() {
 
         <section>
           <h2 className="text-3xl font-bold mb-6 font-headline">Latest Updates</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl-grid-cols-6 2xl:grid-cols-8 gap-4">
             {latest.map((item) => (
               <MediaCard key={item.id} media={item} />
             ))}
