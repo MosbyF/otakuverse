@@ -15,8 +15,6 @@ export default function Home() {
     <div className="flex flex-col">
       
         <section className="relative w-full h-[70vh]">
-          
-          
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 md:p-8">
             <div className="max-w-3xl space-y-6">
               <Image
