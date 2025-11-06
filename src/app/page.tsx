@@ -18,7 +18,7 @@ export default function Home() {
           
           
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 md:p-8">
-            <div className="max-w-3xl text-white space-y-6">
+            <div className="max-w-3xl space-y-6">
               <Image
                 src="https://res.cloudinary.com/doklib3it/image/upload/v1762448266/unleash-removebg-preview_lzoju4.png"
                 alt="Unleash Your Inner Otaku"
