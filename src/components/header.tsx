@@ -86,7 +86,7 @@ export function Header() {
                 <Input
                   type="search"
                   placeholder="Search titles..."
-                  className="pl-8 sm:w-40 md:w-56 text-gray-400"
+                  className="pl-8 sm:w-40 md:w-56 text-white placeholder:text-gray-300"
                 />
               </div>
           </div>
