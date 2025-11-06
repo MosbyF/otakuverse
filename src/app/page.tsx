@@ -13,32 +13,17 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      {heroImage && (
+      
         <section className="relative w-full h-[70vh]">
-          <Image
-            src={heroImage.imageUrl}
-            alt="Unleash Your Inner Otaku"
-            fill
-            className="object-cover"
-            data-ai-hint={heroImage.imageHint}
-            priority
-          />
+          
           <div className="absolute inset-0 bg-black/50" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 md:p-8">
             <div className="max-w-3xl text-white space-y-6">
               <h1 className="text-4xl md:text-7xl font-bold font-headline drop-shadow-2xl">Unleash Your Inner Otaku</h1>
-              <p className="text-lg md:text-2xl drop-shadow-xl">
-                Discover, Watch, and Discuss Your Favorite Anime & Manga
-              </p>
-              <Link href="/media">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
-                  Get Started <ArrowRight className="ml-2" />
-                </Button>
-              </Link>
             </div>
           </div>
         </section>
-      )}
+      
 
       <div className="container mx-auto px-4 py-12 space-y-16">
         <section>
