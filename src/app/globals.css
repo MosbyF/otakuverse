@@ -4,6 +4,11 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://res.cloudinary.com/doklib3it/image/upload/v1762439968/yui_suonmr.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @layer base {
