@@ -1005,6 +1005,20 @@ export const media: MediaType[] = [
     status: 'Featured',
     chapters: 10,
     releaseYear: 2016,
+  },
+  {
+    id: 'omniscient-readers-viewpoint',
+    title: 'Omniscient Reader\'s Viewpoint',
+    type: 'Manga',
+    description: 'A man\'s favorite webnovel becomes reality, and he is the only one who knows how it ends.',
+    longDescription: 'Dokja was an average office worker whose only interest was reading his favorite webnovel, \'Three Ways to Survive the Apocalypse.\' But when the novel suddenly becomes reality, he is the only person who knows how the world will end. Armed with this knowledge, Dokja uses his understanding of the story to change the plot and survive in a world that has become a deadly game.',
+    genres: ['Action', 'Fantasy', 'Adventure', 'Apocalyptic'],
+    rating: 4.9,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/omniscient-readers-viewpoint-1-285x410.webp?t=1726279285',
+    imageHint: 'omniscient reader',
+    status: 'Trending',
+    chapters: 200,
+    releaseYear: 2020,
   }
 ];
 
