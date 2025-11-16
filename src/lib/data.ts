@@ -1,4 +1,5 @@
 
+
 import type { MediaType, GenreType, FandomPost } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -920,6 +921,48 @@ export const media: MediaType[] = [
     status: 'Latest',
     duration: '24 min per ep',
     releaseYear: 2024,
+  },
+  {
+    id: 'nohara-hiroshi-hirumeshi-no-ryuugi',
+    title: 'Nohara Hiroshi Hirumeshi no Ryuugi',
+    type: 'Anime',
+    description: 'Follows the lunchtime escapades of Hiroshi Nohara from Crayon Shin-chan.',
+    longDescription: 'This series spinoff from Crayon Shin-chan follows the salaryman father, Hiroshi Nohara, as he seeks out the best and most satisfying lunches. Each episode is a new culinary adventure as Hiroshi explores different restaurants and dishes.',
+    genres: ['Slice of Life', 'Comedy', 'Food'],
+    rating: 4.5,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/nohara-hiroshi-hirumeshi-no-ryuugi-1-285x399.webp?t=1741821370',
+    imageHint: 'salaryman lunch',
+    status: 'Latest',
+    duration: '10 min per ep',
+    releaseYear: 2024,
+  },
+  {
+    id: 'princess-mononoke',
+    title: 'Princess Mononoke',
+    type: 'Anime',
+    description: 'A prince caught in a struggle between the gods of a forest and the humans who consume its resources.',
+    longDescription: 'On a journey to find the cure for a Tatarigami\'s curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime, a human girl raised by wolves who is fiercely protective of the forest.',
+    genres: ['Action', 'Adventure', 'Fantasy'],
+    rating: 4.9,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/princess-mononoke-1-190x266.jpg?t=1625885428',
+    imageHint: 'forest god',
+    status: 'Featured',
+    duration: '2h 14min',
+    releaseYear: 1997,
+  },
+  {
+    id: 'dragon-ball-z',
+    title: 'Dragon Ball Z',
+    type: 'Anime',
+    description: 'The adventures of Goku, who, along with his companions, defends the Earth against an assortment of villains.',
+    longDescription: 'Continuing the adventures of the mighty warrior Goku, Dragon Ball Z follows his journey as he and his friends defend Earth from a host of powerful foes. From alien invaders to magical androids, Goku must constantly push his limits and ascend to new levels of power to protect his loved ones and the universe.',
+    genres: ['Action', 'Adventure', 'Fantasy', 'Shounen'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/dragon-ball-z-1-190x285.jpg?t=1625885382',
+    imageHint: 'super saiyan',
+    status: 'Trending',
+    duration: '24 min per ep',
+    releaseYear: 1989,
   }
 ];
 
