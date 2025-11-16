@@ -1089,6 +1089,20 @@ export const media: MediaType[] = [
     status: 'Trending',
     duration: '24 min per ep',
     releaseYear: 2017,
+  },
+  {
+    id: 'cowboy-bebop-the-movie',
+    title: 'Cowboy Bebop: The Movie',
+    type: 'Anime',
+    description: 'A bounty hunter crew takes on a dangerous new target.',
+    longDescription: 'The bounty-hunting crew of the Bebop is back in this feature-length adventure. When a deadly virus is unleashed on Mars, a massive bounty is placed on the head of the terrorist responsible. Spike, Jet, Faye, and Ed join the hunt, but the target is more elusive and dangerous than they could ever imagine.',
+    genres: ['Action', 'Sci-Fi', 'Thriller'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/cowboy-bebop-the-movie-1-190x282.jpg?t=1625885495',
+    imageHint: 'bounty hunter',
+    status: 'Featured',
+    duration: '1h 55min',
+    releaseYear: 2001,
   }
 ];
 
