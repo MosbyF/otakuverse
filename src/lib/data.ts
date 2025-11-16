@@ -346,6 +346,20 @@ export const media: MediaType[] = [
     status: 'Latest',
     chapters: 100,
     releaseYear: 2020,
+  },
+  {
+    id: 'layers',
+    title: 'Layers',
+    type: 'Manga',
+    description: 'Two women, a prosthesis maker and a client, are drawn into a complex, psychological drama.',
+    longDescription: 'Kasane is a woman who wears a full-body prosthesis. She visits a prosthesis maker named Saho, who lives in seclusion. As Saho works on Kasane\'s new body, their lives become deeply intertwined, blurring the lines between maker and creation, reality and illusion.',
+    genres: ['Psychological', 'Drama', 'Horror'],
+    rating: 4.5,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/layers-1-190x254.jpg?t=1625911301',
+    imageHint: 'psychological drama',
+    status: 'Latest',
+    chapters: 10,
+    releaseYear: 2011,
   }
 ];
 
