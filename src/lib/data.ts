@@ -130,6 +130,18 @@ export const media: MediaType[] = [
     imageHint: 'fantasy girl',
     status: 'Trending',
   },
+   {
+    id: 'ore-no-ojuken',
+    title: 'Ore no Ojuken',
+    type: 'Manga',
+    description: 'A father\'s hilarious and heartfelt journey into the world of middle school entrance exams.',
+    longDescription: 'When his beloved daughter decides to take on the notoriously difficult middle school entrance exams, a former delinquent father dives headfirst into the world of cram schools, mock tests, and helicopter parents. A hilarious and heartfelt story about family bonds and the lengths a parent will go to for their child.',
+    genres: ['Comedy', 'Slice of Life', 'Drama'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/ore-no-ojuken-1-285x399.webp?t=1762848333',
+    imageHint: 'exam father',
+    status: 'Trending',
+  },
   {
     id: 'ill-become-a-villainess-who-goes-down-in-history',
     title: 'I\'ll Become a Villainess Who Goes Down in History',
