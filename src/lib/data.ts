@@ -1047,6 +1047,20 @@ export const media: MediaType[] = [
     status: 'Featured',
     duration: '24 min per ep',
     releaseYear: 2009,
+  },
+  {
+    id: 'demons-ascension',
+    title: 'Demons\' Ascension',
+    type: 'Anime',
+    description: 'A warrior\'s journey to slay demons and ascend to new heights of power.',
+    longDescription: 'In a world overrun by demonic forces, a young warrior embarks on a perilous journey. To protect the last remnants of humanity, he must slay countless demons, absorb their power, and ascend to a level of strength no mortal has ever achieved. His path is one of solitude, sacrifice, and relentless battle against the darkness.',
+    genres: ['Action', 'Fantasy', 'Supernatural'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/demons-ascension-1-285x399.webp?t=1758407603',
+    imageHint: 'demon warrior',
+    status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2025,
   }
 ];
 
@@ -1141,3 +1155,4 @@ export const fandomPosts: FandomPost[] = [
     sentimentScore: -0.8,
   },
 ];
+
