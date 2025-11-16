@@ -333,6 +333,20 @@ export const media: MediaType[] = [
     chapters: 64,
     releaseYear: 1988,
   },
+  {
+    id: 'jungle-juice',
+    title: 'Jungle Juice',
+    type: 'Manga',
+    description: 'A college student\'s life is turned upside down when he uses a mysterious bug spray.',
+    longDescription: 'Jang Suchan is an extraordinary college student at the top of the social food chain. But underneath the perfect exterior, he\'s hiding a pair of insect wings that suddenly grew when he used a mysterious bug spray called \'Jungle Juice\'. His life crumbles when he bares his wings to the world to save someone\'s life. When all hope seems lost, he stumbles upon a hidden world of insect humans where he may finally find a way to reverse his condition.',
+    genres: ['Action', 'Fantasy', 'Supernatural'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/jungle-juice-1-285x409.webp?t=1717463914',
+    imageHint: 'insect wings',
+    status: 'Latest',
+    chapters: 100,
+    releaseYear: 2020,
+  }
 ];
 
 export const genres: GenreType[] = [
