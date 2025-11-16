@@ -1208,13 +1208,55 @@ export const media: MediaType[] = [
     type: 'Anime',
     description: 'Years after the revolution, Kaoru awaits Kenshin\'s return, reflecting on their time together.',
     longDescription: 'Years have passed since the end of the Bakumatsu era. Kaoru waits for Kenshin to return from his wandering, all the while reminiscing about their life together. This OVA provides an alternate telling of their story, culminating in a poignant and bittersweet conclusion to the saga of the legendary swordsman.',
-    genres: ['Drama', 'Historical', 'Romance', 'Samurai'],
+    genres: ['Drama', 'Historical', 'Romance', 'Samurai', 'Anime'],
     rating: 4.3,
     imageUrl: 'https://cdn.anime-planet.com/anime/primary/rurouni-kenshin-seisouhen-1.jpg?t=1625728609',
     imageHint: 'samurai reflection',
     status: 'Featured',
     duration: '40 min per ep',
     releaseYear: 2001
+  },
+  {
+    id: 'girls-last-tour',
+    title: 'Girls\' Last Tour',
+    type: 'Manga',
+    description: 'Two girls wander the ruins of a deserted city, looking for their next meal and fuel for their ride.',
+    longDescription: 'Civilisation is dead, but Chito and Yuuri are still alive. So they hop aboard their beloved Kettenkrad motorbike and aimlessly wander the ruins of the world they once knew. Day after hopeless day, they look for their next meal and fuel for their ride. But as long as the two are together, even an existence as bleak as theirs has a ray or two of sunshine in it.',
+    genres: ['Sci-Fi', 'Post-Apocalyptic'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/girls-last-tour-1-285x409.jpg?t=1631098350',
+    imageHint: 'post-apocalyptic girls',
+    status: 'Latest',
+    chapters: 42,
+    releaseYear: 2014,
+  },
+  {
+    id: 'cyberpunk-edgerunners',
+    title: 'Cyberpunk: Edgerunners',
+    type: 'Anime',
+    description: 'In a dystopia riddled with corruption, a street kid tries to survive by becoming a mercenary.',
+    longDescription: 'In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become an edgerunner, a mercenary outlaw, in order to survive. With everything to lose, he chooses to stay alive by becoming a legend.',
+    genres: ['Sci-Fi', 'Action'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/cyberpunk-edgerunners-1-285x399.webp?t=1661923699',
+    imageHint: 'cyberpunk mercenary',
+    status: 'Trending',
+    duration: '24 min per ep',
+    releaseYear: 2022,
+  },
+  {
+    id: 'dragon-ball-z-manga',
+    title: 'Dragon Ball Z',
+    type: 'Manga',
+    description: 'The adventures of Goku, who, along with his companions, defends the Earth against an assortment of villains.',
+    longDescription: 'Son Goku is the greatest hero on Earth. Five years after defeating the demon king Piccolo, he’s grown up and had a family—he’s married, and he has a child, Son Gohan. But the threats to peace on Earth are ever-present. More powerful foes than any before threaten the safety of the planet, and it is up to Goku and his friends to defend it.',
+    genres: ['Sci-Fi', 'Action', 'Adventure'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/dragon-ball-z-1-285x428.jpg?t=1634713060',
+    imageHint: 'super saiyan',
+    status: 'Trending',
+    chapters: 26,
+    releaseYear: 1989,
   }
 ];
 
@@ -1316,3 +1358,4 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
