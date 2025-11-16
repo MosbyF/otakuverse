@@ -1059,11 +1059,11 @@ export const genres: GenreType[] = [
     imageHint: 'funny characters',
   },
   {
-    id: 'drama',
-    name: 'Drama',
-    description: 'Emotionally charged narratives and character development.',
-    imageUrl: findImage('genre-drama').url,
-    imageHint: findImage('genre-drama').hint,
+    id: 'horror',
+    name: 'Horror',
+    description: 'Spine-chilling tales of terror and the supernatural.',
+    imageUrl: findImage('genre-horror').url,
+    imageHint: findImage('genre-horror').hint,
   },
   {
     id: 'slice-of-life',

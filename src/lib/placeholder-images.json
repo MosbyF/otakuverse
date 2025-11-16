@@ -115,10 +115,10 @@
       "imageHint": "fantasy castle"
     },
     {
-      "id": "genre-drama",
-      "description": "A Silent Voice movie poster",
-      "imageUrl": "https://res.cloudinary.com/doklib3it/image/upload/v1763280778/a-silent-voice-photo-u12_dn0rls.webp",
-      "imageHint": "emotional scene"
+      "id": "genre-horror",
+      "description": "Scary monster in a dark forest",
+      "imageUrl": "https://res.cloudinary.com/doklib3it/image/upload/v1763322137/e5df6355-1b25-4cbb-b2d2-85943b177d61_geodgb.jpg",
+      "imageHint": "scary monster"
     },
     {
       "id": "genre-comedy",
@@ -135,7 +135,7 @@
     {
       "id": "genre-sports",
       "description": "Haikyuu!! anime still",
-      "imageUrl": "https://res.cloudinary.com/doklib3it/image/upload/v1763321528/haikyuu-karasuno-vs-shiratorizawa_feature_nkk2yu.webp",
+      "imageUrl": "https://res.cloudinary.com/doklib3it/image/upload/v1763298001/best-sports-anime-on-crunchyroll_uafqn6.avif",
       "imageHint": "volleyball match"
     },
     {
