@@ -607,7 +607,7 @@ export const media: MediaType[] = [
     longDescription: 'After his family is slaughtered by a demon and his younger sister Nezuko is turned into one, Tanjiro Kamado embarks on a perilous journey to become a demon slayer. He seeks to find a cure for his sister and to avenge his family, facing powerful demons and honing his skills along the way.',
     genres: ['Action', 'Supernatural', 'Historical'],
     rating: 4.9,
-    imageUrl: 'https://cdn.anime-planet.com/anime/primary/demon-slayer-kimetsu-no-yaiba-1-190x266.jpg?t=1625898243',
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763292795/MV5BMTQ0NDc4MWEtOTRjMC00YjBiLWE3ODQtYzlkM2IwNjlmMzQ1XkEyXkFqcGc._V1__dcpqir.jpg',
     imageHint: 'demon slayer',
     status: 'Trending',
     duration: '24 min per ep',
