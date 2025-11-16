@@ -9,6 +9,9 @@ export type MediaType = {
   imageUrl: string;
   imageHint: string;
   status: 'Featured' | 'Trending' | 'Latest';
+  duration?: string;
+  chapters?: number;
+  releaseYear?: number;
 };
 
 export type GenreType = {

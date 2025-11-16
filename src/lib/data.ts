@@ -1,3 +1,4 @@
+
 import type { MediaType, GenreType, FandomPost } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -21,6 +22,8 @@ export const media: MediaType[] = [
     imageUrl: findImage('anime-1').url,
     imageHint: findImage('anime-1').hint,
     status: 'Featured',
+    duration: '24 min per ep',
+    releaseYear: 2023,
   },
   {
     id: 'chainsaw-man-reze-arc',
@@ -33,6 +36,8 @@ export const media: MediaType[] = [
     imageUrl: 'https://cdn.anime-planet.com/anime/primary/chainsaw-man-the-movie-reze-arc-1-285x399.webp?t=1750358534',
     imageHint: 'chainsaw man reze',
     status: 'Trending',
+    duration: '1h 30min',
+    releaseYear: 2025,
   },
   {
     id: 'the-apothecary-diaries-2nd-season',
@@ -45,6 +50,8 @@ export const media: MediaType[] = [
     imageUrl: 'https://cdn.anime-planet.com/anime/primary/the-apothecary-diaries-2nd-season-1-285x403.webp?t=1729603194',
     imageHint: 'apothecary maomao',
     status: 'Trending',
+    duration: '24 min per ep',
+    releaseYear: 2025,
   },
   {
     id: 'death-stranding-isolation',
@@ -57,6 +64,8 @@ export const media: MediaType[] = [
     imageUrl: 'https://cdn.anime-planet.com/anime/primary/death-stranding-isolation-1-285x398.webp?t=1763258880',
     imageHint: 'porter isolation',
     status: 'Latest',
+    duration: 'TBA',
+    releaseYear: 2026,
   },
   {
     id: 'may-i-ask-for-one-final-thing',
@@ -69,6 +78,8 @@ export const media: MediaType[] = [
     imageUrl: 'https://cdn.anime-planet.com/anime/primary/may-i-ask-for-one-final-thing-1-285x427.webp?t=1744408497',
     imageHint: 'furious noblewoman',
     status: 'Trending',
+    duration: '24 min per ep',
+    releaseYear: 2024,
   },
   {
     id: 'the-most-heretical-last-boss-queen',
@@ -81,6 +92,8 @@ export const media: MediaType[] = [
     imageUrl: 'https://cdn.anime-planet.com/anime/primary/the-most-heretical-last-boss-queen-from-villainess-to-savior-1-285x399.webp?t=1682499892',
     imageHint: 'villainess queen',
     status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2023,
   },
   {
     id: 'the-banished-court-magician-aims-to-become-the-strongest',
@@ -93,6 +106,8 @@ export const media: MediaType[] = [
     imageUrl: 'https://cdn.anime-planet.com/anime/primary/the-banished-court-magician-aims-to-become-the-strongest-1-285x399.webp?t=1759618348',
     imageHint: 'court magician',
     status: 'Trending',
+    duration: '24 min per ep',
+    releaseYear: 2025,
   },
   {
     id: 'i-became-a-patron-of-villains',
@@ -105,6 +120,8 @@ export const media: MediaType[] = [
     imageUrl: 'https://cdn.anime-planet.com/manga/primary/i-became-a-patron-of-villains-1-285x399.webp?t=1761280414',
     imageHint: 'patron of villains',
     status: 'Trending',
+    chapters: 80,
+    releaseYear: 2022,
   },
   {
     id: 'chainsaw-man',
@@ -117,6 +134,8 @@ export const media: MediaType[] = [
     imageUrl: 'https://cdn.anime-planet.com/manga/primary/chainsaw-man-1-285x428.jpg?t=1634713911',
     imageHint: 'chainsaw devil',
     status: 'Trending',
+    chapters: 150,
+    releaseYear: 2018,
   },
   {
     id: 'birinnae',
@@ -129,6 +148,8 @@ export const media: MediaType[] = [
     imageUrl: 'https://cdn.anime-planet.com/manga/primary/birinnae-1-285x399.webp?t=1762904250',
     imageHint: 'fantasy girl',
     status: 'Trending',
+    chapters: 50,
+    releaseYear: 2023,
   },
    {
     id: 'ore-no-ojuken',
@@ -141,6 +162,8 @@ export const media: MediaType[] = [
     imageUrl: 'https://cdn.anime-planet.com/manga/primary/ore-no-ojuken-1-285x399.webp?t=1762848333',
     imageHint: 'exam father',
     status: 'Trending',
+    chapters: 20,
+    releaseYear: 2021,
   },
   {
     id: 'ill-become-a-villainess-who-goes-down-in-history',
@@ -153,6 +176,8 @@ export const media: MediaType[] = [
     imageUrl: 'https://cdn.anime-planet.com/anime/primary/ill-become-a-villainess-who-goes-down-in-history-1-285x399.webp?t=1734746036',
     imageHint: 'smirking villainess',
     status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2024,
   },
   {
     id: 'absolute-regression',
@@ -165,6 +190,8 @@ export const media: MediaType[] = [
     imageUrl: 'https://cdn.anime-planet.com/manga/primary/absolute-regression-1-285x399.webp?t=1749598184',
     imageHint: 'warrior regression',
     status: 'Latest',
+    chapters: 120,
+    releaseYear: 2023,
   },
 ];
 
