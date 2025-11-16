@@ -998,7 +998,7 @@ export const media: MediaType[] = [
     type: 'Manga',
     description: 'An introverted high school boy finds his classmate\'s secret diary and learns she is dying of a pancreatic disease.',
     longDescription: 'An aloof high school boy comes across a book in a hospital waiting room. He soon discovers that it is the secret diary of his popular, cheerful classmate Sakura Yamauchi, who reveals to him that she is secretly suffering from a terminal pancreatic illness. Despite their opposite personalities, the boy decides to spend Sakura\'s last few months with her, guarding her secret and creating a bond that will change him forever.',
-    genres: ['Drama', 'Romance', 'Slice of Life', 'School'],
+    genres: ['Drama', 'Romance', 'School'],
     rating: 4.8,
     imageUrl: 'https://cdn.anime-planet.com/manga/primary/i-want-to-eat-your-pancreas-1-285x399.webp?t=1747009294',
     imageHint: 'secret diary',
@@ -1061,6 +1061,34 @@ export const media: MediaType[] = [
     status: 'Latest',
     duration: '24 min per ep',
     releaseYear: 2025,
+  },
+  {
+    id: 'tales-of-demons-and-gods',
+    title: 'Tales of Demons and Gods',
+    type: 'Manga',
+    description: 'A powerful spirit master is reborn and must protect his city from a dark future.',
+    longDescription: 'Killed in battle against the Sage Emperor, Nie Li is reborn as his 13-year-old self. With the knowledge of his past life, he has a second chance to change his destiny, protect his city, and save his loved ones. He aims to become the strongest spirit master and confront the Sage Emperor once again.',
+    genres: ['Action', 'Fantasy', 'Adventure'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/tales-of-demons-and-gods-1-285x399.webp?t=1643088483',
+    imageHint: 'spirit master',
+    status: 'Trending',
+    chapters: 400,
+    releaseYear: 2015,
+  },
+  {
+    id: 'saga-of-tanya-the-evil',
+    title: 'Saga of Tanya the Evil',
+    type: 'Anime',
+    description: 'A ruthless salaryman is reincarnated as a young girl in a world of magical warfare.',
+    longDescription: 'After being murdered, a Japanese salaryman is reborn as Tanya Degurechaff, an orphan girl in an alternate-reality Europe. In this world of constant war and magic, Tanya is a prodigy in military tactics and magical combat. Driven by a desire for a comfortable life and a deep-seated cynicism, she joins the military, quickly rising through the ranks. Her ruthless efficiency and terrifying power earn her the moniker "Tanya the Evil."',
+    genres: ['Action', 'Fantasy', 'Isekai'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/saga-of-tanya-the-evil-1-190x285.jpg?t=1625897329',
+    imageHint: 'magical warfare',
+    status: 'Trending',
+    duration: '24 min per ep',
+    releaseYear: 2017,
   }
 ];
 
@@ -1105,21 +1133,21 @@ export const genres: GenreType[] = [
     name: 'Horror',
     description: 'Spine-chilling tales of terror and the supernatural.',
     imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763298090/Mieruko-Chan-Horror_tl48ua.webp',
-    imageHint: findImage('genre-horror').hint,
+    imageHint: 'scary monster',
   },
   {
     id: 'sports',
     name: 'Sports',
     description: 'Get your blood pumping with competitive sports action.',
     imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763298001/best-sports-anime-on-crunchyroll_uafqn6.avif',
-    imageHint: findImage('genre-sports').hint,
+    imageHint: 'volleyball match',
   },
   {
     id: 'thriller',
     name: 'Thriller',
     description: 'Suspenseful stories that will keep you on the edge of your seat.',
     imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763298814/shutterstock-2022437660_pm9fr3.jpg',
-    imageHint: findImage('genre-thriller').hint,
+    imageHint: 'mystery thriller',
   },
 ];
 
@@ -1156,3 +1184,6 @@ export const fandomPosts: FandomPost[] = [
   },
 ];
 
+
+
+    
