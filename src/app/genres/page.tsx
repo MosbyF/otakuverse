@@ -1,3 +1,4 @@
+
 import { genres } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,7 +17,7 @@ export default function GenresPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {genres.map((genre) => (
           <Link href={`/media?genre=${genre.id}`} key={genre.id}>
-            <Card className="overflow-hidden group transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 hover:-translate-y-1">
+            <Card className="overflow-hidden group transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 hover:-translate-y-1 relative">
               <div className="relative h-48 w-full">
                 <Image
                   src={genre.imageUrl}
@@ -28,9 +29,9 @@ export default function GenresPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
               </div>
-              <CardHeader className="absolute bottom-0 left-0">
+              <CardHeader className="absolute bottom-0 left-0 right-0 p-4">
                 <CardTitle className="text-2xl font-bold text-white font-headline">{genre.name}</CardTitle>
-                <CardDescription className="text-slate-300 line-clamp-2">{genre.description}</CardDescription>
+                <CardDescription className="text-slate-200 line-clamp-2">{genre.description}</CardDescription>
               </CardHeader>
             </Card>
           </Link>
