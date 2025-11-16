@@ -20,6 +20,7 @@ export default {
         body: ['PT Sans', 'sans-serif'],
         headline: ['Freckle Face', 'sans-serif'],
         display: ['Iceberg', 'sans-serif'],
+        collection: ['Alumni Sans Collegiate One', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
