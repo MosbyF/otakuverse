@@ -1,4 +1,5 @@
 
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { media, genres } from '@/lib/data';
@@ -49,7 +50,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6 font-headline">Browse by Genre</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {genres.slice(0,8).map((genre) => (
-              <Link href={`/genres?genre=${genre.id}`} key={genre.id}>
+              <Link href={`/media?genre=${genre.id}`} key={genre.id}>
                 <div className="relative rounded-lg overflow-hidden h-40 group">
                   <Image
                     src={genre.imageUrl}
