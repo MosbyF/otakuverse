@@ -1257,6 +1257,34 @@ export const media: MediaType[] = [
     status: 'Trending',
     chapters: 26,
     releaseYear: 1989,
+  },
+  {
+    id: 'mobile-suit-gundam-seed',
+    title: 'Mobile Suit Gundam SEED',
+    type: 'Anime',
+    description: 'In a future torn by conflict between genetically enhanced Coordinators and natural humans, a young Coordinator pilots a powerful new mobile suit.',
+    longDescription: 'In the Cosmic Era, the Earth Alliance and the space colonies of ZAFT are at war. Kira Yamato, a young Coordinator, stumbles into the cockpit of a new, advanced mobile suit, the GAT-X105 Strike. He is forced to pilot it to protect his friends, throwing him into the heart of the conflict between his own people and the Naturals of the Earth Alliance.',
+    genres: ['Sci-Fi', 'Action', 'Mecha', 'Drama'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/mobile-suit-gundam-seed-1-190x274.jpg?t=1625885405',
+    imageHint: 'gundam seed',
+    status: 'Featured',
+    duration: '24 min per ep',
+    releaseYear: 2002,
+  },
+  {
+    id: 'towa-no-quon-movie-4-the-roaring-anxiety',
+    title: 'Towa no Quon Movie 4: The Roaring Anxiety',
+    type: 'Anime',
+    description: 'A group of psychic youths must fight against a secret organization that hunts them.',
+    longDescription: 'In a futuristic Tokyo, a group of young psychics known as "Attractors" are hunted by a secret organization called Custos. The fourth chapter of the saga sees the team facing their most anxious battle yet as they uncover deeper secrets about their powers and the forces aligned against them.',
+    genres: ['Sci-Fi', 'Action', 'Supernatural'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/towanoquon-movie-4-the-roaring-anxiety-1-190x239.jpg?t=1625896231',
+    imageHint: 'psychic battle',
+    status: 'Latest',
+    duration: '50 min',
+    releaseYear: 2011,
   }
 ];
 
@@ -1358,4 +1386,5 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
 
