@@ -215,7 +215,7 @@ export const media: MediaType[] = [
     longDescription: 'Guts, a former mercenary now known as the "Black Swordsman," is out for revenge. After a traumatic betrayal, he is cursed to be endlessly pursued by demonic beings. With a gigantic sword and a prosthetic arm, Guts battles his way through a dark medieval world, fighting for his survival and to protect those he loves.',
     genres: ['Dark Fantasy', 'Action', 'Horror'],
     rating: 4.9,
-    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763288428/berserk-manga-w2be3dkn6rwpqw5f_bsgnql.webp',
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/berserk-1-285x404.webp?t=1649815138',
     imageHint: 'black swordsman',
     status: 'Trending',
     chapters: 375,
