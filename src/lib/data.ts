@@ -766,6 +766,20 @@ export const media: MediaType[] = [
     status: 'Featured',
     duration: '4 min',
     releaseYear: 2004,
+  },
+  {
+    id: 'wonder-egg-priority',
+    title: 'Wonder Egg Priority',
+    type: 'Anime',
+    description: 'A girl buys "Wonder Eggs" that lead her to a dream world where she must protect others from their trauma.',
+    longDescription: 'Ai Ohto, a girl with heterochromia, is reeling from the suicide of her best friend. One night, she is guided to a mysterious arcade where she buys a "Wonder Egg." When she breaks the egg in her sleep, she\'s transported to a dream world where she must protect a girl from monsters born of her trauma. In doing so, Ai believes she can bring her friend back to life. A visually stunning and emotionally complex story about trauma, suicide, and friendship.',
+    genres: ['Psychological', 'Drama', 'Fantasy', 'Mystery'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/wonder-egg-priority-1.jpg?t=1625762009',
+    imageHint: 'wonder egg',
+    status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2021,
   }
 ];
 
