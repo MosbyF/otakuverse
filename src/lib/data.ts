@@ -906,6 +906,20 @@ export const media: MediaType[] = [
     status: 'Latest',
     duration: '24 min per ep',
     releaseYear: 2024,
+  },
+  {
+    id: 'lets-play',
+    title: 'Let\'s Play',
+    type: 'Anime',
+    description: 'A young woman\'s dream of creating video games is complicated by a popular streamer who gives her first game a harsh review.',
+    longDescription: 'Sam wants to be a game developer, but her first game gets a brutal review from a famous streamer named Marshall Law. Things get even more complicated when she discovers that this same streamer is now her new neighbor. A story about games, romance, and anxiety.',
+    genres: ['Romance', 'Comedy', 'Slice of Life'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/lets-play-1-285x399.webp?t=1749267465',
+    imageHint: 'game developer romance',
+    status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2024,
   }
 ];
 
