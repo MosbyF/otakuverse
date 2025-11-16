@@ -621,7 +621,7 @@ export const media: MediaType[] = [
     longDescription: 'Mitsuha, a high school girl from a rural town, and Taki, a high school boy from Tokyo, begin to inexplicably swap bodies. They learn to communicate and navigate each other\'s lives, but when they try to meet, they discover a shocking truth that separates them by more than just distance.',
     genres: ['Romance', 'Supernatural', 'Drama'],
     rating: 4.8,
-    imageUrl: 'https://cdn.anime-planet.com/anime/primary/your-name-1-190x274.jpg?t=1625897303',
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763292613/MV5BOTkzMGIyYzAtMDQyYi00OTkxLWI2ZGMtODNmYjMyMWM3ZGY1XkEyXkFqcGc._V1__znk6vt.jpg',
     imageHint: 'body swap',
     status: 'Featured',
     duration: '1h 47min',
