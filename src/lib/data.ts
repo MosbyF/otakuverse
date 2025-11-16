@@ -232,11 +232,11 @@ export const genres: GenreType[] = [
     imageHint: 'funny characters',
   },
   {
-    id: 'slice-of-life',
-    name: 'Slice of Life',
-    description: 'Realistic depictions of everyday life and experiences.',
-    imageUrl: findImage('genre-slice-of-life').url,
-    imageHint: findImage('genre-slice-of-life').hint,
+    id: 'drama',
+    name: 'Drama',
+    description: 'Emotionally charged narratives and character development.',
+    imageUrl: findImage('genre-drama').url,
+    imageHint: findImage('genre-drama').hint,
   },
 ];
 

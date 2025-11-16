@@ -63,19 +63,19 @@
     {
       "id": "manga-4",
       "description": "Volleyball players in a match",
-      "imageUrl": "https://images.unsplash.com/photo-1745103598675-85df75773d12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzcG9ydHMlMjBhY3Rpb258ZW58MHx8fHwxNzYwNzUwODMwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1745103598675-85df75773d12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzcG9ydHMlMjBhY3Rpb258ZW58MHx8fHwxNzYwNzUwODMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sports action"
     },
     {
       "id": "manga-5",
       "description": "A quiet library with floating books",
-      "imageUrl": "https://images.unsplash.com/photo-1610659566574-830ed197451c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmYW50YXN5JTIwbGlicmFyeXxlbnwwfHx8fDE3NjA3MzE4MTB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1610659566574-830ed197451c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmYW50YXN5JTIwbGlicmFyeXxlbnwwfHx8fDE3NjA3MzE4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fantasy library"
     },
     {
       "id": "manga-6",
       "description": "A post-apocalyptic survivor",
-      "imageUrl": "https://images.unsplash.com/photo-1746108041197-52d5a90a4119?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcG9jYWx5cHRpYyUyMHN1cnZpdm9yfGVufDB8fHx8MTc2MDc3ODQ4Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1746108041197-52d5a90a4119?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcG9jYWx5cHRpYyUyMHN1cnZpdm9yfGVufDB8fHx8MTc2MDc3ODQ4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "apocalyptic survivor"
     },
     {
@@ -115,15 +115,15 @@
       "imageHint": "fantasy castle"
     },
     {
-      "id": "genre-slice-of-life",
-      "description": "Cozy coffee shop interior",
-      "imageUrl": "https://images.unsplash.com/photo-1658829457670-d80231baebe5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y296eSUyMGNhZmV8ZW58MHx8fHwxNzYwNzMzNjIxfDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "cozy cafe"
+      "id": "genre-drama",
+      "description": "A Silent Voice movie poster",
+      "imageUrl": "https://res.cloudinary.com/doklib3it/image/upload/v1763280778/a-silent-voice-photo-u12_dn0rls.webp",
+      "imageHint": "emotional scene"
     },
     {
       "id": "genre-comedy",
       "description": "Character with a comical expression",
-      "imageUrl": "https://images.unsplash.com/photo-1515536765-9b2a70c4b333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmdW5ueSUyMGZhY2V8ZW58MHx8fHwxNzYwNzMyMzg3fDA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/doklib3it/image/upload/v1763280262/comedy-anime-series-ott_bhzgc1.jpg",
       "imageHint": "funny face"
     },
     {
