@@ -257,7 +257,7 @@ export const media: MediaType[] = [
     longDescription: 'Izuku Midoriya dreams of becoming a hero, but in a world where 80% of the population has superpowers, or "Quirks," he was born without one. His fate changes when he meets his idol, All Might, who passes on his Quirk to him. Now, Izuku must learn to control his new powers and navigate the challenges of U.A. High School, a prestigious academy for training heroes.',
     genres: ['Action', 'Superhero', 'Comedy'],
     rating: 4.7,
-    imageUrl: 'https://cdn.anime-planet.com/manga/primary/my-hero-academia-1-285x434.jpg?t=1625907994',
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/my-hero-academia-1-190x285.jpg?t=1625897284',
     imageHint: 'superhero school',
     status: 'Trending',
     chapters: 400,
