@@ -1065,6 +1065,20 @@ export const genres: GenreType[] = [
     imageUrl: findImage('genre-drama').url,
     imageHint: findImage('genre-drama').hint,
   },
+  {
+    id: 'slice-of-life',
+    name: 'Slice of Life',
+    description: 'Realistic depictions of everyday experiences.',
+    imageUrl: findImage('genre-slice-of-life').url,
+    imageHint: findImage('genre-slice-of-life').hint,
+  },
+  {
+    id: 'sports',
+    name: 'Sports',
+    description: 'Get your blood pumping with competitive sports action.',
+    imageUrl: findImage('genre-sports').url,
+    imageHint: findImage('genre-sports').hint,
+  },
 ];
 
 export const fandomPosts: FandomPost[] = [
