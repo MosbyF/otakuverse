@@ -26,7 +26,7 @@ export default function MediaPage({
     <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold font-collection mb-4">{title}</h1>
-        <p className="text-lg text-primary/80 max-w-2xl mx-auto font-body">
+        <p className="text-lg text-foreground max-w-2xl mx-auto font-collection-description">
           {description}
         </p>
       </div>

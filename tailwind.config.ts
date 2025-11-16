@@ -21,6 +21,7 @@ export default {
         headline: ['Freckle Face', 'sans-serif'],
         display: ['Iceberg', 'sans-serif'],
         collection: ['Delius', 'sans-serif'],
+        'collection-description': ['Nerko One', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
