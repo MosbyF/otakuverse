@@ -593,7 +593,7 @@ export const media: MediaType[] = [
     longDescription: 'In a world where humanity is on the brink of extinction, giant man-eating humanoids called Titans roam the land. The last remnants of humanity live within three concentric walls. A young boy named Eren Yeager vows to exterminate the Titans after they bring tragedy to his hometown.',
     genres: ['Action', 'Dark Fantasy', 'Post-Apocalyptic'],
     rating: 4.9,
-    imageUrl: 'https://cdn.anime-planet.com/anime/primary/attack-on-titan-1-190x266.jpg?t=1625907936',
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763293339/MV5BZjliODY5MzQtMmViZC00MTZmLWFhMWMtMjMwM2I3OGY1MTRiXkEyXkFqcGc._V1_FMjpg_UX1000__ckkhi7.jpg',
     imageHint: 'giant titans',
     status: 'Trending',
     duration: '24 min per ep',
