@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import type { MediaType } from '@/lib/types';
@@ -27,7 +28,7 @@ export function MediaCard({ media, className }: MediaCardProps) {
           </div>
           <div className="p-3">
             <h3 className="font-semibold text-sm truncate group-hover:text-primary">{media.title}</h3>
-            <Badge variant={media.type === 'Anime' ? 'default' : 'secondary'} className="mt-1 text-xs">
+            <Badge variant={'default'} className="mt-1 text-xs">
               {media.type}
             </Badge>
           </div>

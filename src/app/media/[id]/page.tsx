@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { media } from '@/lib/data';
@@ -44,7 +45,7 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
 
         <div className="md:col-span-2 space-y-8">
           <div>
-            <Badge variant={item.type === 'Anime' ? 'default' : 'secondary'} className="mb-2">
+            <Badge variant={'default'} className="mb-2">
               {item.type}
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">{item.title}</h1>
