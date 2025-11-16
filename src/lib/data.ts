@@ -1062,21 +1062,14 @@ export const genres: GenreType[] = [
     id: 'horror',
     name: 'Horror',
     description: 'Spine-chilling tales of terror and the supernatural.',
-    imageUrl: findImage('genre-horror').url,
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763298090/Mieruko-Chan-Horror_tl48ua.webp',
     imageHint: findImage('genre-horror').hint,
-  },
-  {
-    id: 'slice-of-life',
-    name: 'Slice of Life',
-    description: 'Realistic depictions of everyday experiences.',
-    imageUrl: findImage('genre-slice-of-life').url,
-    imageHint: findImage('genre-slice-of-life').hint,
   },
   {
     id: 'sports',
     name: 'Sports',
     description: 'Get your blood pumping with competitive sports action.',
-    imageUrl: findImage('genre-sports').url,
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763298001/best-sports-anime-on-crunchyroll_uafqn6.avif',
     imageHint: findImage('genre-sports').hint,
   },
 ];
