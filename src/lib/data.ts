@@ -901,7 +901,7 @@ export const media: MediaType[] = [
     longDescription: 'Uka Ishimori is a shy girl who was bullied in middle school. As she enters high school, she wants to make a change. She meets Kai Miura, a popular boy with lemon-colored hair, who helps her come out of her shell. Their relationship blossoms into a sweet and refreshing romance.',
     genres: ['Romance', 'School', 'Slice of Life'],
     rating: 4.7,
-    imageUrl: 'https://cdn.anime-planet.com/anime/primary/honey-lemon-soda-1-285x399.webp?t=1733167524',
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763294119/MV5BZjdhYTk5N2QtZTIzOC00NTUwLTk3MzItMjZkNzYzYzlhZGJlXkEyXkFqcGc._V1__luccy6.jpg',
     imageHint: 'honey lemon romance',
     status: 'Latest',
     duration: '24 min per ep',
