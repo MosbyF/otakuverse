@@ -963,6 +963,20 @@ export const media: MediaType[] = [
     status: 'Trending',
     duration: '24 min per ep',
     releaseYear: 1989,
+  },
+  {
+    id: 'a-wifes-love-affair',
+    title: 'A Wife\'s Love Affair',
+    type: 'Manga',
+    description: 'A story about the complexities of marriage and hidden desires.',
+    longDescription: 'A seemingly perfect marriage begins to unravel when a wife starts a secret affair. This story delves into the emotional turmoil, secret desires, and the consequences of betrayal, exploring the delicate balance of love, trust, and happiness.',
+    genres: ['Drama', 'Romance', 'Slice of Life'],
+    rating: 4.5,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/a-wifes-love-affair-1-285x399.webp?t=1762909045',
+    imageHint: 'love affair',
+    status: 'Latest',
+    chapters: 20,
+    releaseYear: 2024,
   }
 ];
 
