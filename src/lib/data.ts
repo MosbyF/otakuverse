@@ -1187,6 +1187,34 @@ export const media: MediaType[] = [
     status: 'Latest',
     chapters: 80,
     releaseYear: 2019,
+  },
+  {
+    id: 'psychic-princess',
+    title: 'Psychic Princess',
+    type: 'Anime',
+    description: 'A girl with special abilities is forced to marry a cold and cruel prince.',
+    longDescription: 'Qian Yunxi, the eldest daughter of the prime minister, was born with a special ability. Because of this she was deemed \'abnormal\' and was raised in a mountain. On her 16th birthday, she took her younger sister\'s place to marry into the luxurious manor of Prince Ye. Rumors say that Prince Ye is strange, cold, and cruel. Just how will Qian Yunxi\'s fate unfold?',
+    genres: ['Romance', 'Historical', 'Supernatural', 'Comedy'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/psychic-princess-1-285x400.webp?t=1656714756',
+    imageHint: 'psychic princess',
+    status: 'Latest',
+    duration: '20 min per ep',
+    releaseYear: 2018
+  },
+  {
+    id: 'rurouni-kenshin-seisouhen',
+    title: 'Rurouni Kenshin: Seisouhen',
+    type: 'Anime',
+    description: 'Years after the revolution, Kaoru awaits Kenshin\'s return, reflecting on their time together.',
+    longDescription: 'Years have passed since the end of the Bakumatsu era. Kaoru waits for Kenshin to return from his wandering, all the while reminiscing about their life together. This OVA provides an alternate telling of their story, culminating in a poignant and bittersweet conclusion to the saga of the legendary swordsman.',
+    genres: ['Drama', 'Historical', 'Romance', 'Samurai'],
+    rating: 4.3,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/rurouni-kenshin-seisouhen-1.jpg?t=1625728609',
+    imageHint: 'samurai reflection',
+    status: 'Featured',
+    duration: '40 min per ep',
+    releaseYear: 2001
   }
 ];
 
