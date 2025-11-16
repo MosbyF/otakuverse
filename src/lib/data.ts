@@ -285,7 +285,7 @@ export const media: MediaType[] = [
     longDescription: 'Kafka Hibino is a 32-year-old man whose job is to clean up the aftermath of battles between the Japan Defense Force and giant monsters known as Kaiju. After a small, talking monster flies into his mouth, he gains the ability to transform into a powerful Kaiju himself. Now, designated "Kaiju No. 8," he must hide his new identity while trying to achieve his lifelong dream of joining the Defense Force.',
     genres: ['Action', 'Sci-Fi', 'Kaiju'],
     rating: 4.7,
-    imageUrl: 'https://cdn.anime-planet.com/manga/primary/kaiju-no-8-1-285x407.jpg?t=1627993074',
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/kaiju-no-8-1-285x428.jpg?t=1628025821',
     imageHint: 'monster transformation',
     status: 'Trending',
     chapters: 90,
