@@ -229,7 +229,7 @@ export const media: MediaType[] = [
     longDescription: 'Based on the novel "Musashi" by Eiji Yoshikawa, this manga follows the life of Shinmen Takezo, who would later become the legendary swordsman Miyamoto Musashi. It is a fictionalized account of his journey from a brash young man to a master of the sword, exploring themes of life, death, and the meaning of strength.',
     genres: ['Historical', 'Action', 'Samurai'],
     rating: 4.9,
-    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763294520/179885_d15j9p.jpg',
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/vagabond-1-190x272.jpg?t=1625908170',
     imageHint: 'samurai journey',
     status: 'Trending',
     chapters: 327,
