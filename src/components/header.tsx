@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { Menu, Search, User } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
@@ -26,7 +26,21 @@ const navLinks = [
 
 export function Header() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const isLinkActive = (href: string) => {
+    const linkPath = href.split('?')[0];
+    if (linkPath !== pathname) {
+      return false;
+    }
+    const linkParams = new URLSearchParams(href.split('?')[1]);
+    const type = linkParams.get('type');
+    if (type) {
+      return searchParams.get('type') === type;
+    }
+    return true;
+  };
 
   const NavLinks = ({ inSheet }: { inSheet?: boolean }) => (
     <nav className={cn(
@@ -39,7 +53,7 @@ export function Header() {
           href={link.href}
           className={cn(
             'text-sm font-medium transition-colors hover:text-primary',
-            pathname === link.href ? 'text-primary' : 'text-gray-400',
+            isLinkActive(link.href) ? 'text-primary' : 'text-gray-400',
             inSheet && "text-lg"
           )}
           onClick={() => inSheet && setIsMobileMenuOpen(false)}
