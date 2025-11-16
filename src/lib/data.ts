@@ -663,7 +663,7 @@ export const media: MediaType[] = [
     longDescription: 'Shoya Ishida, a high school student, sets out on a path of redemption to make amends with Shoko Nishimiya, a deaf girl he mercilessly bullied in elementary school. Their journey explores themes of forgiveness, social anxiety, and the complexities of human connection.',
     genres: ['Drama', 'School', 'Slice of Life'],
     rating: 4.8,
-    imageUrl: 'https://cdn.anime-planet.com/anime/primary/a-silent-voice-1-190x274.jpg?t=1625896990',
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763292458/f20a5cb04ff2b588b32d6860df05296d7585333d3f5931d4cf168719d01226a9_yaat6n.webp',
     imageHint: 'deaf girl',
     status: 'Featured',
     duration: '2h 10min',
