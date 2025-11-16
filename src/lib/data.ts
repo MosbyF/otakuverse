@@ -892,6 +892,20 @@ export const media: MediaType[] = [
     status: 'Latest',
     duration: '24 min per ep',
     releaseYear: 2024,
+  },
+  {
+    id: 'honey-lemon-soda',
+    title: 'Honey Lemon Soda',
+    type: 'Anime',
+    description: 'A shy girl gets help from a popular boy, leading to a sweet romance.',
+    longDescription: 'Uka Ishimori is a shy girl who was bullied in middle school. As she enters high school, she wants to make a change. She meets Kai Miura, a popular boy with lemon-colored hair, who helps her come out of her shell. Their relationship blossoms into a sweet and refreshing romance.',
+    genres: ['Romance', 'School', 'Slice of Life'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/honey-lemon-soda-1-285x399.webp?t=1733167524',
+    imageHint: 'honey lemon romance',
+    status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2024,
   }
 ];
 
