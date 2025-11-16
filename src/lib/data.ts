@@ -1019,6 +1019,20 @@ export const media: MediaType[] = [
     status: 'Trending',
     chapters: 200,
     releaseYear: 2020,
+  },
+  {
+    id: 'eleceed',
+    title: 'Eleceed',
+    type: 'Manga',
+    description: 'A kind-hearted young man who hides his lightning-fast reflexes meets a secret agent in the body of a cat.',
+    longDescription: 'Jiwoo is a kind-hearted young man who harnesses the lightning-quick reflexes of a cat to secretly make the world a better place. He is soon discovered by Kayden, a secret agent on the run, who finds himself stuck in the body of a fat, fluffy old cat. Together, they team up to fight the forces that would use their powers for evil.',
+    genres: ['Action', 'Fantasy', 'Comedy', 'Supernatural'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/eleceed-1-190x266.jpg?t=1625919139',
+    imageHint: 'secret agent cat',
+    status: 'Latest',
+    chapters: 250,
+    releaseYear: 2018,
   }
 ];
 
@@ -1034,7 +1048,7 @@ export const genres: GenreType[] = [
     id: 'romance',
     name: 'Romance',
     description: 'Heartwarming stories centered around love and relationships.',
-    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1762452574/blue-box-and-horimiya_hxxsuo.avif',
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763298971/v8-1811-01_pzq8vr.jpg',
     imageHint: 'romantic couple',
   },
   {
