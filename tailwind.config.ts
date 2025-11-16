@@ -18,7 +18,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['PT Sans', 'sans-serif'],
-        headline: ['Freckle Face', 'sans-serif'],
+        headline: ['Delius', 'sans-serif'],
         display: ['Iceberg', 'sans-serif'],
         collection: ['Delius', 'sans-serif'],
         'collection-description': ['Nerko One', 'sans-serif'],
