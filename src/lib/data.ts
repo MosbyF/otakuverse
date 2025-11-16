@@ -1369,6 +1369,62 @@ export const media: MediaType[] = [
     status: 'Latest',
     duration: '58 min per ep',
     releaseYear: 2013,
+  },
+  {
+    id: 'to-love-ru-darkness-2nd-ova',
+    title: 'To Love-Ru Darkness 2nd OVA',
+    type: 'Anime',
+    description: 'An OVA for To Love-Ru Darkness 2nd.',
+    longDescription: 'An OVA for To Love-Ru Darkness 2nd.',
+    genres: ['Sci-Fi', 'Comedy', 'Harem'],
+    rating: 3.4,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/to-love-ru-darkness-2nd-ova-1-190x255.jpg?t=1625897260',
+    imageHint: 'harem comedy',
+    status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2016,
+  },
+  {
+    id: 'belle',
+    title: 'Belle',
+    type: 'Anime',
+    description: 'A high school student becomes a globally beloved singer in a virtual world.',
+    longDescription: 'Suzu is a shy high school student living in a rural village. For years, she has only been a shadow of herself. But when she enters "U", a massive virtual world, she escapes into her online persona as Belle, a globally-beloved singer. One day, her concert is interrupted by a monstrous creature chased by vigilantes. As she embarks on an epic, emotional quest to uncover the identity of this mysterious "beast", she discovers her true self in a world where you can be anyone.',
+    genres: ['Sci-Fi', 'Fantasy', 'Drama', 'Music'],
+    rating: 3.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/belle-1-285x399.webp?t=1642120514',
+    imageHint: 'virtual world singer',
+    status: 'Featured',
+    duration: '2h 1min',
+    releaseYear: 2021,
+  },
+  {
+    id: 'descent-of-the-demon-god-novel',
+    title: 'Descent of the Demon God (Novel)',
+    type: 'Manga',
+    description: 'The second coming of the strongest Demon God in a new world.',
+    longDescription: 'After being betrayed by the person he trusted the most, the Demon God’s life came to an end. But he is reborn in a new world. With his past life\'s memories and powers, he aims to conquer this new world and get his revenge.',
+    genres: ['Sci-Fi', 'Fantasy', 'Action'],
+    rating: 4.1,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/descent-of-the-demon-god-novel-1-285x399.jpg?t=1637425718',
+    imageHint: 'demon god',
+    status: 'Latest',
+    chapters: 150,
+    releaseYear: 2021,
+  },
+  {
+    id: 'manager-kim',
+    title: 'Manager Kim',
+    type: 'Manga',
+    description: 'A former special agent, now a single father, re-enters the world of violence to protect his daughter.',
+    longDescription: 'Manager Kim, a single father, quit his job as a special agent to raise his daughter. But when his daughter gets into trouble with a group of gangsters, he is forced to unleash his dormant skills to protect her. A story of a father who will do anything for his child.',
+    genres: ['Sci-Fi', 'Action', 'Drama'],
+    rating: 4.3,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/manager-kim-1-285x400.jpg?t=1636818603',
+    imageHint: 'special agent father',
+    status: 'Trending',
+    chapters: 100,
+    releaseYear: 2021,
   }
 ];
 
@@ -1470,6 +1526,7 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
 
 
 
