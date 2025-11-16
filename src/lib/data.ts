@@ -225,18 +225,18 @@ export const genres: GenreType[] = [
     imageHint: 'fantasy castle',
   },
   {
+    id: 'comedy',
+    name: 'Comedy',
+    description: 'Lighthearted series designed to make you laugh.',
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763280262/comedy-anime-series-ott_bhzgc1.jpg',
+    imageHint: 'funny characters',
+  },
+  {
     id: 'slice-of-life',
     name: 'Slice of Life',
     description: 'Realistic depictions of everyday life and experiences.',
     imageUrl: findImage('genre-slice-of-life').url,
     imageHint: findImage('genre-slice-of-life').hint,
-  },
-  {
-    id: 'comedy',
-    name: 'Comedy',
-    description: 'Lighthearted series designed to make you laugh.',
-    imageUrl: findImage('genre-comedy').url,
-    imageHint: findImage('genre-comedy').hint,
   },
 ];
 
