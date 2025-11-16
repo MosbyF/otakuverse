@@ -1,5 +1,6 @@
 
 
+
 import type { MediaType, GenreType, FandomPost } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -1425,6 +1426,34 @@ export const media: MediaType[] = [
     status: 'Trending',
     chapters: 100,
     releaseYear: 2021,
+  },
+  {
+    id: 'darling-in-the-franxx',
+    title: 'Darling in the FranXX',
+    type: 'Anime',
+    description: 'In a dystopian future, children are artificially created to defend the remnants of humanity.',
+    longDescription: 'In a desolate future, humanity is under constant threat from giant beasts known as Klaxosaurs. The last vestiges of civilization live in fortified mobile cities called Plantations. To defend themselves, children are paired up in boy-girl pairs to pilot giant mechs known as FranXX. The story follows Hiro, a former prodigy who can no longer pilot, and his fateful encounter with Zero Two, a mysterious girl with horns and a notorious reputation as a "partner killer."',
+    genres: ['Sci-Fi', 'Action', 'Mecha', 'Drama', 'Romance'],
+    rating: 3.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/darling-in-the-franxx-1.jpg?t=1625781475',
+    imageHint: 'franxx mech',
+    status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2018
+  },
+  {
+    id: 'star-blazers-space-battleship-yamato-2202',
+    title: 'Star Blazers: Space Battleship Yamato 2202',
+    type: 'Anime',
+    description: 'The crew of the Yamato faces a new threat that endangers the peace between Earth and Gamilas.',
+    longDescription: 'Three years after the war with Gamilas, Earth is at peace. However, a new threat emerges from the Gatlantis Empire. The crew of the Yamato must once again embark on a perilous journey to protect their hard-won peace and confront a powerful new enemy that threatens the entire universe.',
+    genres: ['Sci-Fi', 'Action', 'Space', 'Drama'],
+    rating: 3.5,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/star-blazers-space-battleship-yamato-2202-1.jpg?t=1625779858',
+    imageHint: 'space battleship',
+    status: 'Latest',
+    duration: '25 min per ep',
+    releaseYear: 2017
   }
 ];
 
@@ -1526,6 +1555,7 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
 
 
 
