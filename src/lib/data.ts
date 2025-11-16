@@ -1285,6 +1285,20 @@ export const media: MediaType[] = [
     status: 'Latest',
     duration: '50 min',
     releaseYear: 2011,
+  },
+  {
+    id: 'full-metal-panic-invisible-victory',
+    title: 'Full Metal Panic! Invisible Victory',
+    type: 'Anime',
+    description: 'The battle between Mithril and Amalgam continues.',
+    longDescription: 'It\'s been two months since the fierce battle in Hong Kong. Life seems to have returned to normal for Sousuke Sagara and Kaname Chidori. However, the peace is shattered when Amalgam launches a full-scale assault on Mithril. With their forces decimated, Sousuke and Kaname are separated, and Sousuke must find a way to fight back against a seemingly unstoppable enemy.',
+    genres: ['Sci-Fi', 'Action', 'Mecha'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/full-metal-panic-invisible-victory-1-190x285.jpg?t=1625897281',
+    imageHint: 'mecha battle',
+    status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2018,
   }
 ];
 
@@ -1386,5 +1400,6 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
 
 
