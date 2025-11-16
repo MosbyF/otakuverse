@@ -1145,6 +1145,48 @@ export const media: MediaType[] = [
     status: 'Featured',
     duration: '59 min',
     releaseYear: 2020
+  },
+  {
+    id: 'selfish-romance',
+    title: 'Selfish Romance',
+    type: 'Manga',
+    description: 'A story about a one-sided love that might not be so one-sided after all.',
+    longDescription: 'A story about a one-sided love that might not be so one-sided after all. It explores the ups and downs of a relationship where communication is key, but often missed.',
+    genres: ['Romance'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/selfish-romance-1-285x399.webp?t=1721960448',
+    imageHint: 'romance manga',
+    status: 'Latest',
+    chapters: 30,
+    releaseYear: 2023,
+  },
+  {
+    id: 'spirit-fingers',
+    title: 'Spirit Fingers',
+    type: 'Manga',
+    description: 'A timid girl finds confidence and love through a strange drawing club.',
+    longDescription: 'Amy Song is a timid high school student who\'s always lived in the shadow of her more accomplished siblings. Her life takes a colorful turn when she\'s scouted by the "Spirit Fingers" drawing club, a bizarre group of creative misfits. Through the club, she discovers her own style, gains confidence, and finds an unexpected romance.',
+    genres: ['Romance', 'Comedy', 'Drama'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/spirit-fingers-1-190x266.jpg?t=1625914644',
+    imageHint: 'drawing club',
+    status: 'Trending',
+    chapters: 100,
+    releaseYear: 2015,
+  },
+  {
+    id: 'mystical',
+    title: 'Mystical',
+    type: 'Manga',
+    description: 'A story of a fated romance between a human girl and a mystical being.',
+    longDescription: 'A human girl stumbles into a world of mystical beings and finds herself entangled with a powerful, enigmatic spirit. Their fated encounter sparks a romance that transcends worlds, but is also fraught with danger from those who would keep them apart.',
+    genres: ['Romance', 'Fantasy', 'Supernatural'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/mystical-1-190x266.jpg?t=1625927231',
+    imageHint: 'mystical romance',
+    status: 'Latest',
+    chapters: 80,
+    releaseYear: 2019,
   }
 ];
 
@@ -1243,4 +1285,6 @@ export const fandomPosts: FandomPost[] = [
 
 
     
+    
+
     
