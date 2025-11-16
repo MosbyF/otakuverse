@@ -271,7 +271,7 @@ export const media: MediaType[] = [
     longDescription: 'The master spy "Twilight" must build a fake family to infiltrate an elite private school for a critical mission. He adopts a telepathic daughter and marries a skilled assassin, neither of whom knows the others\' secret identity. They must navigate the challenges of family life while keeping their true natures hidden, leading to a mix of espionage, action, and heartwarming comedy.',
     genres: ['Comedy', 'Action', 'Slice of Life'],
     rating: 4.8,
-    imageUrl: 'https://cdn.anime-planet.com/manga/primary/spy-x-family-1-285x404.jpg?t=1625908119',
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/spy-x-family-1-285x427.jpg?t=1634514980',
     imageHint: 'fake family',
     status: 'Trending',
     chapters: 100,
