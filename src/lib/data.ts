@@ -1341,6 +1341,34 @@ export const media: MediaType[] = [
     status: 'Featured',
     duration: '25 min per ep',
     releaseYear: 2007,
+  },
+  {
+    id: 'aria-the-origination-that-secret-little-place',
+    title: 'Aria the Origination: That Secret Little Place',
+    type: 'Anime',
+    description: 'A special episode of Aria, focusing on a secret place.',
+    longDescription: 'A special episode of Aria, focusing on a secret place. This OVA continues the gentle, slice-of-life adventures of Akari Mizunashi and her friends as they train to become gondoliers on the planet Aqua.',
+    genres: ['Sci-Fi', 'Fantasy'],
+    rating: 4.5,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/aria-the-origination-that-secret-little-place-1-190x266.jpg?t=1625895780',
+    imageHint: 'gondolier girl',
+    status: 'Latest',
+    duration: '30 min',
+    releaseYear: 2008,
+  },
+  {
+    id: 'ghost-in-the-shell-arise',
+    title: 'Ghost in the Shell: Arise',
+    type: 'Anime',
+    description: 'The story of a young Motoko Kusanagi and how she came to lead Public Security Section 9.',
+    longDescription: 'This series of OVAs explores the origin story of Major Motoko Kusanagi and her elite team, Public Security Section 9. It delves into their first missions, the formation of the team, and the cyber-political intrigue that defines their world.',
+    genres: ['Sci-Fi', 'Action', 'Mecha', 'Psychological'],
+    rating: 3.9,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/ghost-in-the-shell-arise-1-190x268.jpg?t=1625896533',
+    imageHint: 'cyborg major',
+    status: 'Latest',
+    duration: '58 min per ep',
+    releaseYear: 2013,
   }
 ];
 
@@ -1442,6 +1470,7 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
 
 
 
