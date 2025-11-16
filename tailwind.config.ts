@@ -18,7 +18,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['PT Sans', 'sans-serif'],
-        headline: ['Bebas Neue', 'sans-serif'],
+        headline: ['Freckle Face', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
