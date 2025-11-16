@@ -19,6 +19,7 @@ export default {
       fontFamily: {
         body: ['PT Sans', 'sans-serif'],
         headline: ['Freckle Face', 'sans-serif'],
+        display: ['Iceberg', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
