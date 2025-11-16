@@ -119,6 +119,18 @@ export const media: MediaType[] = [
     status: 'Trending',
   },
   {
+    id: 'birinnae',
+    title: 'Birinnae',
+    type: 'Manga',
+    description: 'In a world of myth and legend, a young woman discovers a power that could save or destroy the kingdom.',
+    longDescription: 'In a world of myth and legend, a young woman named Birinnae discovers she holds a power that could either save or destroy the kingdom. Chased by those who want to control her, she must uncover the secrets of her past to forge her own destiny.',
+    genres: ['Fantasy', 'Adventure', 'Drama'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/birinnae-1-285x399.webp?t=1762904250',
+    imageHint: 'fantasy girl',
+    status: 'Trending',
+  },
+  {
     id: 'ill-become-a-villainess-who-goes-down-in-history',
     title: 'I\'ll Become a Villainess Who Goes Down in History',
     type: 'Anime',
