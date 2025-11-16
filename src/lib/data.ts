@@ -107,6 +107,18 @@ export const media: MediaType[] = [
     status: 'Trending',
   },
   {
+    id: 'chainsaw-man',
+    title: 'Chainsaw Man',
+    type: 'Manga',
+    description: 'A destitute boy makes a deal with a devil to become a devil hunter.',
+    longDescription: 'Denji was a small-time devil hunter just trying to survive in a harsh world. After being killed on a job, he is revived by his pet devil-dog Pochita and becomes a new man—a man with a devil’s heart and the powers of a chainsaw. Now he’s living in the big city and an official Devil Hunter, but he\'s got a lot to learn about his new job and chainsaw powers.',
+    genres: ['Action', 'Supernatural', 'Horror'],
+    rating: 4.9,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/chainsaw-man-1-285x428.jpg?t=1634713911',
+    imageHint: 'chainsaw devil',
+    status: 'Trending',
+  },
+  {
     id: 'ill-become-a-villainess-who-goes-down-in-history',
     title: 'I\'ll Become a Villainess Who Goes Down in History',
     type: 'Anime',

@@ -79,6 +79,12 @@
       "imageHint": "apocalyptic survivor"
     },
     {
+      "id": "manga-7",
+      "description": "Chainsaw Man manga cover",
+      "imageUrl": "https://cdn.anime-planet.com/manga/primary/chainsaw-man-1-285x428.jpg?t=1634713911",
+      "imageHint": "chainsaw devil"
+    },
+    {
       "id": "genre-action",
       "description": "Explosion in a city",
       "imageUrl": "https://res.cloudinary.com/doklib3it/image/upload/v1762452301/lgi39qi7kmzdipemivm1_p9kewu.jpg",
@@ -117,19 +123,19 @@
     {
       "id": "avatar-1",
       "description": "Profile picture 1",
-      "imageUrl": "https://images.unsplash.com/photo-1702478553542-3aa3c0148543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9maWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MDczMTI4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1702478553542-3aa3c0148543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9maWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MDczMTI4NHww&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "profile avatar"
     },
     {
       "id": "avatar-2",
       "description": "Profile picture 2",
-      "imageUrl": "https://images.unsplash.com/photo-1702478553542-3aa3c0148543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9maWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MDczMTI4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1702478553542-3aa3c0148543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9maWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MDczMTI4NHww&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "profile avatar"
     },
     {
       "id": "avatar-3",
       "description": "Profile picture 3",
-      "imageUrl": "https://images.unsplash.com/photo-1724435811349-32d27f4d5806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9maWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MDczMTI4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1724435811349-32d27f4d5806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9maWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MDczMTI4NHww&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "profile avatar"
     }
   ]
