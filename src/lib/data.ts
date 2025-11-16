@@ -319,6 +319,20 @@ export const media: MediaType[] = [
     chapters: 50,
     releaseYear: 2015,
   },
+  {
+    id: 'parasyte',
+    title: 'Parasyte',
+    type: 'Manga',
+    description: 'A high school student and his right hand become hosts to a parasitic alien.',
+    longDescription: 'Shinichi Izumi is a normal high school student whose life changes when a parasitic alien, a "Parasyte," fails to take over his brain and instead burrows into his right hand. The two must learn to coexist while defending themselves from other Parasytes who see Shinichi as a threat.',
+    genres: ['Horror', 'Sci-Fi', 'Action', 'Psychological'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/parasyte-1-190x287.jpg?t=1625908134',
+    imageHint: 'parasitic alien',
+    status: 'Trending',
+    chapters: 64,
+    releaseYear: 1988,
+  },
 ];
 
 export const genres: GenreType[] = [
