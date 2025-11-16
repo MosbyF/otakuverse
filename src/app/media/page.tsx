@@ -16,15 +16,17 @@ export default function MediaPage({
   });
 
   const title = mediaType ? `${mediaType} Collection` : 'Our Collection';
-  const description = mediaType
-    ? `Browse our extensive library of ${mediaType.toLowerCase()}.`
-    : 'Browse our extensive library of anime and manga. Your next adventure awaits.';
+  const description = mediaType === 'Manga'
+    ? 'Explore the manga shelf.'
+    : mediaType === 'Anime'
+    ? 'Explore the anime shelf.'
+    : 'Explore the shelves.';
 
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold font-collection mb-4">{title}</h1>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-body">
+        <p className="text-lg text-primary/80 max-w-2xl mx-auto font-body">
           {description}
         </p>
       </div>
