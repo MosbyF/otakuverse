@@ -1299,6 +1299,48 @@ export const media: MediaType[] = [
     status: 'Latest',
     duration: '24 min per ep',
     releaseYear: 2018,
+  },
+  {
+    id: 'eden-its-an-endless-world',
+    title: 'Eden: It\'s an Endless World!',
+    type: 'Manga',
+    description: 'In a world ravaged by a deadly virus, a young couple searches for hope and survival.',
+    longDescription: 'In the near future, a pandemic has wiped out a significant portion of humanity and crippled civilization. The story follows Elia, a young boy immune to the virus, and his companion, a sophisticated combat android, as they navigate a dangerous world full of bio-engineered horrors and human factions fighting for control. It\'s a dark, complex story exploring transhumanism, survival, and the nature of humanity.',
+    genres: ['Sci-Fi', 'Post-Apocalyptic', 'Action', 'Drama'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/eden-its-an-endless-world-1-190x268.jpg?t=1625908208',
+    imageHint: 'cyberpunk survival',
+    status: 'Latest',
+    chapters: 128,
+    releaseYear: 1997,
+  },
+  {
+    id: 'space-cheon-ma-3077',
+    title: 'Space Cheon-ma 3077',
+    type: 'Manga',
+    description: 'A powerful martial artist is cryogenically frozen and awakens in a distant future to find a changed world.',
+    longDescription: 'The legendary martial artist Cheon-ma is cryogenically frozen and awakens 1000 years in the future. The world has changed, with advanced technology and new threats. He must now adapt his ancient martial arts skills to this new era and navigate the complex politics of a galactic society.',
+    genres: ['Sci-Fi', 'Action', 'Fantasy'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/space-cheon-ma-3077-1-285x399.webp?t=1737684719',
+    imageHint: 'space martial artist',
+    status: 'Latest',
+    chapters: 50,
+    releaseYear: 2023,
+  },
+  {
+    id: 'den-noh-coil',
+    title: 'Den-noh Coil',
+    type: 'Anime',
+    description: 'Children in a near-future city use augmented reality glasses to solve mysteries.',
+    longDescription: 'In the city of Daikoku, augmented reality has become mainstream. Yuko Okonogi moves to the city and joins her grandmother\'s detective agency, "Coil." Along with other children equipped with AR glasses, she investigates the mysterious and dangerous corrupted data and "illegals" that have begun appearing in the virtual layer of their city.',
+    genres: ['Sci-Fi', 'Mystery', 'Adventure', 'Drama'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/den-noh-coil-1-190x268.jpg?t=1625885771',
+    imageHint: 'augmented reality',
+    status: 'Featured',
+    duration: '25 min per ep',
+    releaseYear: 2007,
   }
 ];
 
@@ -1400,6 +1442,7 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
 
 
 
