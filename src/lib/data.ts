@@ -1076,7 +1076,7 @@ export const genres: GenreType[] = [
     id: 'thriller',
     name: 'Thriller',
     description: 'Suspenseful stories that will keep you on the edge of your seat.',
-    imageUrl: findImage('genre-thriller').url,
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763298814/shutterstock-2022437660_pm9fr3.jpg',
     imageHint: findImage('genre-thriller').hint,
   },
 ];

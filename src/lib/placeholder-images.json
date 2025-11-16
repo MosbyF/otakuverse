@@ -117,7 +117,7 @@
     {
       "id": "genre-horror",
       "description": "Scary monster in a dark forest",
-      "imageUrl": "https://res.cloudinary.com/doklib3it/image/upload/v1763322137/e5df6355-1b25-4cbb-b2d2-85943b177d61_geodgb.jpg",
+      "imageUrl": "https://res.cloudinary.com/doklib3it/image/upload/v1763298090/Mieruko-Chan-Horror_tl48ua.webp",
       "imageHint": "scary monster"
     },
     {
@@ -141,7 +141,7 @@
     {
       "id": "genre-thriller",
       "description": "Mysterious figure in a dark alley",
-      "imageUrl": "https://images.unsplash.com/photo-1533130932473-b3a6288d6725?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://res.cloudinary.com/doklib3it/image/upload/v1763298814/shutterstock-2022437660_pm9fr3.jpg",
       "imageHint": "mystery thriller"
     },
     {
