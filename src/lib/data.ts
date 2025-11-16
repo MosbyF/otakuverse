@@ -1033,6 +1033,20 @@ export const media: MediaType[] = [
     status: 'Latest',
     chapters: 250,
     releaseYear: 2018,
+  },
+  {
+    id: 'fullmetal-alchemist-brotherhood',
+    title: 'Fullmetal Alchemist: Brotherhood',
+    type: 'Anime',
+    description: 'Two brothers search for the Philosopher\'s Stone after a failed alchemical experiment.',
+    longDescription: 'After a horrific alchemy experiment goes wrong, brothers Edward and Alphonse Elric are left with severely damaged bodies. In order to restore what they\'ve lost, they seek the legendary Philosopher\'s Stone. Their journey will test their bond and force them to confront dark secrets of the state military they serve.',
+    genres: ['Action', 'Fantasy', 'Adventure', 'Drama'],
+    rating: 4.9,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/fullmetal-alchemist-brotherhood-1-190x285.jpg?t=1625886288',
+    imageHint: 'alchemist brothers',
+    status: 'Featured',
+    duration: '24 min per ep',
+    releaseYear: 2009,
   }
 ];
 
