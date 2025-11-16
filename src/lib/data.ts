@@ -635,7 +635,7 @@ export const media: MediaType[] = [
     longDescription: 'Rintaro Okabe, a self-proclaimed "mad scientist," and his friends accidentally discover that their modified microwave can send text messages to the past. As they experiment with time travel, they attract the attention of a sinister organization and find themselves caught in a dangerous conspiracy, forcing Okabe to make impossible choices to save his friends.',
     genres: ['Sci-Fi', 'Thriller', 'Psychological'],
     rating: 4.9,
-    imageUrl: 'https://cdn.anime-planet.com/anime/primary/steins-gate-1-190x285.jpg?t=1625895926',
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763292896/MV5BYzczNzdhYWItNmJhZi00NmMxLTk4ZWQtMzdhYjZmYzk3NWUyXkEyXkFqcGc._V1__okf3x9.jpg',
     imageHint: 'time travel',
     status: 'Featured',
     duration: '24 min per ep',
