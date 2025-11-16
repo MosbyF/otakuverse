@@ -291,6 +291,20 @@ export const media: MediaType[] = [
     chapters: 90,
     releaseYear: 2020,
   },
+  {
+    id: 'tokyo-ghoul',
+    title: 'Tokyo Ghoul',
+    type: 'Manga',
+    description: 'A college student is transformed into a half-ghoul after a chance encounter.',
+    longDescription: 'Ken Kaneki, a shy, bookish college student, is instantly drawn to Rize Kamishiro, an avid reader like himself. However, Rize is not exactly who she seems, and this unfortunate meeting pushes Kaneki into the dark, violent world of Ghouls, beings who feed on human flesh. After a fateful encounter, Kaneki is turned into the first half-human, half-ghoul hybrid. He must now navigate two worlds, struggling to fit into ghoul society while hiding his new identity from his human friends.',
+    genres: ['Dark Fantasy', 'Horror', 'Supernatural'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/tokyo-ghoul-1-285x409.webp?t=1749044729',
+    imageHint: 'ghoul student',
+    status: 'Trending',
+    chapters: 143,
+    releaseYear: 2011,
+  },
 ];
 
 export const genres: GenreType[] = [
