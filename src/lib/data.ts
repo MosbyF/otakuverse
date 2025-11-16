@@ -1072,6 +1072,13 @@ export const genres: GenreType[] = [
     imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763298001/best-sports-anime-on-crunchyroll_uafqn6.avif',
     imageHint: findImage('genre-sports').hint,
   },
+  {
+    id: 'thriller',
+    name: 'Thriller',
+    description: 'Suspenseful stories that will keep you on the edge of your seat.',
+    imageUrl: findImage('genre-thriller').url,
+    imageHint: findImage('genre-thriller').hint,
+  },
 ];
 
 export const fandomPosts: FandomPost[] = [

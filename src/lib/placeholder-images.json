@@ -139,6 +139,12 @@
       "imageHint": "volleyball match"
     },
     {
+      "id": "genre-thriller",
+      "description": "Mysterious figure in a dark alley",
+      "imageUrl": "https://images.unsplash.com/photo-1533130932473-b3a6288d6725?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "mystery thriller"
+    },
+    {
       "id": "avatar-1",
       "description": "Profile picture 1",
       "imageUrl": "https://images.unsplash.com/photo-1702478553542-3aa3c0148543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9maWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MDczMTI4NHww&ixlibrb-4.1.0&q=80&w=1080",
