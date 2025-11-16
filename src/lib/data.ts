@@ -305,6 +305,20 @@ export const media: MediaType[] = [
     chapters: 143,
     releaseYear: 2011,
   },
+  {
+    id: 'happiness',
+    title: 'Happiness',
+    type: 'Manga',
+    description: 'A boy\'s life is turned upside down after he is attacked by a mysterious girl.',
+    longDescription: 'Makoto Okazaki is a high school student and the subject of bullying. One night, he decides to steal the money of his tormentor, but is attacked by a mysterious girl. He survives, but his life changes forever as he discovers he has become a vampire.',
+    genres: ['Horror', 'Supernatural', 'Drama'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/happiness-shuzo-oshimi-1-285x399.webp?t=1732055874',
+    imageHint: 'vampire boy',
+    status: 'Latest',
+    chapters: 50,
+    releaseYear: 2015,
+  },
 ];
 
 export const genres: GenreType[] = [
