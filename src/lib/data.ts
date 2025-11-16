@@ -193,6 +193,20 @@ export const media: MediaType[] = [
     chapters: 120,
     releaseYear: 2023,
   },
+  {
+    id: 'jujutsu-kaisen',
+    title: 'Jujutsu Kaisen',
+    type: 'Anime',
+    description: 'A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself.',
+    longDescription: 'Yuji Itadori, a kind-hearted high school student, joins his school\'s Occult Club for fun, but discovers that its members are actual sorcerers who can manipulate the energy between beings for their own use. He hears about a cursed talisman - the finger of Sukuna, a demon - and its location, and decides to retrieve it. But when his friends are attacked by cursed spirits, Yuji swallows the finger to protect them, and becomes cursed himself.',
+    genres: ['Action', 'Supernatural', 'Horror'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/jujutsu-kaisen-1-190x286.jpg?t=1625907951',
+    imageHint: 'sorcerer curse',
+    status: 'Trending',
+    duration: '24 min per ep',
+    releaseYear: 2020,
+  },
 ];
 
 export const genres: GenreType[] = [
