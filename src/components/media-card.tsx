@@ -5,7 +5,7 @@ import type { MediaType } from '@/lib/types';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-import { Star, Clock, BookOpen, Calendar, Play, Book } from 'lucide-react';
+import { Star, Clock, BookOpen, Calendar, PlusSquare } from 'lucide-react';
 import { Button } from './ui/button';
 
 interface MediaCardProps {
@@ -52,8 +52,8 @@ export function MediaCard({ media, className }: MediaCardProps) {
                     </div>
                 )}
                 <Button size="sm" className="w-full mt-3 text-xs">
-                  {media.type === 'Anime' ? <Play className="mr-2 h-4 w-4" /> : <Book className="mr-2 h-4 w-4" />}
-                  {media.type === 'Anime' ? 'Watch Now' : 'Read Now'}
+                  <PlusSquare className="mr-2 h-4 w-4" />
+                  Add to My Shelf
                 </Button>
               </div>
             </div>
