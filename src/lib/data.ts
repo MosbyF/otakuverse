@@ -360,6 +360,20 @@ export const media: MediaType[] = [
     status: 'Latest',
     chapters: 10,
     releaseYear: 2011,
+  },
+  {
+    id: 'our-sunny-days',
+    title: 'Our Sunny Days',
+    type: 'Manga',
+    description: 'Two high school students find comfort in each other\'s company, sharing their struggles and joys.',
+    longDescription: 'Natsu and Aki are two classmates who couldn\'t be more different. Natsu is cheerful and popular, while Aki is quiet and reserved. A chance encounter on the school rooftop leads to an unlikely friendship. As they spend more time together, they discover they have more in common than they thought, and their bond helps them navigate the challenges of adolescence.',
+    genres: ['Slice of Life', 'Romance', 'School'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/our-sunny-days-1-285x399.webp?t=1760310780',
+    imageHint: 'school romance',
+    status: 'Latest',
+    chapters: 30,
+    releaseYear: 2022,
   }
 ];
 
