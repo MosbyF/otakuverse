@@ -1118,7 +1118,7 @@ export const genres: GenreType[] = [
     id: 'romance',
     name: 'Romance',
     description: 'Heartwarming stories centered around love and relationships.',
-    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763298971/v8-1811-01_pzq8vr.jpg',
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763302135/2025-06-16T113A12_otvsio.webp',
     imageHint: 'romantic couple',
   },
   {
@@ -1200,4 +1200,5 @@ export const fandomPosts: FandomPost[] = [
 
 
 
+    
     
