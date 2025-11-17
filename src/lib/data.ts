@@ -6,6 +6,7 @@
 
 
 
+
 import type { MediaType, GenreType, FandomPost } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -1669,6 +1670,76 @@ export const media: MediaType[] = [
     status: 'Latest',
     chapters: 1,
     releaseYear: 2022,
+  },
+  {
+    id: 'slam-dunk',
+    title: 'Slam Dunk',
+    type: 'Manga',
+    description: 'A delinquent joins the basketball team to impress a girl, but discovers a passion for the sport.',
+    longDescription: 'Hanamichi Sakuragi is a delinquent with a long history of being rejected by girls. He meets Haruko Akagi and is instantly smitten. To impress her, he joins the Shohoku High School basketball team, despite knowing nothing about the sport. He soon discovers a love for basketball and becomes a key player.',
+    genres: ['Sports', 'Comedy', 'Drama', 'School'],
+    rating: 4.9,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/slam-dunk-1-285x428.jpg?t=1634712626',
+    imageHint: 'basketball manga',
+    status: 'Trending',
+    chapters: 276,
+    releaseYear: 1990
+  },
+  {
+    id: 'the-master-of-diabolism-q',
+    title: 'The Master of Diabolism Q',
+    type: 'Anime',
+    description: 'A chibi-style spinoff of The Master of Diabolism, featuring cute and comedic shorts.',
+    longDescription: 'A super-deformed, chibi-style spinoff of "The Master of Diabolism" that retells the story in a cute and comedic way. It follows the adventures of Wei Wuxian and Lan Wangji in a series of lighthearted shorts, focusing on their daily lives and interactions.',
+    genres: ['Comedy', 'Fantasy', 'Supernatural'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/the-master-of-diabolism-q-1-285x400.webp?t=1734403726',
+    imageHint: 'chibi cultivation',
+    status: 'Latest',
+    duration: '5 min per ep',
+    releaseYear: 2020
+  },
+  {
+    id: 'my-dress-up-darling',
+    title: 'My Dress-Up Darling',
+    type: 'Anime',
+    description: 'A high school boy who loves making traditional dolls finds an unlikely friendship with a popular gyaru who loves cosplay.',
+    longDescription: 'Wakana Gojo is a high school student with a passion for making hina dolls. His quiet life is turned upside down when he has a fateful encounter with Marin Kitagawa, a beautiful and popular classmate whose interests are a world away from his. Marin, who is passionate about cosplay, discovers Wakana\'s talent for sewing and convinces him to help her create costumes.',
+    genres: ['Romance', 'School', 'Comedy'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/my-dress-up-darling-1-285x399.webp?t=1640020409',
+    imageHint: 'cosplay romance',
+    status: 'Trending',
+    duration: '24 min per ep',
+    releaseYear: 2022
+  },
+  {
+    id: 'a-will-eternal-2nd-season',
+    title: 'A Will Eternal 2nd Season',
+    type: 'Anime',
+    description: 'The comedic and epic adventures of Bai Xiaochun continue in the world of cultivation.',
+    longDescription: 'The second season continues the story of Bai Xiaochun, a young man who is driven by his fear of death to seek immortality through cultivation. His journey is filled with hilarious antics, epic battles, and unexpected friendships as he navigates the dangerous and complex world of cultivators.',
+    genres: ['Action', 'Adventure', 'Comedy', 'Fantasy'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/a-will-eternal-2nd-season-1-285x399.webp?t=1709172768',
+    imageHint: 'cultivation comedy',
+    status: 'Latest',
+    duration: '20 min per ep',
+    releaseYear: 2022
+  },
+  {
+    id: 'my-dress-up-darling-season-2',
+    title: 'My Dress-Up Darling Season 2',
+    type: 'Anime',
+    description: 'The heartwarming and comedic story of Wakana and Marin\'s cosplay adventures continues.',
+    longDescription: 'Wakana Gojo and Marin Kitagawa are back! As their friendship deepens, they take on new and more ambitious cosplay projects. The second season promises more heartwarming moments, hilarious situations, and stunning costume creations as they navigate their feelings for each other and their shared passion.',
+    genres: ['Romance', 'School', 'Comedy'],
+    rating: 4.9,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/my-dress-up-darling-season-2-1-285x399.webp?t=1751543494',
+    imageHint: 'cosplay romance season 2',
+    status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2025
   }
 ];
 
@@ -1770,6 +1841,7 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
 
 
 
