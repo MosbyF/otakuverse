@@ -68,6 +68,7 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
 
           <div className="md:col-span-8 space-y-6">
             <div>
+                <Badge variant="default" className="mb-2 text-sm">{item.type}</Badge>
                 <div className="flex flex-wrap gap-2 mb-2">
                     {item.genres.map((genre) => (
                         <Badge key={genre} variant="outline" className="font-medium">
@@ -112,4 +113,3 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
     </div>
   );
 }
-
