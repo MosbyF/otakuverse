@@ -99,7 +99,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="https://res.cloudinary.com/doklib3it/image/upload/v1762444330/Screenshot_2025-09-22_002714-removebg-preview_tjg6hx.png" alt="Logo" width={100} height={24} className="h-6 w-auto" />
+            <Image src="https://res.cloudinary.com/doklib3it/image/upload/v1762444330/Screenshot_2025-09-22_002714-removebg-preview_tjg6hx.png" alt="Logo" width={150} height={36} className="h-8 w-auto" />
           </Link>
         </div>
 
@@ -114,7 +114,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="left">
                <Link href="/" className="mr-6 flex items-center space-x-2 mb-4" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Image src="https://res.cloudinary.com/doklib3it/image/upload/v1762444330/Screenshot_2025-09-22_002714-removebg-preview_tjg6hx.png" alt="Logo" width={100} height={24} className="h-6 w-auto" />
+                  <Image src="https://res.cloudinary.com/doklib3it/image/upload/v1762444330/Screenshot_2025-09-22_002714-removebg-preview_tjg6hx.png" alt="Logo" width={150} height={36} className="h-8 w-auto" />
                 </Link>
               <NavLinks inSheet />
             </SheetContent>
