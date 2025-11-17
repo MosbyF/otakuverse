@@ -1955,7 +1955,7 @@ export const media: MediaType[] = [
     imageHint: 'baseball high school',
     status: 'Featured',
     duration: '24 min per ep',
-    releaseYear: 2007
+    releaseYear: 2007,
   },
   {
     id: 'ace-of-the-diamond-act-ii',
@@ -1969,7 +1969,7 @@ export const media: MediaType[] = [
     imageHint: 'baseball team',
     status: 'Trending',
     chapters: 300,
-    releaseYear: 2015
+    releaseYear: 2015,
   },
   {
     id: 'haikyuu',
@@ -1983,7 +1983,7 @@ export const media: MediaType[] = [
     imageHint: 'volleyball team',
     status: 'Trending',
     chapters: 402,
-    releaseYear: 2012
+    releaseYear: 2012,
   },
   {
     id: 'run-with-the-wind',
@@ -1997,7 +1997,7 @@ export const media: MediaType[] = [
     imageHint: 'marathon running',
     status: 'Featured',
     duration: '24 min per ep',
-    releaseYear: 2018
+    releaseYear: 2018,
   },
   {
     id: 'the-boxer',
@@ -2011,7 +2011,7 @@ export const media: MediaType[] = [
     imageHint: 'boxing prodigy',
     status: 'Trending',
     chapters: 100,
-    releaseYear: 2019
+    releaseYear: 2019,
   },
   {
     id: 'major-season-6',
@@ -2025,7 +2025,7 @@ export const media: MediaType[] = [
     imageHint: 'major league baseball',
     status: 'Featured',
     duration: '24 min per ep',
-    releaseYear: 2010
+    releaseYear: 2010,
   },
   {
     id: 'kurokos-basketball-3',
@@ -2039,7 +2039,7 @@ export const media: MediaType[] = [
     imageHint: 'basketball tournament',
     status: 'Trending',
     duration: '24 min per ep',
-    releaseYear: 2015
+    releaseYear: 2015,
   },
   {
     id: 'initial-d-final-stage',
@@ -2053,7 +2053,7 @@ export const media: MediaType[] = [
     imageHint: 'street racing',
     status: 'Featured',
     duration: '24 min per ep',
-    releaseYear: 2014
+    releaseYear: 2014,
   },
   {
     id: 'hajime-no-ippo',
@@ -2067,7 +2067,7 @@ export const media: MediaType[] = [
     imageHint: 'boxing manga',
     status: 'Trending',
     chapters: 1400,
-    releaseYear: 1989
+    releaseYear: 1989,
   },
   {
     id: 'fog-e-sports-novel',
@@ -2081,7 +2081,7 @@ export const media: MediaType[] = [
     imageHint: 'esports team',
     status: 'Latest',
     chapters: 100,
-    releaseYear: 2020
+    releaseYear: 2020,
   },
   {
     id: 'ashita-no-joe-fighting-for-tomorrow',
@@ -2095,7 +2095,7 @@ export const media: MediaType[] = [
     imageHint: 'boxing classic',
     status: 'Featured',
     chapters: 20,
-    releaseYear: 1968
+    releaseYear: 1968,
   },
   {
     id: 'kurokos-basketball-ng-shuu',
@@ -2109,7 +2109,7 @@ export const media: MediaType[] = [
     imageHint: 'basketball comedy',
     status: 'Featured',
     duration: '4 min per ep',
-    releaseYear: 2012
+    releaseYear: 2012,
   },
   {
     id: 'the-prince-of-tennis-ii-specials',
@@ -2123,7 +2123,7 @@ export const media: MediaType[] = [
     imageHint: 'tennis specials',
     status: 'Featured',
     duration: '5 min per ep',
-    releaseYear: 2012
+    releaseYear: 2012,
   },
   {
     id: 'garbage-time',
@@ -2137,7 +2137,7 @@ export const media: MediaType[] = [
     imageHint: 'basketball team',
     status: 'Latest',
     chapters: 50,
-    releaseYear: 2020
+    releaseYear: 2020,
   },
   {
     id: 'plawres-sanshiro',
@@ -2151,7 +2151,7 @@ export const media: MediaType[] = [
     imageHint: 'robot wrestling',
     status: 'Featured',
     duration: '24 min per ep',
-    releaseYear: 1983
+    releaseYear: 1983,
   },
   {
     id: 'oban-star-racers',
@@ -2165,7 +2165,7 @@ export const media: MediaType[] = [
     imageHint: 'intergalactic racing',
     status: 'Featured',
     duration: '22 min per ep',
-    releaseYear: 2006
+    releaseYear: 2006,
   },
   {
     id: 'shin-kyojin-no-hoshi',
@@ -2179,7 +2179,7 @@ export const media: MediaType[] = [
     imageHint: 'baseball pitcher',
     status: 'Featured',
     duration: '24 min per ep',
-    releaseYear: 1977
+    releaseYear: 1977,
   },
   {
     id: 'match-the-beat',
@@ -2193,7 +2193,7 @@ export const media: MediaType[] = [
     imageHint: 'rhythm game',
     status: 'Latest',
     chapters: 40,
-    releaseYear: 2020
+    releaseYear: 2020,
   },
   {
     id: 'street-workout',
@@ -2207,7 +2207,7 @@ export const media: MediaType[] = [
     imageHint: 'calisthenics workout',
     status: 'Latest',
     chapters: 60,
-    releaseYear: 2021
+    releaseYear: 2021,
   },
   {
     id: 'f-anime',
@@ -2221,7 +2221,7 @@ export const media: MediaType[] = [
     imageHint: 'formula 1 racing',
     status: 'Featured',
     duration: '24 min per ep',
-    releaseYear: 1988
+    releaseYear: 1988,
   },
   {
     id: 'perfect-blue',
@@ -2320,6 +2320,76 @@ export const media: MediaType[] = [
     status: 'Latest',
     duration: '2h 15min',
     releaseYear: 2020
+  },
+  {
+    id: 'steins-gate-the-missing-link-divide-by-zero',
+    title: 'Steins;Gate: The Missing Link - Divide by Zero',
+    type: 'Anime',
+    description: 'An alternate-ending episode that leads into the story of Steins;Gate 0.',
+    longDescription: 'An alternate version of episode 23 from the original Steins;Gate series. This episode explores what happens when Rintaro Okabe gives up on saving Kurisu Makise, leading to a darker timeline and setting the stage for the events of Steins;Gate 0. It is a story of despair, a world without the one he tried so hard to save, and the beginning of a new struggle.',
+    genres: ['Thriller', 'Sci-Fi', 'Psychological', 'Drama'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/steins-gate-the-missing-link-divide-by-zero-1-190x269.jpg?t=1688081309',
+    imageHint: 'time travel alternate',
+    status: 'Featured',
+    duration: '24 min',
+    releaseYear: 2015
+  },
+  {
+    id: 'im-dating-a-psychopath',
+    title: 'I\'m Dating a Psychopath',
+    type: 'Manga',
+    description: 'A chilling story about a relationship with someone who is not what they seem.',
+    longDescription: 'A seemingly perfect romance takes a dark turn when one partner begins to reveal their true, psychopathic nature. This psychological thriller explores manipulation, obsession, and the terrifying reality of being in love with a monster.',
+    genres: ['Thriller', 'Psychological', 'Horror', 'Romance'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/im-dating-a-psychopath-1-285x399.webp?t=1699723275',
+    imageHint: 'psychopath romance',
+    status: 'Latest',
+    chapters: 70,
+    releaseYear: 2022
+  },
+  {
+    id: 'the-planet-walks-alone',
+    title: 'The Planet Walks Alone',
+    type: 'Manga',
+    description: 'In a desolate world, a lone traveler searches for the last bastion of humanity.',
+    longDescription: 'In a world left barren and empty, a lone traveler embarks on a journey to find a rumored sanctuary where humanity is said to survive. With only a cryptic map and a will to live, they must navigate the ruins of civilization and the dangers that lurk within.',
+    genres: ['Thriller', 'Sci-Fi', 'Post-Apocalyptic', 'Adventure'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/the-planet-walks-alone-1-190x251.jpg?t=1625920974',
+    imageHint: 'lone traveler',
+    status: 'Latest',
+    chapters: 25,
+    releaseYear: 2018
+  },
+  {
+    id: 'never-ending-darling',
+    title: 'Never-Ending Darling',
+    type: 'Manga',
+    description: 'A story of obsessive love that transcends life and death.',
+    longDescription: 'A dark romance about an obsessive love that continues even after death. When the object of their affection passes away, they refuse to let go, leading to a chilling story of devotion and delusion.',
+    genres: ['Thriller', 'Horror', 'Romance', 'Supernatural'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/never-ending-darling-1-285x399.webp?t=1728012528',
+    imageHint: 'obsessive love',
+    status: 'Latest',
+    chapters: 40,
+    releaseYear: 2023
+  },
+  {
+    id: 'tokyo-ghoul-anime',
+    title: 'Tokyo Ghoul',
+    type: 'Anime',
+    description: 'A college student is transformed into a half-ghoul after a chance encounter.',
+    longDescription: 'Ken Kaneki, a shy, bookish college student, is instantly drawn to Rize Kamishiro, an avid reader like himself. However, Rize is not exactly who she seems, and this unfortunate meeting pushes Kaneki into the dark, violent world of Ghouls. After a fateful encounter, Kaneki is turned into the first half-human, half-ghoul hybrid and must navigate two worlds, struggling to fit into ghoul society while hiding his new identity from his human friends.',
+    genres: ['Thriller', 'Horror', 'Action', 'Psychological'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/tokyo-ghoul-1-190x266.jpg?t=1625896777',
+    imageHint: 'ghoul student',
+    status: 'Trending',
+    duration: '24 min per ep',
+    releaseYear: 2014
   }
 ];
 
