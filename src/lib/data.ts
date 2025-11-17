@@ -5,6 +5,7 @@
 
 
 
+
 import type { MediaType, GenreType, FandomPost } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -1373,21 +1374,21 @@ export const media: MediaType[] = [
     imageHint: 'cyborg major',
     status: 'Latest',
     duration: '58 min per ep',
-    releaseYear: 2013,
+    releaseYear: 2013
   },
   {
     id: 'to-love-ru-darkness-2nd-ova',
     title: 'To Love-Ru Darkness 2nd OVA',
     type: 'Anime',
     description: 'An OVA for To Love-Ru Darkness 2nd.',
-    longDescription: 'An OVA for To Love-Ru Darkness 2nd.',
+    longDescription: "The OVA episodes of To Love-Ru Darkness 2nd continue the ecchi-filled adventures of Rito Yuuki and the alien girls living with him. These special episodes, bundled with the manga volumes, offer more chaotic and romantic situations not covered in the main TV series. Expect more outrageous scenarios as the Harem Plan continues to unfold with even more characters vying for Rito's affection.",
     genres: ['Sci-Fi', 'Comedy', 'Harem'],
     rating: 3.4,
     imageUrl: 'https://cdn.anime-planet.com/anime/primary/to-love-ru-darkness-2nd-ova-1-190x255.jpg?t=1625897260',
     imageHint: 'harem comedy',
     status: 'Latest',
     duration: '24 min per ep',
-    releaseYear: 2016,
+    releaseYear: 2016
   },
   {
     id: 'belle',
@@ -1401,7 +1402,7 @@ export const media: MediaType[] = [
     imageHint: 'virtual world singer',
     status: 'Featured',
     duration: '2h 1min',
-    releaseYear: 2021,
+    releaseYear: 2021
   },
   {
     id: 'descent-of-the-demon-god-novel',
@@ -1415,7 +1416,7 @@ export const media: MediaType[] = [
     imageHint: 'demon god',
     status: 'Latest',
     chapters: 150,
-    releaseYear: 2021,
+    releaseYear: 2021
   },
   {
     id: 'manager-kim',
@@ -1429,7 +1430,7 @@ export const media: MediaType[] = [
     imageHint: 'special agent father',
     status: 'Trending',
     chapters: 100,
-    releaseYear: 2021,
+    releaseYear: 2021
   },
   {
     id: 'darling-in-the-franxx',
@@ -1471,7 +1472,7 @@ export const media: MediaType[] = [
     imageHint: 'alien musical',
     status: 'Latest',
     duration: '5 min per ep',
-    releaseYear: 2024,
+    releaseYear: 2024
   },
   {
     id: 'legend-of-the-galactic-heroes-gaiden',
@@ -1485,7 +1486,7 @@ export const media: MediaType[] = [
     imageHint: 'galactic heroes',
     status: 'Latest',
     duration: '25 min per ep',
-    releaseYear: 1998,
+    releaseYear: 1998
   },
   {
     id: 'darwins-game',
@@ -1499,7 +1500,7 @@ export const media: MediaType[] = [
     imageHint: 'deadly mobile game',
     status: 'Latest',
     duration: '24 min per ep',
-    releaseYear: 2020,
+    releaseYear: 2020
   },
   {
     id: 'aldnoah-zero',
@@ -1513,7 +1514,7 @@ export const media: MediaType[] = [
     imageHint: 'mars earth war',
     status: 'Latest',
     duration: '24 min per ep',
-    releaseYear: 2014,
+    releaseYear: 2014
   },
   {
     id: 'space-brothers',
@@ -1527,7 +1528,7 @@ export const media: MediaType[] = [
     imageHint: 'astronaut brothers',
     status: 'Latest',
     chapters: 300,
-    releaseYear: 2007,
+    releaseYear: 2007
   },
   {
     id: '21st-century-boys',
@@ -1541,7 +1542,7 @@ export const media: MediaType[] = [
     imageHint: 'mystery friend',
     status: 'Latest',
     chapters: 16,
-    releaseYear: 2006,
+    releaseYear: 2006
   },
   {
     id: 'spirited-away',
@@ -1769,6 +1770,7 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
 
 
 
