@@ -34,21 +34,10 @@ export default function MediaPage({
     ? `${mediaType}s`
     : 'Our Collection';
 
-  const description = genreId
-    ? `Explore our collection of ${genres.find(g => g.id === genreId)?.name} titles.`
-    : mediaType === 'Manga'
-    ? 'Explore the manga shelf.'
-    : mediaType === 'Anime'
-    ? 'Explore the anime shelf.'
-    : 'Explore the shelves.';
-
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold font-collection mb-4">{title}</h1>
-        <p className="text-lg text-foreground max-w-2xl mx-auto font-collection-description">
-          {description}
-        </p>
       </div>
 
       {filteredMedia.length > 0 ? (
