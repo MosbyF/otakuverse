@@ -81,7 +81,7 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
                 </div>
             </div>
 
-            <Card>
+            <Card className="bg-card/70 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle>Synopsis</CardTitle>
               </CardHeader>
@@ -90,7 +90,7 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="bg-card/70 backdrop-blur-sm">
                 <CardHeader>
                     <CardTitle>Details</CardTitle>
                 </CardHeader>
