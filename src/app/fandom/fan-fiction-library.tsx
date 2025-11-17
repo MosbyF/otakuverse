@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState } from 'react';
@@ -10,6 +9,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { useToast } from '@/hooks/use-toast';
 import type { FanFiction } from '@/lib/types';
 import { Upload } from 'lucide-react';
+import { useAuth } from '@/components/auth/AuthProvider';
+import { useUser } from '@/firebase';
 
 export function FanFictionLibrary({ initialFanFiction }: { initialFanFiction: FanFiction[] }) {
   const [stories, setStories] = useState<FanFiction[]>(initialFanFiction);
@@ -17,6 +18,8 @@ export function FanFictionLibrary({ initialFanFiction }: { initialFanFiction: Fa
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const { toast } = useToast();
+  const { isAuthenticated, openLogin } = useAuth();
+  const { user } = useUser();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -25,14 +28,14 @@ export function FanFictionLibrary({ initialFanFiction }: { initialFanFiction: Fa
 
   const handleStorySubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newStory.title || !newStory.content || isSubmitting) return;
+    if (!newStory.title || !newStory.content || isSubmitting || !isAuthenticated) return;
 
     setIsSubmitting(true);
     // In a real app, this would involve a backend call
     const newSubmission: FanFiction = {
       id: Date.now(),
       title: newStory.title,
-      author: 'CurrentUser',
+      author: user?.displayName || user?.email || 'Anonymous',
       synopsis: newStory.synopsis,
       content: newStory.content,
       timestamp: 'Just now',
@@ -53,49 +56,56 @@ export function FanFictionLibrary({ initialFanFiction }: { initialFanFiction: Fa
   return (
     <div className="max-w-4xl mx-auto">
       <div className="text-center mb-8">
-        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-          <DialogTrigger asChild>
-            <Button size="lg">
-              <Upload className="mr-2 h-5 w-5" />
-              Post Fanfiction
-            </Button>
-          </DialogTrigger>
-          <DialogContent className="sm:max-w-md">
-            <DialogHeader>
-              <DialogTitle>Share Your Story</DialogTitle>
-            </DialogHeader>
-            <form onSubmit={handleStorySubmit} className="grid gap-4 py-4">
-              <Input
-                name="title"
-                placeholder="Story Title"
-                value={newStory.title}
-                onChange={handleInputChange}
-                disabled={isSubmitting}
-                required
-              />
-              <Input
-                name="synopsis"
-                placeholder="Synopsis (a short summary)"
-                value={newStory.synopsis}
-                onChange={handleInputChange}
-                disabled={isSubmitting}
-                required
-              />
-              <Textarea
-                name="content"
-                placeholder="Your story begins here..."
-                value={newStory.content}
-                onChange={handleInputChange}
-                rows={10}
-                disabled={isSubmitting}
-                required
-              />
-              <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? 'Posting...' : 'Post Story'}
+        {isAuthenticated ? (
+          <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+            <DialogTrigger asChild>
+              <Button size="lg">
+                <Upload className="mr-2 h-5 w-5" />
+                Post Fanfiction
               </Button>
-            </form>
-          </DialogContent>
-        </Dialog>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-md">
+              <DialogHeader>
+                <DialogTitle>Share Your Story</DialogTitle>
+              </DialogHeader>
+              <form onSubmit={handleStorySubmit} className="grid gap-4 py-4">
+                <Input
+                  name="title"
+                  placeholder="Story Title"
+                  value={newStory.title}
+                  onChange={handleInputChange}
+                  disabled={isSubmitting}
+                  required
+                />
+                <Input
+                  name="synopsis"
+                  placeholder="Synopsis (a short summary)"
+                  value={newStory.synopsis}
+                  onChange={handleInputChange}
+                  disabled={isSubmitting}
+                  required
+                />
+                <Textarea
+                  name="content"
+                  placeholder="Your story begins here..."
+                  value={newStory.content}
+                  onChange={handleInputChange}
+                  rows={10}
+                  disabled={isSubmitting}
+                  required
+                />
+                <Button type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? 'Posting...' : 'Post Story'}
+                </Button>
+              </form>
+            </DialogContent>
+          </Dialog>
+        ) : (
+           <Button size="lg" onClick={openLogin}>
+              <Upload className="mr-2 h-5 w-5" />
+              Login to Post Fanfiction
+            </Button>
+        )}
       </div>
 
       <div className="space-y-6">

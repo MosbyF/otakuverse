@@ -9,7 +9,8 @@ import { Frown, Meh, Send, Smile } from 'lucide-react';
 import type { FandomPost } from '@/lib/types';
 import { getSentiment } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
-import { placeholderImages } from '@/lib/placeholder-images.json';
+import { useAuth } from '@/components/auth/AuthProvider';
+import { useUser } from '@/firebase';
 
 function SentimentBadge({ sentiment }: { sentiment?: 'positive' | 'negative' | 'neutral' }) {
   if (!sentiment) return null;
@@ -35,12 +36,12 @@ export function DiscussionForum({ initialPosts }: { initialPosts: FandomPost[] }
   const [newPostContent, setNewPostContent] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
-  const userAvatar = placeholderImages.find(p => p.id === 'avatar-1');
-
+  const { isAuthenticated, openLogin } = useAuth();
+  const { user } = useUser();
 
   const handlePostSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newPostContent.trim() || isSubmitting) return;
+    if (!newPostContent.trim() || isSubmitting || !isAuthenticated) return;
 
     setIsSubmitting(true);
 
@@ -49,9 +50,9 @@ export function DiscussionForum({ initialPosts }: { initialPosts: FandomPost[] }
     if (result.success && result.data) {
       const newPost: FandomPost = {
         id: Date.now(),
-        author: 'CurrentUser',
-        avatarUrl: userAvatar?.imageUrl || '',
-        avatarHint: userAvatar?.imageHint || '',
+        author: user?.displayName || user?.email || 'Anonymous',
+        avatarUrl: user?.photoURL || '',
+        avatarHint: 'user avatar',
         content: newPostContent,
         timestamp: 'Just now',
         sentiment: result.data.sentiment,
@@ -72,26 +73,36 @@ export function DiscussionForum({ initialPosts }: { initialPosts: FandomPost[] }
 
   return (
     <div className="max-w-3xl mx-auto space-y-6">
-      <Card>
-        <CardContent className="p-4">
-          <form onSubmit={handlePostSubmit} className="flex flex-col gap-4">
-             <div className="flex items-start gap-4">
-              <Textarea
-                placeholder="What's on your mind?"
-                value={newPostContent}
-                onChange={(e) => setNewPostContent(e.target.value)}
-                rows={3}
-                className="flex-1"
-                disabled={isSubmitting}
-              />
-            </div>
-            <Button type="submit" className="self-end" disabled={isSubmitting || !newPostContent.trim()}>
-              {isSubmitting ? 'Posting...' : 'Post'}
-              <Send className="ml-2 h-4 w-4" />
-            </Button>
-          </form>
-        </CardContent>
-      </Card>
+      {isAuthenticated ? (
+        <Card>
+          <CardContent className="p-4">
+            <form onSubmit={handlePostSubmit} className="flex flex-col gap-4">
+              <div className="flex items-start gap-4">
+                <Textarea
+                  placeholder="What's on your mind?"
+                  value={newPostContent}
+                  onChange={(e) => setNewPostContent(e.target.value)}
+                  rows={3}
+                  className="flex-1"
+                  disabled={isSubmitting}
+                />
+              </div>
+              <Button type="submit" className="self-end" disabled={isSubmitting || !newPostContent.trim()}>
+                {isSubmitting ? 'Posting...' : 'Post'}
+                <Send className="ml-2 h-4 w-4" />
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
+      ) : (
+        <Card className="text-center p-6">
+            <CardContent className="p-0">
+                <p className="text-muted-foreground mb-4">You must be logged in to join the discussion.</p>
+                <Button onClick={openLogin}>Login to Post</Button>
+            </CardContent>
+        </Card>
+      )}
+
 
       <div className="space-y-4">
         {posts.map((post) => (

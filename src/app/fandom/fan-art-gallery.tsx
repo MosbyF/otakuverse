@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState } from 'react';
@@ -11,6 +10,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { useToast } from '@/hooks/use-toast';
 import type { FanArt } from '@/lib/types';
 import { Upload } from 'lucide-react';
+import { useAuth } from '@/components/auth/AuthProvider';
+import { useUser } from '@/firebase';
 
 export function FanArtGallery({ initialArt }: { initialArt: FanArt[] }) {
   const [art, setArt] = useState<FanArt[]>(initialArt);
@@ -18,6 +19,8 @@ export function FanArtGallery({ initialArt }: { initialArt: FanArt[] }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const { toast } = useToast();
+  const { isAuthenticated, openLogin } = useAuth();
+  const { user } = useUser();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -26,14 +29,14 @@ export function FanArtGallery({ initialArt }: { initialArt: FanArt[] }) {
 
   const handleArtSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newArt.title || !newArt.imageUrl || isSubmitting) return;
+    if (!newArt.title || !newArt.imageUrl || isSubmitting || !isAuthenticated) return;
 
     setIsSubmitting(true);
     // In a real app, this would involve an actual upload and backend call
     const newSubmission: FanArt = {
       id: Date.now(),
       title: newArt.title,
-      author: 'CurrentUser',
+      author: user?.displayName || user?.email || 'Anonymous',
       imageUrl: newArt.imageUrl,
       description: newArt.description,
       timestamp: 'Just now',
@@ -53,48 +56,55 @@ export function FanArtGallery({ initialArt }: { initialArt: FanArt[] }) {
 
   return (
     <div className="max-w-6xl mx-auto">
-       <div className="text-center mb-8">
-        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-          <DialogTrigger asChild>
-            <Button size="lg">
-              <Upload className="mr-2 h-5 w-5" />
-              Upload Fan Art
-            </Button>
-          </DialogTrigger>
-          <DialogContent className="sm:max-w-[425px]">
-            <DialogHeader>
-              <DialogTitle>Share Your Creation</DialogTitle>
-            </DialogHeader>
-            <form onSubmit={handleArtSubmit} className="grid gap-4 py-4">
-              <Input
-                name="title"
-                placeholder="Title of your artwork"
-                value={newArt.title}
-                onChange={handleInputChange}
-                disabled={isSubmitting}
-                required
-              />
-              <Input
-                name="imageUrl"
-                placeholder="Image URL (e.g., from Imgur)"
-                value={newArt.imageUrl}
-                onChange={handleInputChange}
-                disabled={isSubmitting}
-                required
-              />
-              <Textarea
-                name="description"
-                placeholder="Brief description (optional)"
-                value={newArt.description}
-                onChange={handleInputChange}
-                disabled={isSubmitting}
-              />
-              <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? 'Submitting...' : 'Submit Art'}
+      <div className="text-center mb-8">
+        {isAuthenticated ? (
+          <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+            <DialogTrigger asChild>
+              <Button size="lg">
+                <Upload className="mr-2 h-5 w-5" />
+                Upload Fan Art
               </Button>
-            </form>
-          </DialogContent>
-        </Dialog>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-[425px]">
+              <DialogHeader>
+                <DialogTitle>Share Your Creation</DialogTitle>
+              </DialogHeader>
+              <form onSubmit={handleArtSubmit} className="grid gap-4 py-4">
+                <Input
+                  name="title"
+                  placeholder="Title of your artwork"
+                  value={newArt.title}
+                  onChange={handleInputChange}
+                  disabled={isSubmitting}
+                  required
+                />
+                <Input
+                  name="imageUrl"
+                  placeholder="Image URL (e.g., from Imgur)"
+                  value={newArt.imageUrl}
+                  onChange={handleInputChange}
+                  disabled={isSubmitting}
+                  required
+                />
+                <Textarea
+                  name="description"
+                  placeholder="Brief description (optional)"
+                  value={newArt.description}
+                  onChange={handleInputChange}
+                  disabled={isSubmitting}
+                />
+                <Button type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? 'Submitting...' : 'Submit Art'}
+                </Button>
+              </form>
+            </DialogContent>
+          </Dialog>
+        ) : (
+          <Button size="lg" onClick={openLogin}>
+            <Upload className="mr-2 h-5 w-5" />
+            Login to Upload Fan Art
+          </Button>
+        )}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
