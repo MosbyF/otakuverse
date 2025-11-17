@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -77,10 +76,6 @@ export function DiscussionForum({ initialPosts }: { initialPosts: FandomPost[] }
         <CardContent className="p-4">
           <form onSubmit={handlePostSubmit} className="flex flex-col gap-4">
              <div className="flex items-start gap-4">
-              <Avatar>
-                <AvatarImage src={userAvatar?.imageUrl} alt="Current User" data-ai-hint={userAvatar?.imageHint} />
-                <AvatarFallback>U</AvatarFallback>
-              </Avatar>
               <Textarea
                 placeholder="What's on your mind?"
                 value={newPostContent}
