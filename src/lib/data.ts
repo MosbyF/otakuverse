@@ -9,6 +9,7 @@
 
 
 
+
 import type { MediaType, GenreType, FandomPost, FanArt, FanFiction } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -1952,7 +1953,189 @@ export const media: MediaType[] = [
     status: 'Featured',
     duration: '2 min',
     releaseYear: 2021,
-  }
+  },
+  {
+    id: 'major-season-3',
+    title: 'Major Season 3',
+    type: 'Anime',
+    description: 'Goro\'s journey continues as he aims for the pros in high school baseball.',
+    longDescription: 'Goro Shigeno enters Kaido High School, a powerhouse of high school baseball. He aims to defeat the main team with the backups and make a name for himself. The third season follows his intense training, fierce rivalries, and his unwavering determination to reach the Koshien.',
+    genres: ['Sports', 'Drama', 'School'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/major-season-3-1-190x271.jpg?t=1625885873',
+    imageHint: 'baseball high school',
+    status: 'Featured',
+    duration: '24 min per ep',
+    releaseYear: 2007,
+  },
+  {
+    id: 'ace-of-the-diamond-act-ii',
+    title: 'Ace of the Diamond Act II',
+    type: 'Manga',
+    description: 'The story of Seidou High School\'s baseball team continues as they aim for national victory.',
+    longDescription: 'The sequel to Ace of the Diamond, this series follows the Seidou High School baseball team as they continue their journey to conquer the national tournament. With new players, stronger rivals, and the same burning passion, Eijun Sawamura and his teammates face new challenges on and off the field.',
+    genres: ['Sports', 'School', 'Shounen'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/ace-of-the-diamond-act-ii-1-285x426.webp?t=1747713402',
+    imageHint: 'baseball team',
+    status: 'Trending',
+    chapters: 300,
+    releaseYear: 2015,
+  },
+  {
+    id: 'haikyuu',
+    title: 'Haikyuu!!',
+    type: 'Manga',
+    description: 'A short but passionate boy becomes a volleyball player and aims for the top.',
+    longDescription: 'Shoyo Hinata, inspired by a short-statured volleyball player, joins his school\'s volleyball team. Despite his height, his incredible jumping ability makes him a formidable player. He and his rival, the genius setter Tobio Kageyama, end up on the same high school team and must learn to work together to take their team to the nationals.',
+    genres: ['Sports', 'Comedy', 'Drama', 'School'],
+    rating: 4.9,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/haikyuu-1-285x428.jpg?t=1634713810',
+    imageHint: 'volleyball team',
+    status: 'Trending',
+    chapters: 402,
+    releaseYear: 2012,
+  },
+  {
+    id: 'run-with-the-wind',
+    title: 'Run with the Wind',
+    type: 'Anime',
+    description: 'A group of college students are roped into running a prestigious marathon.',
+    longDescription: 'Kakeru, a former elite high school runner, is chased for stealing food. He is saved by Haiji, a university student who is also a runner. Haiji persuades Kakeru to live in his old apartment with other residents and join them in running the Hakone Ekiden marathon, one of the most prominent university marathons in Japan. A story about running, friendship, and overcoming personal struggles.',
+    genres: ['Sports', 'Drama'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/run-with-the-wind-1-190x286.jpg?t=1625898244',
+    imageHint: 'marathon running',
+    status: 'Featured',
+    duration: '24 min per ep',
+    releaseYear: 2018,
+  },
+  {
+    id: 'the-boxer',
+    title: 'The Boxer',
+    type: 'Manga',
+    description: 'A legendary boxing coach discovers a young prodigy with a chilling lack of emotion.',
+    longDescription: '"K," a legendary boxing coach, has trained five champions, but none could give him true satisfaction. He discovers Yu, a young boy with phenomenal talent and an almost inhuman lack of fear or emotion. K believes he has found the perfect "monster" to create his ultimate masterpiece, but Yu\'s journey will be a dark and brutal one, exploring the very nature of fighting.',
+    genres: ['Sports', 'Action', 'Psychological', 'Drama'],
+    rating: 4.9,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/the-boxer-1-285x409.webp?t=1671635443',
+    imageHint: 'boxing prodigy',
+    status: 'Trending',
+    chapters: 100,
+    releaseYear: 2019,
+  },
+  {
+    id: 'major-season-6',
+    title: 'Major Season 6',
+    type: 'Anime',
+    description: 'Goro takes on the challenge of the Major Leagues in America.',
+    longDescription: 'Goro Shigeno has finally made it to the Major Leagues in America. The sixth and final season of Major follows his career as a professional baseball player, facing new rivals, dealing with injuries, and balancing his career with his growing family. It is the culmination of his lifelong journey with baseball.',
+    genres: ['Sports', 'Drama'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/major-season-6-1-190x271.jpg?t=1625886555',
+    imageHint: 'major league baseball',
+    status: 'Featured',
+    duration: '24 min per ep',
+    releaseYear: 2010,
+  },
+  {
+    id: 'kurokos-basketball-3',
+    title: 'Kuroko\'s Basketball 3',
+    type: 'Anime',
+    description: 'Seirin High continues their quest for victory in the Winter Cup.',
+    longDescription: 'The third season of Kuroko\'s Basketball sees Seirin High facing their toughest opponents yet in the Winter Cup. They must take on the remaining members of the "Generation of Miracles" in a series of intense and dramatic games. The season focuses on the final matches and the ultimate test of Kuroko and Kagami\'s teamwork.',
+    genres: ['Sports', 'Comedy', 'School'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/kurokos-basketball-3-1-190x271.jpg?t=1625896880',
+    imageHint: 'basketball tournament',
+    status: 'Trending',
+    duration: '24 min per ep',
+    releaseYear: 2015,
+  },
+  {
+    id: 'initial-d-final-stage',
+    title: 'Initial D Final Stage',
+    type: 'Anime',
+    description: 'The final chapter of Takumi Fujiwara\'s street racing career.',
+    longDescription: 'The final stage of the legendary street racing series. Takumi Fujiwara, as part of Project D, faces his most challenging opponent yet in his last official race. It is the culmination of his journey from an unassuming tofu delivery boy to one of the most famous street racers in the Kanto region.',
+    genres: ['Sports', 'Action', 'Cars'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/initial-d-final-stage-1-190x263.jpg?t=1625896819',
+    imageHint: 'street racing',
+    status: 'Featured',
+    duration: '24 min per ep',
+    releaseYear: 2014,
+  },
+  {
+    id: 'hajime-no-ippo',
+    title: 'Hajime no Ippo',
+    type: 'Manga',
+    description: 'A timid high school student is introduced to the world of boxing and finds his passion.',
+    longDescription: 'Ippo Makunouchi is a shy high school student who is often bullied. One day, he is saved by a professional boxer named Mamoru Takamura, who takes him to his boxing gym. Ippo discovers a passion for boxing and begins his journey to become a professional boxer, aiming for the top of the boxing world.',
+    genres: ['Sports', 'Action', 'Comedy', 'Drama'],
+    rating: 4.9,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/hajime-no-ippo-1-285x438.webp?t=1653796545',
+    imageHint: 'boxing manga',
+    status: 'Trending',
+    chapters: 1400,
+    releaseYear: 1989,
+  },
+  {
+    id: 'fog-e-sports-novel',
+    title: 'Fog (e-sports) (Novel)',
+    type: 'Manga',
+    description: 'A former top-tier e-sports player is recruited back into the game by a new team.',
+    longDescription: 'A former top-tier e-sports player, who had retired due to personal reasons, is scouted by a new, ambitious team. He must overcome his past trauma and adapt to a new generation of players to lead his team to victory in the competitive world of e-sports.',
+    genres: ['Sports', 'Drama'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/fog-e-sports-novel-1-190x265.jpg?t=1640131268',
+    imageHint: 'esports team',
+    status: 'Latest',
+    chapters: 100,
+    releaseYear: 2020,
+  },
+  {
+    id: 'ashita-no-joe-fighting-for-tomorrow',
+    title: 'Ashita no Joe: Fighting for Tomorrow',
+    type: 'Manga',
+    description: 'A classic boxing manga about a young man from the slums who becomes a professional boxer.',
+    longDescription: 'Joe Yabuki, a young man from the slums, is a troublemaker with a powerful punch. He is discovered by a former boxing coach, Danpei Tange, who sees his potential. The story follows Joe\'s journey from a delinquent to a professional boxer, his intense rivalry with Toru Rikiishi, and his life in and out of the ring.',
+    genres: ['Sports', 'Drama', 'Action'],
+    rating: 4.9,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/ashita-no-joe-fighting-for-tomorrow-1-285x375.webp?t=1713562256',
+    imageHint: 'boxing classic',
+    status: 'Featured',
+    chapters: 20,
+    releaseYear: 1968,
+  },
+  {
+    id: 'kurokos-basketball-ng-shuu',
+    title: 'Kuroko\'s Basketball NG-shuu',
+    type: 'Anime',
+    description: 'A collection of bloopers and comedic shorts from Kuroko\'s Basketball.',
+    longDescription: 'A series of short, comedic specials bundled with the Blu-ray/DVD releases of Kuroko\'s Basketball. They feature bloopers, outtakes, and humorous side stories with the characters, offering a lighthearted look at their lives off the court.',
+    genres: ['Sports', 'Comedy'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/kurokos-basketball-ng-shuu-1-190x268.jpg?t=1625896523',
+    imageHint: 'basketball comedy',
+    status: 'Featured',
+    duration: '4 min per ep',
+    releaseYear: 2012,
+  },
+  {
+    id: 'the-prince-of-tennis-ii-specials',
+    title: 'The Prince of Tennis II Specials',
+    type: 'Anime',
+    description: 'Special episodes of The Prince of Tennis II.',
+    longDescription: 'These special episodes, bundled with the Blu-ray/DVD releases, offer additional stories and comedic moments with the characters from The Prince of Tennis II. They provide a fun and expanded look at the lives of the talented tennis players at the U-17 training camp.',
+    genres: ['Sports', 'Comedy', 'School'],
+    rating: 4.5,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/the-prince-of-tennis-ii-specials-1-190x267.jpg?t=1625897134',
+    imageHint: 'tennis specials',
+    status: 'Featured',
+    duration: '5 min per ep',
+    releaseYear: 2012,
+  },
 ];
 
 export const genres: GenreType[] = [
@@ -2014,88 +2197,16 @@ export const genres: GenreType[] = [
   },
 ];
 
-export const fandomPosts: FandomPost[] = [
-  {
-    id: 1,
-    author: 'AnimeFan_123',
-    avatarUrl: findImage('avatar-1').url,
-    avatarHint: findImage('avatar-1').hint,
-    content: "Just finished Frieren: Beyond Journey's End. The ending was absolutely mind-blowing! I can't believe they pulled that off. 10/10 masterpiece.",
-    timestamp: '2 hours ago',
-    sentiment: 'positive',
-    sentimentScore: 0.9,
-  },
-  {
-    id: 2,
-    author: 'MechaMaster',
-    avatarUrl: findImage('avatar-2').url,
-    avatarHint: findImage('avatar-2').hint,
-    content: 'The new episode of Iron-Clad Dynasty was okay, but the animation felt a bit off in the main fight scene. Anyone else notice that?',
-    timestamp: '5 hours ago',
-    sentiment: 'neutral',
-    sentimentScore: -0.2,
-  },
-  {
-    id: 3,
-    author: 'ShojoLover',
-    avatarUrl: findImage('avatar-3').url,
-    avatarHint: findImage('avatar-3').hint,
-    content: 'I really hated how they handled the main couple in Rooftop Confessions. It felt so forced and unnatural. Ruined the whole series for me.',
-    timestamp: '1 day ago',
-    sentiment: 'negative',
-    sentimentScore: -0.8,
-  },
-];
+export const fandomPosts: FandomPost[] = [];
 
-export const fanArt: FanArt[] = [
-  {
-    id: 1,
-    title: 'Gojo Satoru Painting',
-    author: 'ArtMaster7',
-    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763365851/gojo_satoru_fan_art_by_rika_dono_dfn269v-fullview_bfr3k4.jpg',
-    description: 'A digital painting I did of Gojo from Jujutsu Kaisen. Hope you like it!',
-    timestamp: '3 days ago'
-  },
-  {
-    id: 2,
-    title: 'Chainsaw Man - Blood and Chaos',
-    author: 'PixelPioneer',
-    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763365825/2ac360f0-8c26-444a-95c0-128a1c97a5c8_vhtcwy.jpg',
-    description: 'My take on the visceral energy of Chainsaw Man.',
-    timestamp: '1 week ago'
-  },
-    {
-    id: 3,
-    title: 'Luffy Gear 5',
-    author: 'Luffyfan',
-    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763365942/7259021e-fac1-49a3-a809-548c78673a5a_q5m924.jpg',
-    description: 'Fan art of Luffy in Gear 5 form.',
-    timestamp: '4 days ago'
-  },
-];
+export const fanArt: FanArt[] = [];
 
-export const fanFiction: FanFiction[] = [
-  {
-    id: 1,
-    title: 'The Dragon\'s Shadow',
-    author: 'StorySpinner',
-    synopsis: 'An alternate universe story where a different character inherits the dragon\'s power.',
-    content: 'In a world where destiny is written in the stars, a young thief stumbles upon the ancient dragon\'s sigil, altering the course of history forever...',
-    timestamp: '5 days ago'
-  },
-  {
-    id: 2,
-    title: 'After the Promise',
-    author: 'VerseWeaver',
-    synopsis: 'What happens after the final episode? A continuation of the story.',
-    content: 'The battle was over, but the silence that followed was deafening. For the heroes who saved the world, the journey to find peace was just beginning. This is the story of the morning after.',
-    timestamp: '2 weeks ago'
-  }
-];
+export const fanFiction: FanFiction[] = [];
     
     
 
     
+
 
 
 
