@@ -1,0 +1,104 @@
+/**
+ * @file Firestore Security Rules
+ * @description This ruleset enforces a strict user-ownership model for user profiles and shelf items, while allowing public read access to anime, manga, and genre information.
+ *
+ * Data Structure:
+ * - /users/{userId}: Stores user profiles, with 'userId' matching the Firebase Auth UID.
+ * - /anime/{animeId}: Stores anime series information. Publicly readable.
+ * - /manga/{mangaId}: Stores manga series information. Publicly readable.
+ * - /genres/{genreId}: Stores genre information. Publicly readable.
+ * - /users/{userId}/shelfItems/{shelfItemId}: Stores items on a user's shelf, nested under the user's profile.
+ *
+ * Key Security Decisions:
+ * - User profiles and shelf items are strictly owned by the user, based on their Firebase Auth UID. Only the owner can create, read, update, or delete these items.
+ * - Anime, manga, and genre data are publicly readable but not writable through the client.
+ * - The 'list' operation is allowed only for the owner of the `/users/{userId}/shelfItems/{shelfItemId}` collection.
+ */
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    /**
+     * @description Controls access to user profiles.
+     * @path /users/{userId}
+     * @allow (create) - A user can create their own profile if the userId matches their auth UID.
+     * @allow (get, update, delete) - A user can get, update, or delete their own profile if the userId matches their auth UID.
+     * @deny (create) - A user cannot create a profile for another user.
+     * @deny (get, update, delete) - A user cannot get, update, or delete another user's profile.
+     * @principle Enforces document ownership for writes.
+     */
+    match /users/{userId} {
+      function isSignedIn() {
+        return request.auth != null;
+      }
+
+      function isOwner(userId) {
+        return isSignedIn() && request.auth.uid == userId;
+      }
+
+      allow create: if isOwner(userId) && request.resource.data.id == userId;
+      allow get, update, delete: if isOwner(userId) && resource.data.id == userId;
+      allow list: if false;
+    }
+
+    /**
+     * @description Controls access to anime series information.
+     * @path /anime/{animeId}
+     * @allow (get, list) - Anyone can read anime series information.
+     * @deny (create, update, delete) - No client-side writes allowed for anime data.
+     * @principle Allows public read access to anime data.
+     */
+    match /anime/{animeId} {
+      allow get, list: if true;
+      allow create, update, delete: if false;
+    }
+
+    /**
+     * @description Controls access to manga series information.
+     * @path /manga/{mangaId}
+     * @allow (get, list) - Anyone can read manga series information.
+     * @deny (create, update, delete) - No client-side writes allowed for manga data.
+     * @principle Allows public read access to manga data.
+     */
+    match /manga/{mangaId} {
+      allow get, list: if true;
+      allow create, update, delete: if false;
+    }
+
+    /**
+     * @description Controls access to genre information.
+     * @path /genres/{genreId}
+     * @allow (get, list) - Anyone can read genre information.
+     * @deny (create, update, delete) - No client-side writes allowed for genre data.
+     * @principle Allows public read access to genre data.
+     */
+    match /genres/{genreId} {
+      allow get, list: if true;
+      allow create, update, delete: if false;
+    }
+
+    /**
+     * @description Controls access to items on a user's shelf.
+     * @path /users/{userId}/shelfItems/{shelfItemId}
+     * @allow (create) - A user can add an item to their own shelf.
+     * @allow (get, update, delete) - A user can get, update or delete items on their own shelf.
+     * @allow (list) - A user can list items on their own shelf.
+     * @deny (create) - A user cannot add an item to another user's shelf.
+     * @deny (get, update, delete) - A user cannot get, update, or delete items on another user's shelf.
+     * @principle Enforces document ownership for writes and reads on user's shelf.
+     */
+    match /users/{userId}/shelfItems/{shelfItemId} {
+      function isSignedIn() {
+        return request.auth != null;
+      }
+
+      function isOwner(userId) {
+        return isSignedIn() && request.auth.uid == userId;
+      }
+
+      allow create: if isOwner(userId) && request.resource.data.userId == userId;
+      allow get, update, delete: if isOwner(userId);
+      allow list: if isOwner(userId);
+    }
+  }
+}

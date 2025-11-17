@@ -1,0 +1,237 @@
+{
+  "entities": {
+    "User": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "User",
+      "type": "object",
+      "description": "Represents a user of the OtakuVerse platform.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the User entity."
+        },
+        "username": {
+          "type": "string",
+          "description": "User's username for login and display purposes."
+        },
+        "email": {
+          "type": "string",
+          "description": "User's email address.",
+          "format": "email"
+        }
+      },
+      "required": [
+        "id",
+        "username",
+        "email"
+      ]
+    },
+    "Anime": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Anime",
+      "type": "object",
+      "description": "Represents an anime series.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Anime entity."
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of the anime."
+        },
+        "genreIds": {
+          "type": "array",
+          "description": "References to Genres. (Relationship: Anime N:N Genre)",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string",
+          "description": "Description/Synopsis of the anime."
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "description"
+      ]
+    },
+    "Manga": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Manga",
+      "type": "object",
+      "description": "Represents a manga series.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Manga entity."
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of the manga."
+        },
+        "genreIds": {
+          "type": "array",
+          "description": "References to Genres. (Relationship: Manga N:N Genre)",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string",
+          "description": "Description/Synopsis of the manga."
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "description"
+      ]
+    },
+    "Genre": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Genre",
+      "type": "object",
+      "description": "Represents a genre for anime and manga.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Genre entity."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the genre (e.g., Action, Romance)."
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "ShelfItem": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "ShelfItem",
+      "type": "object",
+      "description": "Represents an item (anime or manga) on a user's shelf.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the ShelfItem entity."
+        },
+        "userId": {
+          "type": "string",
+          "description": "Reference to User. (Relationship: User 1:N ShelfItem)"
+        },
+        "animeId": {
+          "type": "string",
+          "description": "Reference to Anime. (Relationship: Anime 1:N ShelfItem). Nullable if mangaId is set."
+        },
+        "mangaId": {
+          "type": "string",
+          "description": "Reference to Manga. (Relationship: Manga 1:N ShelfItem). Nullable if animeId is set."
+        }
+      },
+      "required": [
+        "id",
+        "userId"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/users/{userId}",
+        "definition": {
+          "entityName": "user",
+          "schema": {
+            "$ref": "#/backend/entities/User"
+          },
+          "description": "Stores user profiles. The 'userId' parameter corresponds to the Firebase Auth UID.  Used for storing basic user information.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "The Firebase Auth UID of the user."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/anime/{animeId}",
+        "definition": {
+          "entityName": "anime",
+          "schema": {
+            "$ref": "#/backend/entities/Anime"
+          },
+          "description": "Stores anime series information.",
+          "params": [
+            {
+              "name": "animeId",
+              "description": "The unique identifier for the anime series."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/manga/{mangaId}",
+        "definition": {
+          "entityName": "manga",
+          "schema": {
+            "$ref": "#/backend/entities/Manga"
+          },
+          "description": "Stores manga series information.",
+          "params": [
+            {
+              "name": "mangaId",
+              "description": "The unique identifier for the manga series."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/genres/{genreId}",
+        "definition": {
+          "entityName": "genre",
+          "schema": {
+            "$ref": "#/backend/entities/Genre"
+          },
+          "description": "Stores genre information.",
+          "params": [
+            {
+              "name": "genreId",
+              "description": "The unique identifier for the genre."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/users/{userId}/shelfItems/{shelfItemId}",
+        "definition": {
+          "entityName": "shelfItem",
+          "schema": {
+            "$ref": "#/backend/entities/ShelfItem"
+          },
+          "description": "Stores items on a user's shelf. The 'userId' parameter corresponds to the Firebase Auth UID. This allows path-based rules for ownership. ",
+          "params": [
+            {
+              "name": "userId",
+              "description": "The Firebase Auth UID of the user who owns the shelf."
+            },
+            {
+              "name": "shelfItemId",
+              "description": "The unique identifier of the shelf item."
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning": "The Firestore structure prioritizes authorization independence and QAPs (Rules are not Filters). User data is stored under `/users/{userId}`. Anime and Manga entities reside in top-level collections `/anime` and `/manga` respectively. Genres are stored in `/genres`. The 'Add to My Shelf' feature is implemented using a subcollection `/users/{userId}/shelfItems/{shelfItemId}`. This structure enables secure list operations (QAPs) because each collection can have its own security rules without needing to filter based on data within documents. Authorization independence is achieved because access to a user's shelf is determined solely by the authenticated user's ID (`request.auth.uid`) matching the `{userId}` parameter in the path; no `get()` calls are necessary to check parent document data. This allows for atomic operations when adding items to the shelf. The choice of hierarchical paths for user-owned data (`/users/{userId}/shelfItems/{shelfItemId}`) follows best practices for simple and efficient ownership-based security rules."
+  }
+}
