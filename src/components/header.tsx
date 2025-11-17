@@ -1,9 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { Menu, Search } from 'lucide-react';
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
 import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/sheet"
 import { UserNav } from './auth/UserNav';
 import { useAuth } from './auth/AuthProvider';
+import { Input } from './ui/input';
 
 
 const navLinks = [
@@ -24,6 +25,32 @@ const navLinks = [
   { href: '/fandom', label: 'Fandom' },
   { href: '/about', label: 'About Us' },
 ];
+
+function SearchBar() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const defaultQuery = searchParams.get('q') || '';
+  const [query, setQuery] = useState(defaultQuery);
+
+  const handleSearch = (e: FormEvent) => {
+    e.preventDefault();
+    if (!query.trim()) return;
+    router.push(`/search?q=${query}`);
+  };
+
+  return (
+    <form onSubmit={handleSearch} className="relative">
+      <Search className="absolute left-2 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+      <Input
+        type="search"
+        placeholder="Search anime, manga..."
+        className="pl-8 h-9"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+    </form>
+  );
+}
 
 export function Header() {
   const pathname = usePathname();
@@ -97,10 +124,7 @@ export function Header() {
 
         <div className="hidden flex-1 items-center justify-end space-x-4 md:flex">
           <NavLinks />
-           <Button variant="ghost" size="icon">
-              <Search className="h-5 w-5 text-gray-400" />
-              <span className="sr-only">Search</span>
-            </Button>
+           <SearchBar />
            <UserNav />
         </div>
       </div>
