@@ -1,4 +1,5 @@
 
+
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { media } from '@/lib/data';
@@ -81,7 +82,7 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
                 </div>
             </div>
 
-            <Card className="bg-card/70 backdrop-blur-sm">
+            <Card className="bg-primary/20 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle>Synopsis</CardTitle>
               </CardHeader>
@@ -90,7 +91,7 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
               </CardContent>
             </Card>
             
-            <Card className="bg-card/70 backdrop-blur-sm">
+            <Card className="bg-primary/20 backdrop-blur-sm">
                 <CardHeader>
                     <CardTitle>Details</CardTitle>
                 </CardHeader>
@@ -111,3 +112,4 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
     </div>
   );
 }
+
