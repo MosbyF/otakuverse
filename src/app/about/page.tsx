@@ -5,9 +5,6 @@ export default function AboutPage() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">About OtakuVerse</h1>
-          <p className="text-xl text-muted-foreground">
-            Your universe for all things anime and manga.
-          </p>
         </div>
 
         <div className="space-y-8 text-lg leading-relaxed text-foreground/90">
