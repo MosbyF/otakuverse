@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { media } from '@/lib/data';
 import { Badge } from '@/components/ui/badge';
-import { Star, Tv, BookOpen, Users, Film, Link as LinkIcon } from 'lucide-react';
+import { Star, Tv, BookOpen } from 'lucide-react';
 import type { MediaType } from '@/lib/types';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -15,15 +15,14 @@ export function generateStaticParams() {
 }
 
 const DetailItem = ({ icon, label, value }: { icon: React.ElementType, label: string, value: React.ReactNode }) => (
-    <div className="flex items-start">
-        <div className="flex items-center gap-3 w-28 text-muted-foreground shrink-0">
+    <div className="flex items-center">
+        <div className="flex items-center gap-3 w-32 text-muted-foreground shrink-0">
             <icon className="w-5 h-5" />
             <span className="font-medium">{label}</span>
         </div>
         <div className="font-semibold text-foreground/90">{value}</div>
     </div>
 );
-
 
 export default function MediaDetailPage({ params }: { params: { id: string } }) {
   const item = media.find((m) => m.id === params.id) as MediaType;
@@ -34,10 +33,6 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
   
   const isManga = item.type === 'Manga';
 
-  // Mock data
-  const creator = { name: 'Creator Name', role: 'Author' };
-  const studio = { name: 'Studio Name', role: 'Animation' };
-  
   const sourceMap: { [key: string]: { name: string, url: string } } = {
     'frieren-beyond-journeys-end': { name: 'Crunchyroll', url: 'https://www.crunchyroll.com/series/GG5H5X249/frieren-beyond-journeys-end' },
     'chainsaw-man': { name: 'Crunchyroll', url: 'https://www.crunchyroll.com/series/GVDHX8QNW/chainsaw-man' },
@@ -50,13 +45,13 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
   const source = sourceMap[item.id] || sourceMap['default'];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-12">
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-12 gap-8">
           
           <div className="md:col-span-4">
             <div className="sticky top-24">
-              <div className="relative aspect-[2/3] rounded-lg overflow-hidden shadow-lg">
+              <div className="relative aspect-[2/3] rounded-lg overflow-hidden shadow-lg shadow-primary/20">
                 <Image
                   src={item.imageUrl}
                   alt={item.title}
@@ -101,17 +96,11 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
                 </CardHeader>
                 <CardContent className="space-y-4">
                     <DetailItem icon={isManga ? BookOpen : Tv} label={isManga ? "Chapters" : "Episodes"} value={isManga ? (item.chapters ? `${item.chapters} Chapters` : 'Ongoing') : (item.duration || 'Ongoing')} />
-                    <DetailItem icon={Users} label="Creator" value={creator.name} />
-                    {!isManga && studio.name && <DetailItem icon={Film} label="Studio" value={studio.name} />}
                     <Separator />
                     <DetailItem 
-                        icon={LinkIcon} 
+                        icon={Star}
                         label="Source" 
-                        value={
-                            <a href={source.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                                {source.name}
-                            </a>
-                        } 
+                        value={source.name}
                     />
                 </CardContent>
             </Card>
