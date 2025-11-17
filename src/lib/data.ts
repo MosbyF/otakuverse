@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 import type { MediaType, GenreType, FandomPost, FanArt, FanFiction } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -2136,6 +2124,104 @@ export const media: MediaType[] = [
     duration: '5 min per ep',
     releaseYear: 2012,
   },
+  {
+    id: 'garbage-time',
+    title: 'Garbage Time',
+    type: 'Manga',
+    description: 'A story about an underdog basketball team striving for victory.',
+    longDescription: 'A story about an underdog basketball team striving for victory against all odds. They must learn to work together and overcome their weaknesses to compete against the best.',
+    genres: ['Sports', 'School', 'Drama'],
+    rating: 4.5,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/garbage-time-1-190x266.jpg?t=1625928131',
+    imageHint: 'basketball team',
+    status: 'Latest',
+    chapters: 50,
+    releaseYear: 2020
+  },
+  {
+    id: 'plawres-sanshiro',
+    title: 'Plawres Sanshiro',
+    type: 'Anime',
+    description: 'A boy and his custom-made robot compete in the world of Plastic Model Wrestling.',
+    longDescription: 'The series follows the adventures of Sanshiro Sugata, a young boy who becomes a champion in the world of Plawres, a popular sport where custom-made, 30cm tall robots fight in a miniature ring. Sanshiro and his robot, Juohmaru, battle against various opponents to become the best.',
+    genres: ['Sports', 'Action', 'Sci-Fi'],
+    rating: 4.5,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/plawres-sanshiro-1-190x268.jpg?t=1625885856',
+    imageHint: 'robot wrestling',
+    status: 'Featured',
+    duration: '24 min per ep',
+    releaseYear: 1983
+  },
+  {
+    id: 'oban-star-racers',
+    title: 'Oban Star-Racers',
+    type: 'Anime',
+    description: 'A young girl joins an intergalactic racing competition to reunite with her father.',
+    longDescription: 'Eva, a rebellious 15-year-old girl, escapes her boarding school to find her father. She ends up joining his racing team as the pilot of a star-racer and competes in the Great Race of Oban, a dangerous intergalactic competition, in hopes of winning the Ultimate Prize and reuniting her family.',
+    genres: ['Sports', 'Action', 'Adventure', 'Sci-Fi'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/oban-star-racers-1-190x268.jpg?t=1625886072',
+    imageHint: 'intergalactic racing',
+    status: 'Featured',
+    duration: '22 min per ep',
+    releaseYear: 2006
+  },
+  {
+    id: 'shin-kyojin-no-hoshi',
+    title: 'Shin Kyojin no Hoshi',
+    type: 'Anime',
+    description: 'The story of a young baseball pitcher who dreams of becoming a star like his father.',
+    longDescription: 'A sequel to the classic baseball anime "Kyojin no Hoshi," this series follows the next generation as a young pitcher strives to live up to his father\'s legacy and become a star in the world of professional baseball.',
+    genres: ['Sports', 'Drama'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/shin-kyojin-no-hoshi-1-190x255.jpg?t=1625897915',
+    imageHint: 'baseball pitcher',
+    status: 'Featured',
+    duration: '24 min per ep',
+    releaseYear: 1977
+  },
+  {
+    id: 'match-the-beat',
+    title: 'Match the Beat!',
+    type: 'Manga',
+    description: 'A story about a high school rhythm game club aiming for the national championship.',
+    longDescription: 'A group of high school students with a passion for rhythm games form a club to compete in a national tournament. The story follows their practice, teamwork, and the friendships they build as they aim for the top.',
+    genres: ['Sports', 'Music', 'School'],
+    rating: 4.5,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/match-the-beat-1-190x266.jpg?t=1625929994',
+    imageHint: 'rhythm game',
+    status: 'Latest',
+    chapters: 40,
+    releaseYear: 2020
+  },
+  {
+    id: 'street-workout',
+    title: 'Street Workout',
+    type: 'Manga',
+    description: 'A young man discovers the world of calisthenics and street workouts.',
+    longDescription: 'A young man, looking to get stronger, discovers the dynamic and creative world of street workouts. He joins a local group and learns to master his body through calisthenics, pushing his physical and mental limits to become the best.',
+    genres: ['Sports', 'Action'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/street-workout-1-285x399.webp?t=1657326653',
+    imageHint: 'calisthenics workout',
+    status: 'Latest',
+    chapters: 60,
+    releaseYear: 2021
+  },
+  {
+    id: 'f-anime',
+    title: 'F',
+    type: 'Anime',
+    description: 'A story about a young, talented, and reckless Formula 1 driver.',
+    longDescription: 'The series follows Gunma Akagi, a young and naturally talented but reckless country boy who aims to become a Formula 1 driver. His journey is filled with intense races, fierce rivalries, and the challenges of the professional racing world.',
+    genres: ['Sports', 'Action', 'Cars'],
+    rating: 4.5,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/f-anime-1-190x267.jpg?t=1625896135',
+    imageHint: 'formula 1 racing',
+    status: 'Featured',
+    duration: '24 min per ep',
+    releaseYear: 1988
+  }
 ];
 
 export const genres: GenreType[] = [
@@ -2202,23 +2288,3 @@ export const fandomPosts: FandomPost[] = [];
 export const fanArt: FanArt[] = [];
 
 export const fanFiction: FanFiction[] = [];
-    
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
