@@ -3,6 +3,7 @@
 
 
 
+
 import type { MediaType, GenreType, FandomPost } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -1540,6 +1541,118 @@ export const media: MediaType[] = [
     status: 'Latest',
     chapters: 16,
     releaseYear: 2006,
+  },
+  {
+    id: 'spirited-away',
+    title: 'Spirited Away',
+    type: 'Anime',
+    description: 'A young girl wanders into a world of gods, witches, and spirits.',
+    longDescription: 'During her family\'s move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.',
+    genres: ['Fantasy', 'Supernatural', 'Adventure'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/spirited-away-1-190x281.jpg?t=1625885360',
+    imageHint: 'spirit world',
+    status: 'Featured',
+    duration: '2h 5min',
+    releaseYear: 2001,
+  },
+  {
+    id: 'the-promised-neverland',
+    title: 'The Promised Neverland',
+    type: 'Anime',
+    description: 'A group of orphans discovers the dark truth about their idyllic orphanage.',
+    longDescription: 'Emma, Norman, and Ray are the brightest kids at the Grace Field House orphanage. And under the care of the woman they refer to as "Mom," all the kids have enjoyed a comfortable life. Good food, clean clothes, and the perfect environment to learn—what more could an orphan ask for? One day, though, Emma and Norman uncover the dark truth of the outside world they are forbidden from seeing.',
+    genres: ['Fantasy', 'Mystery', 'Thriller', 'Horror'],
+    rating: 3.9,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/the-promised-neverland-1-190x266.jpg?t=1625898174',
+    imageHint: 'orphanage secret',
+    status: 'Featured',
+    duration: '23 min per ep',
+    releaseYear: 2019,
+  },
+  {
+    id: 'return-of-the-blossoming-blade-novel',
+    title: 'Return of the Blossoming Blade (Novel)',
+    type: 'Manga',
+    description: 'The legendary "Plum Blossom Sword Saint" is reborn and must reclaim his former glory.',
+    longDescription: 'Cheongmyeong, the legendary Plum Blossom Sword Saint, is reborn after his death. He awakens in the body of a young boy and discovers that his beloved Mount Hua Sect has fallen from grace. Now, he must navigate this new era and restore the Mount Hua Sect to its former glory.',
+    genres: ['Fantasy', 'Action', 'Martial Arts'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/return-of-the-blossoming-blade-novel-1-285x398.webp?t=1642331460',
+    imageHint: 'sword saint',
+    status: 'Trending',
+    chapters: 200,
+    releaseYear: 2021,
+  },
+  {
+    id: 'spice-and-wolf',
+    title: 'Spice and Wolf',
+    type: 'Anime',
+    description: 'A traveling merchant meets a wolf deity, and they journey together.',
+    longDescription: 'Kraft Lawrence, a traveling merchant, dreams of opening his own shop. His life changes when he finds a beautiful girl with wolf ears and a tail sleeping in his wagon. She is Holo, a wolf harvest deity who wants to return to her northern homeland. They strike a deal and travel together, navigating the world of trade, economics, and the ever-present threat of the Church.',
+    genres: ['Fantasy', 'Romance', 'Adventure'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/spice-and-wolf-1-190x285.jpg?t=1625885968',
+    imageHint: 'wolf deity',
+    status: 'Featured',
+    duration: '24 min per ep',
+    releaseYear: 2008,
+  },
+  {
+    id: 'jade-dynasty-3rd-season',
+    title: 'Jade Dynasty 3rd Season',
+    type: 'Anime',
+    description: 'The journey of Zhang Xiaofan continues as he delves deeper into the world of cultivation.',
+    longDescription: 'The third season of Jade Dynasty continues the epic tale of Zhang Xiaofan. As he grapples with his dual heritage of both righteous and demonic cultivation techniques, he faces new enemies, uncovers ancient secrets, and gets further entangled in the conflicts of the martial world.',
+    genres: ['Fantasy', 'Action', 'Romance'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/jade-dynasty-3rd-season-1-285x399.webp?t=1749828819',
+    imageHint: 'cultivation world',
+    status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2024,
+  },
+  {
+    id: 'beastars',
+    title: 'Beastars',
+    type: 'Anime',
+    description: 'In a world of anthropomorphic animals, a gentle wolf grapples with his predatory instincts.',
+    longDescription: 'In a civilized society of anthropomorphic animals, a grim reality of predator and prey coexists with a fragile peace. Legoshi, a large but gentle gray wolf, is a student at Cherryton Academy. His life is turned upside down when his carnivorous instincts are awakened by a small dwarf rabbit named Haru.',
+    genres: ['Fantasy', 'Drama', 'Psychological', 'Romance'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/beastars-1-190x269.jpg?t=1625899094',
+    imageHint: 'animal society',
+    status: 'Featured',
+    duration: '22 min per ep',
+    releaseYear: 2019,
+  },
+  {
+    id: 'gachiakuta',
+    title: 'Gachiakuta',
+    type: 'Manga',
+    description: 'A boy from a discriminated tribe is exiled to a hellish abyss and seeks to change his world.',
+    longDescription: 'Rudo lives in the slums, a descendant of a criminal tribe. One day, he is falsely accused of murder and cast into the abyss, a place where all of society\'s trash is thrown. In this hellish landscape, he awakens a new power and begins his journey to crawl back out and change the world that cast him aside.',
+    genres: ['Fantasy', 'Action', 'Dark Fantasy'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/gachiakuta-1-285x399.webp?t=1695505009',
+    imageHint: 'abyss world',
+    status: 'Trending',
+    chapters: 50,
+    releaseYear: 2022,
+  },
+  {
+    id: 'tales-of-demon-and-god-6th-season',
+    title: 'Tales of Demon and God 6th Season',
+    type: 'Anime',
+    description: 'Nie Li\'s journey to become the strongest spirit master continues.',
+    longDescription: 'The sixth season continues the adventure of Nie Li, who was reborn into his 13-year-old self. Using his vast knowledge from his past life, he continues to cultivate his power, gather allies, and prepare to face the Sage Emperor and the dangers that threaten his home, Glory City.',
+    genres: ['Fantasy', 'Action', 'Adventure'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/tales-of-demon-and-god-6th-season-1-285x400.webp?t=1709156391',
+    imageHint: 'spirit master',
+    status: 'Latest',
+    duration: '10 min per ep',
+    releaseYear: 2024,
   }
 ];
 
@@ -1641,6 +1754,7 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
 
 
 
