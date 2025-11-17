@@ -8,6 +8,7 @@ import { Star, Tv, BookOpen } from 'lucide-react';
 import type { MediaType } from '@/lib/types';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import { AddToShelfButton } from '@/components/add-to-shelf-button';
 
 export function generateStaticParams() {
   return media.map((item) => ({
@@ -77,9 +78,12 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
                     ))}
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold font-headline mb-3">{item.title}</h1>
-                <div className="flex items-center gap-2 text-2xl font-bold text-amber-400">
-                  <Star className="h-7 w-7 fill-amber-400" />
-                  <span>{item.rating.toFixed(1)}</span>
+                <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-2 text-2xl font-bold text-amber-400">
+                      <Star className="h-7 w-7 fill-amber-400" />
+                      <span>{item.rating.toFixed(1)}</span>
+                    </div>
+                    <AddToShelfButton media={item} />
                 </div>
             </div>
 

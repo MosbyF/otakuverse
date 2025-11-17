@@ -22,7 +22,6 @@
       },
       "required": [
         "id",
-        "username",
         "email"
       ]
     },
@@ -124,25 +123,41 @@
           "type": "string",
           "description": "Reference to User. (Relationship: User 1:N ShelfItem)"
         },
-        "animeId": {
+        "mediaId": {
           "type": "string",
-          "description": "Reference to Anime. (Relationship: Anime 1:N ShelfItem). Nullable if mangaId is set."
+          "description": "Reference to the Anime or Manga ID."
         },
-        "mangaId": {
+        "type": {
           "type": "string",
-          "description": "Reference to Manga. (Relationship: Manga 1:N ShelfItem). Nullable if animeId is set."
+          "enum": ["Anime", "Manga"]
+        },
+        "title": {
+          "type": "string"
+        },
+        "imageUrl": {
+          "type": "string"
+        },
+        "addedAt": {
+          "type": "string",
+          "format": "date-time"
         }
       },
       "required": [
         "id",
-        "userId"
+        "userId",
+        "mediaId",
+        "type",
+        "title",
+        "imageUrl",
+        "addedAt"
       ]
     }
   },
   "auth": {
     "providers": [
       "password",
-      "anonymous"
+      "anonymous",
+      "google.com"
     ]
   },
   "firestore": {

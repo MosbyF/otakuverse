@@ -2,18 +2,19 @@
 
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { Menu, Search, User } from 'lucide-react';
+import { Menu, Search } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { cn } from '@/lib/utils';
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { UserNav } from './auth/UserNav';
+import { useAuth } from './auth/AuthProvider';
 
 
 const navLinks = [
@@ -28,6 +29,7 @@ export function Header() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { openLogin } = useAuth();
 
   const isLinkActive = (href: string) => {
     const linkPath = href.split('?')[0];
@@ -74,7 +76,8 @@ export function Header() {
           </Link>
         </div>
 
-        <div className="md:hidden ml-auto">
+        <div className="md:hidden ml-auto flex items-center">
+          <UserNav />
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -98,10 +101,7 @@ export function Header() {
               <Search className="h-5 w-5 text-gray-400" />
               <span className="sr-only">Search</span>
             </Button>
-           <Button variant="ghost" size="icon">
-              <User className="h-5 w-5 text-gray-400" />
-              <span className="sr-only">Profile</span>
-            </Button>
+           <UserNav />
         </div>
       </div>
     </header>

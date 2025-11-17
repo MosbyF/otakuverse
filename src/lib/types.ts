@@ -51,3 +51,13 @@ export type FanFiction = {
   content: string;
   timestamp: string;
 };
+
+export type ShelfItem = {
+  id: string;
+  userId: string;
+  mediaId: string;
+  type: 'Anime' | 'Manga';
+  title: string;
+  imageUrl: string;
+  addedAt: string;
+};

@@ -4,6 +4,8 @@ import { cn } from '@/lib/utils';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Toaster } from '@/components/ui/toaster';
+import { FirebaseClientProvider } from '@/firebase/client-provider';
+import { AuthProvider } from '@/components/auth/AuthProvider';
 
 export const metadata: Metadata = {
   title: 'OtakuVerse',
@@ -26,10 +28,14 @@ export default function RootLayout({
         />
       </head>
       <body className={cn('min-h-screen bg-background font-body antialiased flex flex-col')}>
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <Toaster />
+        <FirebaseClientProvider>
+          <AuthProvider>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <Toaster />
+          </AuthProvider>
+        </FirebaseClientProvider>
       </body>
     </html>
   );
