@@ -1,9 +1,5 @@
-import Image from 'next/image';
-import { placeholderImages } from '@/lib/placeholder-images.json';
 
 export default function AboutPage() {
-  const aboutImage = placeholderImages.find(p => p.id === 'genre-fantasy');
-
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-4xl mx-auto">
@@ -13,18 +9,6 @@ export default function AboutPage() {
             Your universe for all things anime and manga.
           </p>
         </div>
-
-        {aboutImage && (
-          <div className="relative h-64 md:h-80 rounded-lg overflow-hidden mb-12">
-            <Image
-              src={aboutImage.imageUrl}
-              alt="A fantastic landscape representing the world of anime and manga"
-              fill
-              className="object-cover"
-              data-ai-hint={aboutImage.imageHint}
-            />
-          </div>
-        )}
 
         <div className="space-y-8 text-lg leading-relaxed text-foreground/90">
           <section>
