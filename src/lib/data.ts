@@ -1,6 +1,7 @@
 
 
 
+
 import type { MediaType, GenreType, FandomPost } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -1454,6 +1455,20 @@ export const media: MediaType[] = [
     status: 'Latest',
     duration: '25 min per ep',
     releaseYear: 2017
+  },
+  {
+    id: 'alien-stage',
+    title: 'Alien Stage',
+    type: 'Anime',
+    description: 'A musical anime about aliens competing on a stage.',
+    longDescription: 'In a world where aliens have taken over, a group of humans are forced to participate in a deadly musical competition on stage. They must sing for their survival.',
+    genres: ['Sci-Fi', 'Music', 'Thriller'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/alien-stage-1-285x399.webp?t=1668661627',
+    imageHint: 'alien musical',
+    status: 'Latest',
+    duration: '5 min per ep',
+    releaseYear: 2024,
   }
 ];
 
@@ -1555,6 +1570,7 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
 
 
 
