@@ -899,7 +899,7 @@ export const media: MediaType[] = [
     type: 'Anime',
     description: 'A shy girl gets help from a popular boy, leading to a sweet romance.',
     longDescription: 'Uka Ishimori is a shy girl who was bullied in middle school. As she enters high school, she wants to make a change. She meets Kai Miura, a popular boy with lemon-colored hair, who helps her come out of her shell. Their relationship blossoms into a sweet and refreshing romance.',
-    genres: ['Romance', 'School'],
+    genres: ['Romance', 'School', 'Comedy'],
     rating: 4.7,
     imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763294119/MV5BZjdhYTk5N2QtZTIzOC00NTUwLTk3MzItMjZkNzYzYzlhZGJlXkEyXkFqcGc._V1__luccy6.jpg',
     imageHint: 'honey lemon romance',
@@ -2292,6 +2292,34 @@ export const media: MediaType[] = [
     status: 'Latest',
     chapters: 60,
     releaseYear: 2022,
+  },
+  {
+    id: 'homesick',
+    title: 'Homesick',
+    type: 'Manga',
+    description: 'A psychological thriller about a family with a dark secret.',
+    longDescription: 'A family moves into a new home, only to discover that the house has a dark history. As strange events begin to occur, they must uncover the secrets of the house before it consumes them. A chilling psychological thriller about family, secrets, and the places we call home.',
+    genres: ['Thriller', 'Psychological', 'Horror'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/homesick-1-190x266.jpg?t=1625932359',
+    imageHint: 'haunted house',
+    status: 'Latest',
+    chapters: 30,
+    releaseYear: 2021
+  },
+  {
+    id: 'psycho-pass-3-first-inspector',
+    title: 'Psycho-Pass 3: First Inspector',
+    type: 'Anime',
+    description: 'The final confrontation between the Public Safety Bureau and the mysterious organization Bifrost.',
+    longDescription: 'The movie serves as the conclusion to the third season of Psycho-Pass. Inspectors Arata Shindo and Kei Mikhail Ignatov confront the truth behind the shadowy organization Bifrost, which has been manipulating events from behind the scenes. The final battle for the future of the Sibyl System and Tokyo begins.',
+    genres: ['Thriller', 'Sci-Fi', 'Action', 'Psychological'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/psycho-pass-3-first-inspector-1-190x269.jpg?t=1625908015',
+    imageHint: 'cyberpunk detective',
+    status: 'Latest',
+    duration: '2h 15min',
+    releaseYear: 2020
   }
 ];
 
