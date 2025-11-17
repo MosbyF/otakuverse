@@ -4,6 +4,7 @@
 
 
 
+
 import type { MediaType, GenreType, FandomPost } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -1653,6 +1654,20 @@ export const media: MediaType[] = [
     status: 'Latest',
     duration: '10 min per ep',
     releaseYear: 2024,
+  },
+  {
+    id: 'isekai-tensei-recruited-to-another-world',
+    title: 'Isekai Tensei: Recruited to Another World',
+    type: 'Manga',
+    description: 'A person is recruited and reincarnated into another world to embark on a new adventure.',
+    longDescription: 'After an unexpected recruitment, an ordinary person is reincarnated into a fantasy world filled with magic and monsters. With newfound abilities, they must navigate this unfamiliar land, forge new alliances, and uncover the purpose behind their summoning.',
+    genres: ['Fantasy', 'Isekai', 'Adventure'],
+    rating: 4.5,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/isekai-tensei-recruited-to-another-world-light-novel-1-285x404.webp?t=1653781238',
+    imageHint: 'isekai fantasy',
+    status: 'Latest',
+    chapters: 1,
+    releaseYear: 2022,
   }
 ];
 
@@ -1754,6 +1769,7 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
 
 
 
