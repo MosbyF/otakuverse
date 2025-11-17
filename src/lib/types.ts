@@ -1,3 +1,4 @@
+
 export type MediaType = {
   id: string;
   title: string;
@@ -31,4 +32,22 @@ export type FandomPost = {
   timestamp: string;
   sentiment?: 'positive' | 'negative' | 'neutral';
   sentimentScore?: number;
+};
+
+export type FanArt = {
+  id: number;
+  title: string;
+  author: string;
+  imageUrl: string;
+  description: string;
+  timestamp: string;
+};
+
+export type FanFiction = {
+  id: number;
+  title: string;
+  author: string;
+  synopsis: string;
+  content: string;
+  timestamp: string;
 };

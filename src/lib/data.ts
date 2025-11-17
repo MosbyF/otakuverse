@@ -8,7 +8,8 @@
 
 
 
-import type { MediaType, GenreType, FandomPost } from './types';
+
+import type { MediaType, GenreType, FandomPost, FanArt, FanFiction } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
 const findImage = (id: string) => {
@@ -1383,7 +1384,7 @@ export const media: MediaType[] = [
     title: 'To Love-Ru Darkness 2nd OVA',
     type: 'Anime',
     description: 'An OVA for To Love-Ru Darkness 2nd.',
-    longDescription: "The OVA episodes of To Love-Ru Darkness 2nd continue the ecchi-filled adventures of Rito Yuuki and the alien girls living with him. These special episodes, bundled with the manga volumes, offer more chaotic and romantic situations not covered in the main TV series. Expect more outrageous scenarios as the Harem Plan continues to unfold with even more characters vying for Rito's affection.",
+    longDescription: 'The OVA episodes of To Love-Ru Darkness 2nd continue the ecchi-filled adventures of Rito Yuuki and the alien girls living with him. These special episodes, bundled with the manga volumes, offer more chaotic and romantic situations not covered in the main TV series. Expect more outrageous scenarios as the Harem Plan continues to unfold with even more characters vying for Rito\'s affection.',
     genres: ['Sci-Fi', 'Comedy', 'Harem'],
     rating: 3.4,
     imageUrl: 'https://cdn.anime-planet.com/anime/primary/to-love-ru-darkness-2nd-ova-1-190x255.jpg?t=1625897260',
@@ -2046,12 +2047,56 @@ export const fandomPosts: FandomPost[] = [
   },
 ];
 
+export const fanArt: FanArt[] = [
+  {
+    id: 1,
+    title: 'Gojo Satoru Painting',
+    author: 'ArtMaster7',
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763365851/gojo_satoru_fan_art_by_rika_dono_dfn269v-fullview_bfr3k4.jpg',
+    description: 'A digital painting I did of Gojo from Jujutsu Kaisen. Hope you like it!',
+    timestamp: '3 days ago'
+  },
+  {
+    id: 2,
+    title: 'Chainsaw Man - Blood and Chaos',
+    author: 'PixelPioneer',
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763365825/2ac360f0-8c26-444a-95c0-128a1c97a5c8_vhtcwy.jpg',
+    description: 'My take on the visceral energy of Chainsaw Man.',
+    timestamp: '1 week ago'
+  },
+    {
+    id: 3,
+    title: 'Luffy Gear 5',
+    author: 'Luffyfan',
+    imageUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763365942/7259021e-fac1-49a3-a809-548c78673a5a_q5m924.jpg',
+    description: 'Fan art of Luffy in Gear 5 form.',
+    timestamp: '4 days ago'
+  },
+];
 
-
+export const fanFiction: FanFiction[] = [
+  {
+    id: 1,
+    title: 'The Dragon\'s Shadow',
+    author: 'StorySpinner',
+    synopsis: 'An alternate universe story where a different character inherits the dragon\'s power.',
+    content: 'In a world where destiny is written in the stars, a young thief stumbles upon the ancient dragon\'s sigil, altering the course of history forever...',
+    timestamp: '5 days ago'
+  },
+  {
+    id: 2,
+    title: 'After the Promise',
+    author: 'VerseWeaver',
+    synopsis: 'What happens after the final episode? A continuation of the story.',
+    content: 'The battle was over, but the silence that followed was deafening. For the heroes who saved the world, the journey to find peace was just beginning. This is the story of the morning after.',
+    timestamp: '2 weeks ago'
+  }
+];
     
     
 
     
+
 
 
 
