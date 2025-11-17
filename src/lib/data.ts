@@ -2,6 +2,7 @@
 
 
 
+
 import type { MediaType, GenreType, FandomPost } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -1469,6 +1470,76 @@ export const media: MediaType[] = [
     status: 'Latest',
     duration: '5 min per ep',
     releaseYear: 2024,
+  },
+  {
+    id: 'legend-of-the-galactic-heroes-gaiden',
+    title: 'Legend of the Galactic Heroes: Gaiden',
+    type: 'Anime',
+    description: 'Prequel to the main series, detailing the backstories of Reinhard von Lohengramm and Yang Wen-li.',
+    longDescription: 'This series of side stories explores the early careers of the two main protagonists of the main series, Reinhard von Lohengramm and Yang Wen-li, before they became the legendary figures of the Galactic Empire and the Free Planets Alliance.',
+    genres: ['Sci-Fi', 'Space', 'Drama', 'Military'],
+    rating: 4.3,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/legend-of-the-galactic-heroes-gaiden-1-190x271.jpg?t=1691490085',
+    imageHint: 'galactic heroes',
+    status: 'Latest',
+    duration: '25 min per ep',
+    releaseYear: 1998,
+  },
+  {
+    id: 'darwins-game',
+    title: 'Darwin\'s Game',
+    type: 'Anime',
+    description: 'A high school student gets involved in a deadly mobile game.',
+    longDescription: 'High school student Kaname Sudou receives an invitation to a mysterious mobile game called Darwin\'s Game. When he launches the app, he is drawn into a real-life battle for survival where players fight each other using supernatural abilities called Sigils. He must learn the rules of the game and fight to survive.',
+    genres: ['Sci-Fi', 'Action', 'Mystery', 'Thriller'],
+    rating: 3.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/darwins-game-1-190x285.jpg?t=1625898875',
+    imageHint: 'deadly mobile game',
+    status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2020,
+  },
+  {
+    id: 'aldnoah-zero',
+    title: 'Aldnoah.Zero',
+    type: 'Anime',
+    description: 'A war breaks out between Earth and the Vers Empire of Mars.',
+    longDescription: 'In 1972, a hypergate to Mars was discovered on the Moon. This led to the colonization of Mars and the founding of the Vers Empire. Decades later, in 2014, a war breaks out between Earth and Mars. The story follows a group of high school students on Earth who are thrown into the conflict, piloting advanced mechs to defend their planet against the technologically superior Martian forces.',
+    genres: ['Sci-Fi', 'Action', 'Mecha'],
+    rating: 3.1,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/aldnoah-zero-1-285x399.jpg?t=1630333400',
+    imageHint: 'mars earth war',
+    status: 'Latest',
+    duration: '24 min per ep',
+    releaseYear: 2014,
+  },
+  {
+    id: 'space-brothers',
+    title: 'Space Brothers',
+    type: 'Manga',
+    description: 'Two brothers chase their childhood dream of going to space.',
+    longDescription: 'When they were young, the brothers Mutta and Hibito Nanba witnessed what they believed to be a UFO. This event leads them to promise each other that they will become astronauts. Years later, Hibito has become an astronaut and is on his way to the Moon. Mutta, who has had less success in life, gets a chance to rekindle his dream and follow his brother into space.',
+    genres: ['Sci-Fi', 'Comedy', 'Drama'],
+    rating: 3.4,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/space-brothers-1-190x265.jpg?t=1625910486',
+    imageHint: 'astronaut brothers',
+    status: 'Latest',
+    chapters: 300,
+    releaseYear: 2007,
+  },
+  {
+    id: '21st-century-boys',
+    title: '21st Century Boys',
+    type: 'Manga',
+    description: 'The sequel to 20th Century Boys, where the friends reunite to stop the final plan of "Friend".',
+    longDescription: 'This is the conclusion to the "20th Century Boys" saga. The friends, led by Kenji, reunite one last time to uncover the true identity of the mysterious cult leader "Friend" and to stop his final, devastating plan to destroy the world. The story jumps between the past and the present, unraveling the last secrets of their childhood and the conspiracy that has spanned decades.',
+    genres: ['Sci-Fi', 'Mystery', 'Thriller', 'Psychological'],
+    rating: 3,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/21st-century-boys-1-285x409.webp?t=1715361866',
+    imageHint: 'mystery friend',
+    status: 'Latest',
+    chapters: 16,
+    releaseYear: 2006,
   }
 ];
 
@@ -1570,6 +1641,7 @@ export const fandomPosts: FandomPost[] = [
     
 
     
+
 
 
 
