@@ -1,3 +1,4 @@
+
 import type { MediaType, GenreType, FandomPost, FanArt, FanFiction } from './types';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -1744,7 +1745,7 @@ export const media: MediaType[] = [
     imageHint: 'fox familiar',
     status: 'Featured',
     duration: '30 min per ep',
-    releaseYear: 2013,
+    releaseYear: 2013
   },
   {
     id: 'welcome-to-demon-school-iruma-kun-2',
@@ -1758,7 +1759,7 @@ export const media: MediaType[] = [
     imageHint: 'demon school',
     status: 'Trending',
     duration: '24 min per ep',
-    releaseYear: 2021,
+    releaseYear: 2021
   },
   {
     id: 'wotakoi-love-is-hard-for-otaku-youth',
@@ -1772,7 +1773,7 @@ export const media: MediaType[] = [
     imageHint: 'otaku romance',
     status: 'Featured',
     duration: '26 min',
-    releaseYear: 2021,
+    releaseYear: 2021
   },
   {
     id: 'relife-kanketsu-hen',
@@ -1786,7 +1787,7 @@ export const media: MediaType[] = [
     imageHint: 'high school experiment',
     status: 'Featured',
     duration: '24 min per ep',
-    releaseYear: 2018,
+    releaseYear: 2018
   },
   {
     id: 'grand-blue',
@@ -1800,7 +1801,7 @@ export const media: MediaType[] = [
     imageHint: 'diving club',
     status: 'Trending',
     duration: '24 min per ep',
-    releaseYear: 2018,
+    releaseYear: 2018
   },
   {
     id: 'i-can-do-it-novel',
@@ -1814,7 +1815,7 @@ export const media: MediaType[] = [
     imageHint: 'perseverance story',
     status: 'Latest',
     chapters: 50,
-    releaseYear: 2022,
+    releaseYear: 2022
   },
   {
     id: 'sq-begin-w-your-name',
@@ -1828,7 +1829,7 @@ export const media: MediaType[] = [
     imageHint: 'girl romance',
     status: 'Trending',
     chapters: 200,
-    releaseYear: 2015,
+    releaseYear: 2015
   },
   {
     id: 'kamisama-kiss',
@@ -1842,7 +1843,7 @@ export const media: MediaType[] = [
     imageHint: 'fox familiar',
     status: 'Trending',
     chapters: 149,
-    releaseYear: 2008,
+    releaseYear: 2008
   },
   {
     id: 'wotakoi-love-is-hard-for-otaku',
@@ -1856,7 +1857,7 @@ export const media: MediaType[] = [
     imageHint: 'otaku romance',
     status: 'Trending',
     duration: '22 min per ep',
-    releaseYear: 2018,
+    releaseYear: 2018
   },
   {
     id: 'my-love-mix-up',
@@ -1870,7 +1871,7 @@ export const media: MediaType[] = [
     imageHint: 'love triangle',
     status: 'Trending',
     chapters: 50,
-    releaseYear: 2019,
+    releaseYear: 2019
   },
   {
     id: 'i-became-a-god-in-a-horror-game-novel',
@@ -1884,7 +1885,7 @@ export const media: MediaType[] = [
     imageHint: 'horror game god',
     status: 'Latest',
     chapters: 100,
-    releaseYear: 2021,
+    releaseYear: 2021
   },
   {
     id: 'the-summer-hikaru-died-anime',
@@ -1898,7 +1899,7 @@ export const media: MediaType[] = [
     imageHint: 'imposter friend',
     status: 'Latest',
     duration: '24 min per ep',
-    releaseYear: 2024,
+    releaseYear: 2024
   },
   {
     id: 'orb-on-the-movements-of-the-earth',
@@ -1912,7 +1913,7 @@ export const media: MediaType[] = [
     imageHint: 'science religion',
     status: 'Latest',
     duration: '24 min per ep',
-    releaseYear: 2024,
+    releaseYear: 2024
   },
   {
     id: 'shiver-junji-ito-selected-stories',
@@ -1926,7 +1927,7 @@ export const media: MediaType[] = [
     imageHint: 'junji ito',
     status: 'Featured',
     chapters: 9,
-    releaseYear: 2017,
+    releaseYear: 2017
   },
   {
     id: 'chainsaw-man-pv',
@@ -1940,7 +1941,7 @@ export const media: MediaType[] = [
     imageHint: 'chainsaw man',
     status: 'Featured',
     duration: '2 min',
-    releaseYear: 2021,
+    releaseYear: 2021
   },
   {
     id: 'major-season-3',
@@ -1954,7 +1955,7 @@ export const media: MediaType[] = [
     imageHint: 'baseball high school',
     status: 'Featured',
     duration: '24 min per ep',
-    releaseYear: 2007,
+    releaseYear: 2007
   },
   {
     id: 'ace-of-the-diamond-act-ii',
@@ -1968,7 +1969,7 @@ export const media: MediaType[] = [
     imageHint: 'baseball team',
     status: 'Trending',
     chapters: 300,
-    releaseYear: 2015,
+    releaseYear: 2015
   },
   {
     id: 'haikyuu',
@@ -1982,7 +1983,7 @@ export const media: MediaType[] = [
     imageHint: 'volleyball team',
     status: 'Trending',
     chapters: 402,
-    releaseYear: 2012,
+    releaseYear: 2012
   },
   {
     id: 'run-with-the-wind',
@@ -1996,7 +1997,7 @@ export const media: MediaType[] = [
     imageHint: 'marathon running',
     status: 'Featured',
     duration: '24 min per ep',
-    releaseYear: 2018,
+    releaseYear: 2018
   },
   {
     id: 'the-boxer',
@@ -2010,7 +2011,7 @@ export const media: MediaType[] = [
     imageHint: 'boxing prodigy',
     status: 'Trending',
     chapters: 100,
-    releaseYear: 2019,
+    releaseYear: 2019
   },
   {
     id: 'major-season-6',
@@ -2024,7 +2025,7 @@ export const media: MediaType[] = [
     imageHint: 'major league baseball',
     status: 'Featured',
     duration: '24 min per ep',
-    releaseYear: 2010,
+    releaseYear: 2010
   },
   {
     id: 'kurokos-basketball-3',
@@ -2038,7 +2039,7 @@ export const media: MediaType[] = [
     imageHint: 'basketball tournament',
     status: 'Trending',
     duration: '24 min per ep',
-    releaseYear: 2015,
+    releaseYear: 2015
   },
   {
     id: 'initial-d-final-stage',
@@ -2052,7 +2053,7 @@ export const media: MediaType[] = [
     imageHint: 'street racing',
     status: 'Featured',
     duration: '24 min per ep',
-    releaseYear: 2014,
+    releaseYear: 2014
   },
   {
     id: 'hajime-no-ippo',
@@ -2066,7 +2067,7 @@ export const media: MediaType[] = [
     imageHint: 'boxing manga',
     status: 'Trending',
     chapters: 1400,
-    releaseYear: 1989,
+    releaseYear: 1989
   },
   {
     id: 'fog-e-sports-novel',
@@ -2080,7 +2081,7 @@ export const media: MediaType[] = [
     imageHint: 'esports team',
     status: 'Latest',
     chapters: 100,
-    releaseYear: 2020,
+    releaseYear: 2020
   },
   {
     id: 'ashita-no-joe-fighting-for-tomorrow',
@@ -2094,7 +2095,7 @@ export const media: MediaType[] = [
     imageHint: 'boxing classic',
     status: 'Featured',
     chapters: 20,
-    releaseYear: 1968,
+    releaseYear: 1968
   },
   {
     id: 'kurokos-basketball-ng-shuu',
@@ -2108,7 +2109,7 @@ export const media: MediaType[] = [
     imageHint: 'basketball comedy',
     status: 'Featured',
     duration: '4 min per ep',
-    releaseYear: 2012,
+    releaseYear: 2012
   },
   {
     id: 'the-prince-of-tennis-ii-specials',
@@ -2122,7 +2123,7 @@ export const media: MediaType[] = [
     imageHint: 'tennis specials',
     status: 'Featured',
     duration: '5 min per ep',
-    releaseYear: 2012,
+    releaseYear: 2012
   },
   {
     id: 'garbage-time',
@@ -2221,6 +2222,76 @@ export const media: MediaType[] = [
     status: 'Featured',
     duration: '24 min per ep',
     releaseYear: 1988
+  },
+  {
+    id: 'perfect-blue',
+    title: 'Perfect Blue',
+    type: 'Anime',
+    description: 'A retired pop-singer-turned-actress\'s sense of reality is shaken when she is stalked by an obsessed fan and what seems to be a ghost of her past.',
+    longDescription: 'Mima Kirigoe, a member of a popular J-pop group, retires from music to pursue a career in acting. As she takes on more mature roles, her life begins to unravel. She is stalked by an obsessive fan, haunted by a ghostly apparition of her pop-idol self, and loses her grip on reality as a series of gruesome murders occur around her. A chilling psychological thriller that explores the dark side of fame.',
+    genres: ['Thriller', 'Psychological', 'Horror', 'Drama'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/perfect-blue-1-190x266.jpg?t=1625885409',
+    imageHint: 'psychological thriller',
+    status: 'Featured',
+    duration: '1h 21min',
+    releaseYear: 1998,
+  },
+  {
+    id: 'ling-long-2nd-season',
+    title: 'Ling Long 2nd Season',
+    type: 'Anime',
+    description: 'The journey continues in a world where humanity faces a deadly beast tide.',
+    longDescription: 'The second season of Ling Long continues the story of humanity\'s struggle for survival on a post-apocalyptic Earth. A new threat emerges, and the hunters of the lighthouse must once again venture into the dangerous wilderness to protect their home and uncover the secrets of the cataclysm that reshaped their world.',
+    genres: ['Thriller', 'Action', 'Sci-Fi', 'Post-Apocalyptic'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/ling-long-2nd-season-1-285x399.webp?t=1699411849',
+    imageHint: 'apocalyptic world',
+    status: 'Latest',
+    duration: '20 min per ep',
+    releaseYear: 2021,
+  },
+  {
+    id: 'like-mother-like-daughter',
+    title: 'Like Mother, Like Daughter',
+    type: 'Manga',
+    description: 'A psychological thriller about a strained mother-daughter relationship.',
+    longDescription: 'A psychological thriller about a strained mother-daughter relationship that takes a dark turn. It explores themes of manipulation, identity, and the dark side of family ties.',
+    genres: ['Thriller', 'Psychological', 'Drama'],
+    rating: 4.6,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/like-mother-like-daughter-1-285x399.webp?t=1701137242',
+    imageHint: 'mother daughter thriller',
+    status: 'Latest',
+    chapters: 20,
+    releaseYear: 2021,
+  },
+  {
+    id: 'higurashi-when-they-cry-cotton-drifting-arc',
+    title: 'Higurashi: When They Cry - Cotton Drifting Arc',
+    type: 'Manga',
+    description: 'The story of a peaceful village with a dark secret, told from a new perspective.',
+    longDescription: 'This arc retells the events of the annual Watanagashi Festival in the quiet village of Hinamizawa, focusing on the character Mion Sonozaki. Keiichi Maebara gets drawn deeper into the village\'s dark history and the mysterious "curse of Oyashiro-sama." As paranoia and suspicion mount, the bonds of friendship are tested in a horrifying descent into madness.',
+    genres: ['Thriller', 'Horror', 'Mystery', 'Psychological'],
+    rating: 4.8,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/higurashi-when-they-cry-cotton-drifting-arc-1-190x285.jpg?t=1625907652',
+    imageHint: 'village mystery',
+    status: 'Featured',
+    chapters: 20,
+    releaseYear: 2005,
+  },
+  {
+    id: 'chasing-tails',
+    title: 'Chasing Tails',
+    type: 'Manga',
+    description: 'A detective chases a cunning and elusive serial killer.',
+    longDescription: 'A thrilling game of cat and mouse unfolds between a brilliant but obsessive detective and a cunning serial killer who leaves a trail of cryptic clues. As the detective gets closer to the truth, the lines between hunter and hunted begin to blur.',
+    genres: ['Thriller', 'Mystery', 'Psychological'],
+    rating: 4.7,
+    imageUrl: 'https://cdn.anime-planet.com/manga/primary/chasing-tails-1-285x399.webp?t=1697837922',
+    imageHint: 'detective killer',
+    status: 'Latest',
+    chapters: 60,
+    releaseYear: 2022,
   }
 ];
 
