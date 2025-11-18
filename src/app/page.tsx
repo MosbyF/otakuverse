@@ -27,7 +27,7 @@ export default function Home() {
       
       <div className="container mx-auto px-4 py-12 space-y-16">
         <section className="text-center">
-          <p className="text-xl italic text-primary max-w-3xl mx-auto">
+          <p className="text-xl italic text-white max-w-3xl mx-auto">
             A hub to unite stories, creativity, and fans from every corner of the anime and manga universe.
           </p>
         </section>
