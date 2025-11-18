@@ -1097,7 +1097,7 @@ export const media: MediaType[] = [
     longDescription: 'The bounty-hunting crew of the Bebop is back in this feature-length adventure. When a deadly virus is unleashed on Mars, a massive bounty is placed on the head of the terrorist responsible. Spike, Jet, Faye, and Ed join the hunt, but the target is more elusive and dangerous than they could ever imagine.',
     genres: ['Action', 'Sci-Fi', 'Thriller'],
     rating: 4.8,
-    imageUrl: 'https://cdn.anime-planet.com/anime/primary/cowboy-bebop-the-movie-1-190x282.jpg?t=1625885495',
+    imageUrl: 'https://cdn.anime-planet.com/anime/primary/cowboy-bebop-the-movie-1-190x268.jpg?t=1625885495',
     imageHint: 'bounty hunter',
     status: 'Featured',
     duration: '1h 55min',
@@ -2485,7 +2485,32 @@ export const fandomPosts: FandomPost[] = [
   }
 ];
 
-export const fanArt: FanArt[] = [];
+export const fanArt: FanArt[] = [
+  {
+    id: 1,
+    title: "Cyber-Samurai's Respite",
+    author: "ImpossibleMe",
+    imageUrl: "https://res.cloudinary.com/doklib3it/image/upload/v1763482708/suzarte88-ukiyo-e-1-peq-copia_np4p4m.jpg",
+    description: "I was inspired by classic ukiyo-e woodblock prints and wanted to blend that traditional feel with a cyberpunk aesthetic. This is a moment of quiet before the storm.",
+    timestamp: "1 day ago"
+  },
+  {
+    id: 2,
+    title: "Galactic Ronin",
+    author: "Raylight",
+    imageUrl: "https://res.cloudinary.com/doklib3it/image/upload/v1763482730/star-wars-anime-v0-paruolrbjxzf1_yapiej.webp",
+    description: "What if a Jedi was a ronin in feudal Japan, but in space? That was the idea that sparked this piece. Had a ton of fun with the lighting on this one!",
+    timestamp: "3 days ago"
+  },
+  {
+    id: 3,
+    title: "Witch's Brew",
+    author: "Chaotic_Mineac",
+    imageUrl: "https://res.cloudinary.com/doklib3it/image/upload/v1763482697/brandon-liao-wh-illustration-01-3840_nu98kh.jpg",
+    description: "I love drawing cozy, magical scenes. Here’s a little witch brewing up a potion in her kitchen. Probably something that smells like cinnamon and rain.",
+    timestamp: "5 days ago"
+  }
+];
 
 export const fanFiction: FanFiction[] = [];
 
