@@ -1568,8 +1568,8 @@ export const media: MediaType[] = [
   {
     id: 'return-of-the-blossoming-blade-novel',
     title: 'Return of the Blossoming Blade (Novel)',
-    type: 'Manga',
     description: 'The legendary "Plum Blossom Sword Saint" is reborn and must reclaim his former glory.',
+    type: 'Manga',
     longDescription: 'Cheongmyeong, the legendary Plum Blossom Sword Saint, is reborn after his death. He awakens in the body of a young boy and discovers that his beloved Mount Hua Sect has fallen from grace. Now, he must navigate this new era and restore the Mount Hua Sect to its former glory.',
     genres: ['Fantasy', 'Action', 'Martial Arts'],
     rating: 4.8,
@@ -2452,8 +2452,41 @@ export const genres: GenreType[] = [
   },
 ];
 
-export const fandomPosts: FandomPost[] = [];
+export const fandomPosts: FandomPost[] = [
+  {
+    id: 1,
+    author: 'Violet',
+    avatarUrl: findImage('avatar-1').url,
+    avatarHint: 'profile avatar',
+    content: 'Just rewatched Your Name for the millionth time. It still gets me every single time. That ending... my heart just can\'t take it! 😭',
+    timestamp: '2 hours ago',
+    sentiment: 'positive',
+    sentimentScore: 0.8
+  },
+  {
+    id: 2,
+    author: 'Moonflower',
+    avatarUrl: findImage('avatar-2').url,
+    avatarHint: 'profile avatar',
+    content: 'Right?? The animation is breathtaking, and the music is just perfect. I literally have the soundtrack on repeat.',
+    timestamp: '1 hour ago',
+    sentiment: 'positive',
+    sentimentScore: 0.9
+  },
+  {
+    id: 3,
+    author: 'Eternallover',
+    avatarUrl: findImage('avatar-3').url,
+    avatarHint: 'profile avatar',
+    content: 'I know what you mean! It\'s such a beautiful and heartbreaking story about connection. It makes you wonder about fate and the people we\'re meant to meet. ✨',
+    timestamp: '30 minutes ago',
+    sentiment: 'positive',
+    sentimentScore: 0.9
+  }
+];
 
 export const fanArt: FanArt[] = [];
 
 export const fanFiction: FanFiction[] = [];
+
+    
