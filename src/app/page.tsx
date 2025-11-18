@@ -30,7 +30,7 @@ export default function Home() {
         <section className="text-center">
           <h2 className="text-3xl font-bold mb-2 font-headline text-primary">Our Aim</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Your universe to discover, collect, and share the best in anime and manga. Dive in and connect with fellow fans.
+            A hub to unite stories, creativity, and fans from every corner of the anime and manga universe.
           </p>
         </section>
 
