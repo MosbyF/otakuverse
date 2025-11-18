@@ -26,8 +26,14 @@ export default function Home() {
           </div>
         </section>
       
-
       <div className="container mx-auto px-4 py-12 space-y-16">
+        <section className="text-center">
+          <h2 className="text-3xl font-bold mb-2 font-headline text-primary">Our Aim</h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Your universe to discover, collect, and share the best in anime and manga. Dive in and connect with fellow fans.
+          </p>
+        </section>
+
         <section>
           <h2 className="text-3xl font-bold mb-6 font-headline">Trending Now</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-4">
