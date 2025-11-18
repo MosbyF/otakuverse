@@ -1,5 +1,4 @@
 
-
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { media, genres } from '@/lib/data';
@@ -28,8 +27,7 @@ export default function Home() {
       
       <div className="container mx-auto px-4 py-12 space-y-16">
         <section className="text-center">
-          <h2 className="text-3xl font-bold mb-2 font-headline text-primary">Our Aim</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl italic text-primary max-w-3xl mx-auto">
             A hub to unite stories, creativity, and fans from every corner of the anime and manga universe.
           </p>
         </section>
