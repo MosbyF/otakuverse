@@ -12,12 +12,16 @@ import type { FanArt } from '@/lib/types';
 import { Upload, Eye } from 'lucide-react';
 import { useAuth } from '@/components/auth/AuthProvider';
 import { useUser } from '@/firebase';
+import { cn } from '@/lib/utils';
+
+const DESCRIPTION_TRUNCATE_LENGTH = 100;
 
 export function FanArtGallery({ initialArt }: { initialArt: FanArt[] }) {
   const [art, setArt] = useState<FanArt[]>(initialArt);
   const [newArt, setNewArt] = useState({ title: '', imageUrl: '', description: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isUploadDialogOpen, setIsUploadDialogOpen] = useState(false);
+  const [expandedDescriptions, setExpandedDescriptions] = useState<Record<number, boolean>>({});
   const { toast } = useToast();
   const { isAuthenticated, openLogin } = useAuth();
   const { user } = useUser();
@@ -52,6 +56,13 @@ export function FanArtGallery({ initialArt }: { initialArt: FanArt[] }) {
         description: 'Your fan art has been submitted.',
       });
     }, 1000);
+  };
+  
+  const toggleDescription = (id: number) => {
+    setExpandedDescriptions(prev => ({
+      ...prev,
+      [id]: !prev[id]
+    }));
   };
 
   return (
@@ -108,12 +119,15 @@ export function FanArtGallery({ initialArt }: { initialArt: FanArt[] }) {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {art.map((item) => (
-          <Dialog key={item.id}>
-            <Card className="group overflow-hidden">
-                <DialogTrigger asChild>
-                  <CardContent className="p-0 cursor-pointer">
-                    <div className="relative aspect-square w-full">
+        {art.map((item) => {
+          const isExpanded = expandedDescriptions[item.id];
+          const isLongDescription = item.description.length > DESCRIPTION_TRUNCATE_LENGTH;
+          
+          return (
+            <Dialog key={item.id}>
+              <Card className="group overflow-hidden flex flex-col">
+                  <DialogTrigger asChild>
+                    <div className="relative aspect-square w-full cursor-pointer">
                       <Image
                         src={item.imageUrl}
                         alt={item.title}
@@ -124,29 +138,43 @@ export function FanArtGallery({ initialArt }: { initialArt: FanArt[] }) {
                           <Eye className="h-10 w-10 text-white" />
                       </div>
                     </div>
-                  </CardContent>
-                </DialogTrigger>
-              <CardHeader className="p-4">
-                <CardTitle className="text-lg truncate">{item.title}</CardTitle>
-                {item.description && <CardDescription className="text-sm text-muted-foreground line-clamp-2">{item.description}</CardDescription>}
-              </CardHeader>
-              <CardFooter className="p-4 pt-0 text-sm text-muted-foreground">
-                <span>by {item.author}</span>
-              </CardFooter>
-            </Card>
+                  </DialogTrigger>
+                <CardHeader className="p-4">
+                  <CardTitle className="text-lg truncate">{item.title}</CardTitle>
+                  {item.description && (
+                    <div>
+                      <CardDescription className={cn("text-sm text-muted-foreground", !isExpanded && "line-clamp-2")}>
+                        {item.description}
+                      </CardDescription>
+                      {isLongDescription && (
+                        <button
+                          onClick={() => toggleDescription(item.id)}
+                          className="text-xs text-primary hover:underline mt-1"
+                        >
+                          {isExpanded ? 'View Less' : 'View More'}
+                        </button>
+                      )}
+                    </div>
+                  )}
+                </CardHeader>
+                <CardFooter className="p-4 pt-0 text-sm text-muted-foreground mt-auto">
+                  <span>by {item.author}</span>
+                </CardFooter>
+              </Card>
 
-            <DialogContent className="max-w-4xl p-0 border-0">
-              <div className="relative aspect-video w-full">
-                <Image
-                  src={item.imageUrl}
-                  alt={item.title}
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </DialogContent>
-          </Dialog>
-        ))}
+              <DialogContent className="max-w-4xl p-0 border-0">
+                <div className="relative aspect-video w-full">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
+          );
+        })}
       </div>
     </div>
   );
