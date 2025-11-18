@@ -2456,7 +2456,7 @@ export const fandomPosts: FandomPost[] = [
   {
     id: 1,
     author: 'Violet',
-    avatarUrl: findImage('avatar-1').url,
+    avatarUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763482401/e41eac254c607c1b3ddc20fe79ac152e_zlqxqq.webp',
     avatarHint: 'profile avatar',
     content: 'Just rewatched Your Name for the millionth time. It still gets me every single time. That ending... my heart just can\'t take it! 😭',
     timestamp: '2 hours ago',
@@ -2466,7 +2466,7 @@ export const fandomPosts: FandomPost[] = [
   {
     id: 2,
     author: 'Moonflower',
-    avatarUrl: findImage('avatar-2').url,
+    avatarUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763482392/Bari_Bari_Densetsu_2_avkhqo.webp',
     avatarHint: 'profile avatar',
     content: 'Right?? The animation is breathtaking, and the music is just perfect. I literally have the soundtrack on repeat.',
     timestamp: '1 hour ago',
@@ -2476,7 +2476,7 @@ export const fandomPosts: FandomPost[] = [
   {
     id: 3,
     author: 'Eternallover',
-    avatarUrl: findImage('avatar-3').url,
+    avatarUrl: 'https://res.cloudinary.com/doklib3it/image/upload/v1763482409/MV5BMzI1NDk0MzEzN15BMl5BanBnXkFtZTcwOTE0MjIyNw._V1_QL75_UY281_CR10_0_500_281__l6uexs.webp',
     avatarHint: 'profile avatar',
     content: 'I know what you mean! It\'s such a beautiful and heartbreaking story about connection. It makes you wonder about fate and the people we\'re meant to meet. ✨',
     timestamp: '30 minutes ago',
@@ -2488,5 +2488,7 @@ export const fandomPosts: FandomPost[] = [
 export const fanArt: FanArt[] = [];
 
 export const fanFiction: FanFiction[] = [];
+
+    
 
     
