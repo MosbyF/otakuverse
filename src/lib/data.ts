@@ -2509,6 +2509,14 @@ export const fanArt: FanArt[] = [
     imageUrl: "https://res.cloudinary.com/doklib3it/image/upload/v1763482697/brandon-liao-wh-illustration-01-3840_nu98kh.jpg",
     description: "I love drawing cozy, magical scenes. Here’s a little witch brewing up a potion in her kitchen. Probably something that smells like cinnamon and rain.",
     timestamp: "5 days ago"
+  },
+  {
+    id: 4,
+    title: "Midnight Munchies",
+    author: "violet",
+    imageUrl: "https://res.cloudinary.com/doklib3it/image/upload/v1763484127/munsh-kitchenshot-01_mh0trz.webp",
+    description: "I wanted to capture that late-night feeling of making instant noodles. There's something so comforting about it.",
+    timestamp: "6 days ago"
   }
 ];
 
@@ -2517,3 +2525,4 @@ export const fanFiction: FanFiction[] = [];
     
 
     
+
