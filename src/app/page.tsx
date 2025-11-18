@@ -30,6 +30,9 @@ export default function Home() {
           <p className="text-xl italic text-white max-w-3xl mx-auto">
             A hub to unite stories, creativity, and fans from every corner of the anime and manga universe.
           </p>
+          <p className="text-xl italic text-white max-w-3xl mx-auto mt-4">
+            Bringing every otaku closer to the worlds they love.
+          </p>
         </section>
 
         <section>
