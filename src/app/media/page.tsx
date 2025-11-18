@@ -13,8 +13,13 @@ export default function MediaPage({
   const genreId = searchParams?.genre;
 
   let filteredMedia = media;
+  let pageTitle = "Explore All Media";
 
-  if (mediaType) {
+  if (mediaType === 'Anime') {
+    pageTitle = 'Explore the Anime Shelf';
+    filteredMedia = filteredMedia.filter((item) => item.type === mediaType);
+  } else if (mediaType === 'Manga') {
+    pageTitle = 'Explore the Manga Shelf';
     filteredMedia = filteredMedia.filter((item) => item.type === mediaType);
   }
 
@@ -23,6 +28,7 @@ export default function MediaPage({
     if (!genre) {
       return notFound();
     }
+    pageTitle = `Explore ${genre.name}`;
     filteredMedia = filteredMedia.filter((item) =>
       item.genres.some(g => g.toLowerCase() === genre.name.toLowerCase())
     );
@@ -30,6 +36,9 @@ export default function MediaPage({
 
   return (
     <div className="container mx-auto px-4 py-8">
+       <div className="text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">{pageTitle}</h1>
+      </div>
       {filteredMedia.length > 0 ? (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
           {filteredMedia.map((item: MediaType) => (
