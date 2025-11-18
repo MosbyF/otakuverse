@@ -2515,7 +2515,7 @@ export const fanArt: FanArt[] = [
     title: "Midnight Munchies",
     author: "violet",
     imageUrl: "https://res.cloudinary.com/doklib3it/image/upload/v1763484127/munsh-kitchenshot-01_mh0trz.webp",
-    description: "I wanted to capture that late-night feeling of making instant noodles. There's something so comforting about it.",
+    description: "I wanted to capture that late-night feeling of making instant noodles. There's something so comforting about it. I made this on Blender kitchen",
     timestamp: "6 days ago"
   }
 ];
@@ -2525,4 +2525,5 @@ export const fanFiction: FanFiction[] = [];
     
 
     
+
 
