@@ -62,6 +62,7 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
                   sizes="(max-width: 768px) 100vw, 33vw"
                   priority
                   data-ai-hint={item.imageHint}
+                  crossOrigin="anonymous"
                 />
               </div>
             </div>

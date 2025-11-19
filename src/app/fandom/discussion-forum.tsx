@@ -110,7 +110,7 @@ export function DiscussionForum({ initialPosts }: { initialPosts: FandomPost[] }
             <CardContent className="p-4">
               <div className="flex items-start gap-4">
                 <Avatar>
-                  <AvatarImage src={post.avatarUrl} alt={post.author} data-ai-hint={post.avatarHint} />
+                  <AvatarImage src={post.avatarUrl} alt={post.author} data-ai-hint={post.avatarHint} crossOrigin="anonymous" />
                   <AvatarFallback>{post.author.charAt(0)}</AvatarFallback>
                 </Avatar>
                 <div className="flex-1">

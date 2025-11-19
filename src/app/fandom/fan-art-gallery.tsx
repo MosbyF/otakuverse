@@ -133,6 +133,7 @@ export function FanArtGallery({ initialArt }: { initialArt: FanArt[] }) {
                         alt={item.title}
                         fill
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        crossOrigin="anonymous"
                       />
                       <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                           <Eye className="h-10 w-10 text-white" />
@@ -169,6 +170,7 @@ export function FanArtGallery({ initialArt }: { initialArt: FanArt[] }) {
                     alt={item.title}
                     fill
                     className="object-contain"
+                    crossOrigin="anonymous"
                   />
                 </div>
               </DialogContent>

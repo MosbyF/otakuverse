@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
-             <Image src="https://res.cloudinary.com/doklib3it/image/upload/v1762444330/Screenshot_2025-09-22_002714-removebg-preview_tjg6hx.png" alt="Logo" width={100} height={24} className="h-6 w-auto" />
+             <Image src="https://res.cloudinary.com/doklib3it/image/upload/v1762444330/Screenshot_2025-09-22_002714-removebg-preview_tjg6hx.png" alt="Logo" width={100} height={24} className="h-6 w-auto" crossOrigin="anonymous" />
           </div>
           <div className="text-center text-sm text-muted-foreground mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} OtakuVerse. All Rights Reserved.

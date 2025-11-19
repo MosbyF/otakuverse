@@ -27,6 +27,7 @@ export function MediaCard({ media, className }: MediaCardProps) {
                 className="object-contain transition-transform duration-300 group-hover:scale-105"
                 sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
                 data-ai-hint={media.imageHint}
+                crossOrigin="anonymous"
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3 text-white">
                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
