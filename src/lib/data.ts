@@ -1098,7 +1098,7 @@ export const media: MediaType[] = [
     longDescription: 'The bounty-hunting crew of the Bebop is back in this feature-length adventure. When a deadly virus is unleashed on Mars, a massive bounty is placed on the head of the terrorist responsible. Spike, Jet, Faye, and Ed join the hunt, but the target is more elusive and dangerous than they could ever imagine.',
     genres: ['Action', 'Sci-Fi', 'Thriller'],
     rating: 4.8,
-    imageUrl: 'https://cdn.anime-planet.com/anime/primary/cowboy-bebop-the-movie-1-190x268.jpg?t=1625885495',
+    imageUrl: 'https://m.media-amazon.com/images/M/MV5BM2VhZjk2MWMtZjc2OC00YzA4LWI0NzAtZGQ1YjVkOTk5YzVlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
     imageHint: 'bounty hunter',
     status: 'Featured',
     duration: '1h 55min',
@@ -2516,7 +2516,7 @@ export const fanArt: FanArt[] = [
     title: "Midnight Munchies",
     author: "violet",
     imageUrl: "https://res.cloudinary.com/doklib3it/image/upload/v1763484127/munsh-kitchenshot-01_mh0trz.webp",
-    description: "I wanted to capture that late-night feeling of making instant noodles. I made this on Blender",
+    description: "I wanted to capture that late-night feeling of making instant noodles. I made this on Blender.",
     timestamp: "6 days ago"
   }
 ];
@@ -2526,6 +2526,7 @@ export const fanFiction: FanFiction[] = [];
     
 
     
+
 
 
 
