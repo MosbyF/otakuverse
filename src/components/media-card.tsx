@@ -24,7 +24,7 @@ export function MediaCard({ media, className }: MediaCardProps) {
                 src={media.imageUrl}
                 alt={media.title}
                 fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                className="object-contain transition-transform duration-300 group-hover:scale-105"
                 sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
                 data-ai-hint={media.imageHint}
               />

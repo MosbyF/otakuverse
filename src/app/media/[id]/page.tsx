@@ -16,10 +16,10 @@ export function generateStaticParams() {
   }));
 }
 
-const DetailItem = ({ icon, label, value }: { icon: React.ElementType, label: string, value: React.ReactNode }) => (
+const DetailItem = ({ icon: Icon, label, value }: { icon: React.ElementType, label: string, value: React.ReactNode }) => (
     <div className="flex items-center">
         <div className="flex items-center gap-3 w-32 text-muted-foreground shrink-0">
-            <icon className="w-5 h-5" />
+            <Icon className="w-5 h-5" />
             <span className="font-medium">{label}</span>
         </div>
         <div className="font-semibold text-foreground/90">{value}</div>
@@ -58,7 +58,7 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
                   src={item.imageUrl}
                   alt={item.title}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 768px) 100vw, 33vw"
                   priority
                   data-ai-hint={item.imageHint}
