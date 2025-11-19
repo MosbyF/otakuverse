@@ -80,6 +80,7 @@ export function Header() {
         <Link
           key={link.href}
           href={link.href}
+          prefetch={true}
           className={cn(
             'text-sm font-medium transition-colors hover:text-primary',
             isLinkActive(link.href) ? 'text-primary' : 'text-gray-400',
@@ -98,7 +99,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-primary/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
         <div className="flex items-center">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" prefetch={true} className="flex items-center space-x-2">
             <Image src="https://res.cloudinary.com/doklib3it/image/upload/v1762444330/Screenshot_2025-09-22_002714-removebg-preview_tjg6hx.png" alt="Logo" width={150} height={36} className="h-8 w-auto" crossOrigin="anonymous"/>
           </Link>
         </div>
@@ -113,7 +114,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
-               <Link href="/" className="mr-6 flex items-center space-x-2 mb-4" onClick={() => setIsMobileMenuOpen(false)}>
+               <Link href="/" prefetch={true} className="mr-6 flex items-center space-x-2 mb-4" onClick={() => setIsMobileMenuOpen(false)}>
                   <Image src="https://res.cloudinary.com/doklib3it/image/upload/v1762444330/Screenshot_2025-09-22_002714-removebg-preview_tjg6hx.png" alt="Logo" width={150} height={36} className="h-8 w-auto" crossOrigin="anonymous" />
                 </Link>
               <NavLinks inSheet />

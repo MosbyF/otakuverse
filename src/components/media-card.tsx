@@ -16,7 +16,7 @@ interface MediaCardProps {
 export function MediaCard({ media, className }: MediaCardProps) {
   return (
     <div className={cn('group relative', className)}>
-      <Link href={`/media/${media.id}`} className="block">
+      <Link href={`/media/${media.id}`} className="block" prefetch={true}>
         <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 hover:-translate-y-1">
           <CardContent className="p-0">
             <div className="relative aspect-[2/3]">

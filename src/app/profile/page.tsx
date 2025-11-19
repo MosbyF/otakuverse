@@ -147,7 +147,7 @@ export default function ProfilePage() {
       {!isLoadingShelf && shelfItems && shelfItems.length > 0 && (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
           {shelfItems.sort((a, b) => new Date(b.addedAt).getTime() - new Date(a.addedAt).getTime()).map((item) => (
-            <Link href={`/media/${item.mediaId}`} key={item.id}>
+            <Link href={`/media/${item.mediaId}`} key={item.id} prefetch={true}>
               <Card className="overflow-hidden group transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 hover:-translate-y-1">
                 <div className="relative aspect-[2/3]">
                   <Image
@@ -170,7 +170,7 @@ export default function ProfilePage() {
       {!isLoadingShelf && (!shelfItems || shelfItems.length === 0) && (
         <div className="text-center py-16 border-2 border-dashed rounded-lg">
           <p className="text-muted-foreground mb-4">Your shelf is empty.</p>
-          <Link href="/">
+          <Link href="/" prefetch={true}>
             <Button>Start Browsing</Button>
           </Link>
         </div>

@@ -16,7 +16,7 @@ export default function GenresPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {genres.map((genre) => (
-          <Link href={`/media?genre=${genre.id}`} key={genre.id}>
+          <Link href={`/media?genre=${genre.id}`} key={genre.id} prefetch={true}>
             <Card className="overflow-hidden group transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 hover:-translate-y-1 relative">
               <div className="relative h-48 w-full">
                 <Image

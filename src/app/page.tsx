@@ -57,7 +57,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6 font-headline">Browse by Genre</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {genres.slice(0,8).map((genre) => (
-              <Link href={`/media?genre=${genre.id}`} key={genre.id}>
+              <Link href={`/media?genre=${genre.id}`} key={genre.id} prefetch={true}>
                 <div className="relative rounded-lg overflow-hidden h-40 group">
                   <Image
                     src={genre.imageUrl}
@@ -65,6 +65,7 @@ export default function Home() {
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                     data-ai-hint={genre.imageHint}
+                    crossOrigin="anonymous"
                   />
                   <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                     <h3 className="text-2xl font-bold text-white font-headline">{genre.name}</h3>
