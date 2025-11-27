@@ -26,6 +26,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Bebas+Neue&family=Delius&family=Freckle+Face&family=Iceberg&family=Nerko+One&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
           rel="stylesheet"
         />
+        <link rel="dns-prefetch" href="https://cdn.anime-planet.com" />
       </head>
       <body className={cn('min-h-screen bg-background font-body antialiased flex flex-col')}>
         <FirebaseClientProvider>
