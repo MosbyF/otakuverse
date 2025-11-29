@@ -1,4 +1,6 @@
 
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import type { MediaType } from '@/lib/types';
@@ -7,6 +9,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import { Star, Clock, BookOpen, Calendar } from 'lucide-react';
 import { AddToShelfButton } from './add-to-shelf-button';
+import { useState, useRef } from 'react';
 
 interface MediaCardProps {
   media: MediaType;
@@ -14,14 +17,37 @@ interface MediaCardProps {
 }
 
 export function MediaCard({ media, className }: MediaCardProps) {
+  const [imgSrc, setImgSrc] = useState(media.imageUrl);
+  const highQualitySrc = media.imageUrl.replace('/q_auto:low,f_auto', '');
+  const preloaded = useRef(false);
+
+  const handleMouseEnter = () => {
+    if (!preloaded.current) {
+      const img = new (window.Image)();
+      img.src = highQualitySrc;
+      img.onload = () => {
+        setImgSrc(highQualitySrc);
+        preloaded.current = true;
+      };
+    } else {
+        setImgSrc(highQualitySrc);
+    }
+  };
+
+  const handleMouseLeave = () => {
+      // Optionally, revert to low-quality image to save memory,
+      // but for most use cases, keeping the high-quality image is fine.
+      // setImgSrc(media.imageUrl);
+  }
+
   return (
-    <div className={cn('group relative', className)}>
+    <div className={cn('group relative', className)} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <Link href={`/media/${media.id}`} className="block" prefetch={true}>
         <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 hover:-translate-y-1">
           <CardContent className="p-0">
             <div className="relative aspect-[2/3]">
               <Image
-                src={media.imageUrl}
+                src={imgSrc}
                 alt={media.title}
                 fill
                 className="object-contain transition-transform duration-300 group-hover:scale-105"

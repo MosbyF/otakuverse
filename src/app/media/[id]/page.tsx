@@ -1,5 +1,6 @@
 
 
+
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { media } from '@/lib/data';
@@ -33,6 +34,7 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
     notFound();
   }
   
+  const highQualityImageUrl = item.imageUrl.replace('/q_auto:low,f_auto', '');
   const isManga = item.type === 'Manga';
 
   const sourceMap: { [key: string]: { name: string, url: string } } = {
@@ -55,7 +57,7 @@ export default function MediaDetailPage({ params }: { params: { id: string } }) 
             <div className="sticky top-24">
               <div className="relative aspect-[2/3] rounded-lg overflow-hidden shadow-lg shadow-primary/20">
                 <Image
-                  src={item.imageUrl}
+                  src={highQualityImageUrl}
                   alt={item.title}
                   fill
                   className="object-contain"
