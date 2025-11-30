@@ -78,6 +78,8 @@ export function LoginDialog({ isOpen, onOpenChange }: LoginDialogProps) {
       
       // Create user profile in Firestore
       if (firestore && user) {
+        // Use setDoc to create a document with the user's UID as the document ID.
+        // This is a common pattern for user profiles.
         await setDoc(doc(firestore, "users", user.uid), {
           id: user.uid,
           email: user.email,
@@ -100,11 +102,15 @@ export function LoginDialog({ isOpen, onOpenChange }: LoginDialogProps) {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
       
+      // Create or merge user profile in Firestore
       if (firestore && user) {
+        // Use `merge: true` to avoid overwriting existing data if the user
+        // signed up with email and is now using Google.
         await setDoc(doc(firestore, "users", user.uid), {
           id: user.uid,
           email: user.email,
           username: user.displayName,
+          photoURL: user.photoURL
         }, { merge: true });
       }
 

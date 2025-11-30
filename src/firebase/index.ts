@@ -5,33 +5,21 @@ import { initializeApp, getApps, getApp, FirebaseApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore'
 
-// IMPORTANT: DO NOT MODIFY THIS FUNCTION
+// This function initializes Firebase and returns the SDKs.
 export function initializeFirebase() {
+  // If no Firebase app has been initialized, create one.
   if (!getApps().length) {
-    // Important! initializeApp() is called without any arguments because Firebase App Hosting
-    // integrates with the initializeApp() function to provide the environment variables needed to
-    // populate the FirebaseOptions in production. It is critical that we attempt to call initializeApp()
-    // without arguments.
-    let firebaseApp;
-    try {
-      // Attempt to initialize via Firebase App Hosting environment variables
-      firebaseApp = initializeApp();
-    } catch (e) {
-      // Only warn in production because it's normal to use the firebaseConfig to initialize
-      // during development
-      if (process.env.NODE_ENV === "production") {
-        console.warn('Automatic initialization failed. Falling back to firebase config object.', e);
-      }
-      firebaseApp = initializeApp(firebaseConfig);
-    }
-
-    return getSdks(firebaseApp);
+    // initializeApp() is called with the config object.
+    // In a Vercel environment, the environment variables from .env.local
+    // will be used to populate the firebaseConfig object.
+    initializeApp(firebaseConfig);
   }
-
-  // If already initialized, return the SDKs with the already initialized App
+  
+  // Return the initialized app and SDKs.
   return getSdks(getApp());
 }
 
+// This helper function gets the SDK instances from the Firebase app.
 export function getSdks(firebaseApp: FirebaseApp) {
   return {
     firebaseApp,
@@ -40,11 +28,13 @@ export function getSdks(firebaseApp: FirebaseApp) {
   };
 }
 
+// Export all the necessary hooks and providers for use in your components.
 export * from './provider';
 export * from './client-provider';
 export * from './firestore/use-collection';
 export * from './firestore/use-doc';
 export * from './non-blocking-updates';
 export * from './non-blocking-login';
+export * from './auth/use-user';
 export * from './errors';
 export * from './error-emitter';

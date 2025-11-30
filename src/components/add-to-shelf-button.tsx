@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Button, type ButtonProps } from '@/components/ui/button';
 import { useAuth } from '@/components/auth/AuthProvider';
 import { useUser, useFirestore, addDocumentNonBlocking } from '@/firebase';
-import { collection, serverTimestamp } from 'firebase/firestore';
+import { collection } from 'firebase/firestore';
 import { useToast } from '@/hooks/use-toast';
 import { PlusSquare, Check } from 'lucide-react';
 import type { MediaType } from '@/lib/types';
@@ -44,30 +44,21 @@ export function AddToShelfButton({ media, variant, ...props }: AddToShelfButtonP
       addedAt: new Date().toISOString(),
     };
     
-    try {
-      const shelfRef = collection(firestore, 'users', user.uid, 'shelfItems');
-      // We don't await here for optimistic UI
-      addDocumentNonBlocking(shelfRef, shelfItem);
+    const shelfRef = collection(firestore, 'users', user.uid, 'shelfItems');
+    // We don't await here for optimistic UI
+    addDocumentNonBlocking(shelfRef, shelfItem);
 
-      setIsAdded(true);
-      toast({
-        title: 'Added to Shelf!',
-        description: `${media.title} has been added to your collection.`,
-      });
-      setTimeout(() => {
-        setIsAdded(false);
-        setIsAdding(false);
-      }, 2000);
-
-    } catch (error) {
-        console.error("Error adding document: ", error);
-        toast({
-            variant: "destructive",
-            title: "Uh oh! Something went wrong.",
-            description: "Could not add item to your shelf.",
-        });
-        setIsAdding(false);
-    }
+    setIsAdded(true);
+    toast({
+      title: 'Added to Shelf!',
+      description: `${media.title} has been added to your collection.`,
+    });
+    
+    // Reset the button state after a delay
+    setTimeout(() => {
+      setIsAdded(false);
+      setIsAdding(false);
+    }, 2000);
   };
   
   const isIconButton = variant === 'icon';
